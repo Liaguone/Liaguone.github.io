@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>大学 on Liagu&#39; blog</title>
+        <link>https://hack.liagu-one.top/tags/%E5%A4%A7%E5%AD%A6/</link>
+        <description>Recent content in 大学 on Liagu&#39; blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Liagu</copyright>
+        <lastBuildDate>Mon, 01 Jul 2024 21:12:31 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/tags/%E5%A4%A7%E5%AD%A6/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>计算机网络</title>
+        <link>https://hack.liagu-one.top/p/9e32d85/</link>
+        <pubDate>Mon, 01 Jul 2024 21:12:31 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/p/9e32d85/</guid>
+        <description>&lt;h1 id=&#34;总结&#34;&gt;总结
+&lt;/h1&gt;&lt;h2 id=&#34;网络适配器的作用是什么工作在哪一层&#34;&gt;网络适配器的作用是什么，工作在哪一层
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;进行串行和并行传输的转换&lt;/li&gt;
+&lt;li&gt;对数据进行缓存，对接收速率进行匹配&lt;/li&gt;
+&lt;li&gt;对接收的数据进行差错检测&lt;/li&gt;
+&lt;li&gt;在计算机的操作系统上安装设备驱动程序，跟主机当中的存储器、CPU等部件进行协调&lt;/li&gt;
+&lt;li&gt;实现以太网协议，如数据的封装、发送、地址的检查、接收、有效判断、校验等等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;网络适配器工作在数据链路层和物理层。&lt;/p&gt;
+&lt;h2 id=&#34;ip地址与硬件地址的区别为什么要用这两种不同的地址&#34;&gt;ip地址与硬件地址的区别，为什么要用这两种不同的地址
+&lt;/h2&gt;&lt;p&gt;1、长度的区别：&lt;/p&gt;
+&lt;p&gt;物理地址即硬件地址，由48bit构成；IP地址由32bit组成，是逻辑地址。&lt;/p&gt;
+&lt;p&gt;2、放置位置的区别：&lt;/p&gt;
+&lt;p&gt;IP地址放IP数据报的首部，而硬件地址则放在MAC帧的首部。&lt;/p&gt;
+&lt;p&gt;3、使用的区别:&lt;/p&gt;
+&lt;p&gt;在网络层和网络层以上使用IP地址，数据链路层及以下使用硬件地址。&lt;/p&gt;
+&lt;p&gt;在IP 层抽象的互连网上，我们看到的只是IP 数据报，路由器根据目的站的IP地址进行选路。在具体的物理网络的链路层，我们看到的只是MAC 帧，IP 数据报被封装在MAC帧里面。MAC 帧在不同的网络上传送时，其MAC 帧的首部是不同的。&lt;/p&gt;
+&lt;p&gt;这种变化，在上面的IP 层上是看不到的。每个路由器都有IP 地址和硬件地址。使用IP 地址与硬件地址，尽管连接在一起的网络的硬件地址体系各不相同，但IP 层抽象的互连网却屏蔽了下层这些很复杂的细节，并使我们能够使用统一的、抽象的IP 地址进行通信。&lt;/p&gt;
+&lt;h2 id=&#34;计算机网络法律上的国际标准和事实上的国际标准划分哪几层&#34;&gt;计算机网络法律上的国际标准和事实上的国际标准，划分哪几层
+&lt;/h2&gt;&lt;p&gt;osi：应用层，表示层，会话层，运输层，网络层，数据链路层，物理层&lt;/p&gt;
+&lt;p&gt;tcp、ip：应用层，，运输层，网际层IP，链路层&lt;/p&gt;
+&lt;h2 id=&#34;文件传输协议ftp的工作过程是是怎么样的&#34;&gt;文件传输协议FTP的工作过程是是怎么样的
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wenku.csdn.net/answer/2cfa167d2f4d4672af20273080d54e23#:~:text=FTP%E7%9A%84%E4%B8%BB%E8%A6%81%E5%B7%A5%E4%BD%9C%E8%BF%87%E7%A8%8B%E6%98%AF%E9%80%9A%E8%BF%87TCP%E8%BF%9E%E6%8E%A5%EF%BC%8C%E5%9C%A8%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%92%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B9%8B%E9%97%B4%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6%E3%80%82%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%8F%91%E9%80%81FTP%E5%91%BD%E4%BB%A4%E8%AF%B7%E6%B1%82%E5%88%B0%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%8C%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%93%8D%E5%BA%94%E8%BF%99%E4%BA%9B%E8%AF%B7%E6%B1%82%E5%B9%B6%E6%89%A7%E8%A1%8C%E7%9B%B8%E5%BA%94%E7%9A%84%E6%93%8D%E4%BD%9C%EF%BC%8C%E4%BE%8B%E5%A6%82%E5%88%97%E5%87%BA%E7%9B%AE%E5%BD%95%E4%B8%AD%E7%9A%84%E6%96%87%E4%BB%B6%E6%88%96%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6%E3%80%82,FTP%E5%8D%8F%E8%AE%AE%E4%BD%BF%E7%94%A8%E4%B8%A4%E4%B8%AATCP%E8%BF%9E%E6%8E%A5%EF%BC%8C%E5%9C%A8%E6%8E%A7%E5%88%B6%E8%BF%9E%E6%8E%A5%E5%92%8C%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5%E4%B9%8B%E9%97%B4%E4%BC%A0%E8%BE%93%E6%95%B0%E6%8D%AE%E3%80%82%20%E6%8E%A7%E5%88%B6%E8%BF%9E%E6%8E%A5%E7%94%A8%E4%BA%8E%E4%BC%A0%E8%BE%93FTP%E5%91%BD%E4%BB%A4%E5%92%8C%E5%93%8D%E5%BA%94%EF%BC%8C%E8%80%8C%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5%E7%94%A8%E4%BA%8E%E4%BC%A0%E8%BE%93%E6%96%87%E4%BB%B6%E5%92%8C%E6%95%B0%E6%8D%AE%E3%80%82%20FTP%E6%98%AF%E5%B8%A6%E5%A4%96%E4%BC%A0%E9%80%81%E6%8E%A7%E5%88%B6%E4%BF%A1%E6%81%AF%EF%BC%8C%E5%9B%A0%E4%B8%BAFTP%E5%91%BD%E4%BB%A4%E5%92%8C%E5%93%8D%E5%BA%94%E9%80%9A%E5%B8%B8%E6%AF%94%E6%95%B0%E6%8D%AE%E8%BF%9E%E6%8E%A5%E6%9B%B4%E5%B0%8F%E3%80%82&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;11111&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wenku.csdn.net/answer/5c07cb22eb4945989f247917ac97970c&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2222&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;某网络的掩码是能连接多少台主机&#34;&gt;某网络的掩码是，能连接多少台主机
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wenku.csdn.net/answer/4089133e23fc4995af86b81f51b5af3f&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1111&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;客户服务器方式和p2p对等通信主要区别有没有相同的地方&#34;&gt;客户服务器方式和p2p对等通信主要区别，有没有相同的地方
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://wenku.csdn.net/answer/9d38dd4fceef4cdd80b8fcacada969e1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1111&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;判断ip地址的网络类型&#34;&gt;判断ip地址的网络类型
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;http://picgo.liagu-one.top/img/image-20240701023603827.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240701023603827&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;大题&lt;/p&gt;
+&lt;h2 id=&#34;码分多址通信计算传输错误的&#34;&gt;码分多址通信计算传输错误的
+&lt;/h2&gt;&lt;p&gt;p70 2-16&lt;/p&gt;
+&lt;h2 id=&#34;crc计算余数的问题&#34;&gt;CRC计算余数的问题
+&lt;/h2&gt;&lt;h2 id=&#34;地址匹配的问题&#34;&gt;地址匹配的问题
+&lt;/h2&gt;&lt;h2 id=&#34;划分子网的问题&#34;&gt;划分子网的问题
+&lt;/h2&gt;&lt;h2 id=&#34;收到分组转发分组选择路由的问题&#34;&gt;收到分组转发分组选择路由的问题
+&lt;/h2&gt;&lt;h2 id=&#34;tcp报文段&#34;&gt;TCP报文段
+&lt;/h2&gt;&lt;h1 id=&#34;2-物理层&#34;&gt;2-物理层
+&lt;/h1&gt;&lt;p&gt;怎样才能在连接各种计算机的传输媒体上传输数据比特流，而不是指具体的传输媒体。&lt;/p&gt;
+&lt;h1 id=&#34;3-数据链路层&#34;&gt;3-数据链路层
+&lt;/h1&gt;&lt;p&gt;功能：为了向网络层提供服务，数据链路层必须使用物理层提供的服务。而物理层是以比特流进行传输的，这种比特流并不保证在数据传输过程中没有错误，接收到的位数量可能少于、等于或者多于发送的位数量。而且它们还可能有不同的值，这时数据链路层为了能实现数据有效的差错控制，就采用了一种”帧”的数据块进行传输。而要采帧格式传输，就必须有相应的帧同步技术，这就是数据链路层的”成帧”（也称为”帧同步”）功能。&lt;/p&gt;
+&lt;p&gt;作用：将源计算机网络层来的数据可靠的传输到相邻节点的目标计算机的网络层。&lt;/p&gt;
+&lt;p&gt;解决的问题：封装成帧，透明传输，差错检测&lt;/p&gt;
+&lt;p&gt;数据链路和数据帧&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702170145922.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702170145922&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;协议控制数据的传输&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;三个基本问题分别解决什么，能不能缺少：(封装成帧，透明传输，差错检测)&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702170045867.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702170045867&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;差错检测CRC&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702175615381.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702175615381&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702175736598.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702175736598&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-2点对点协议ppp&#34;&gt;3-2点对点协议PPP
+&lt;/h2&gt;&lt;p&gt;：是用户计算机和ISP进行通信的所用的数据链路层协议&lt;/p&gt;
+&lt;p&gt;有三部分&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;一个将IP数据报封装到串行链路的方法，支持异步和同步链路，IP数据报作为PPP帧的信息部分。&lt;/li&gt;
+&lt;li&gt;一个用来建立、配置和测试数据链路连接的链路控制协议LCP，负责协商链路的参数，如认证、压缩、错误检测等。&lt;/li&gt;
+&lt;li&gt;一套网络控制协议NCP，每一个协议支持一个网络层协议，如IP、AppleTalk等，负责协商网络层的参数，如IP地址、路由协议等。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702170923332.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702170923332&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;字节填充&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;PPP使用0x7E（01111110)作为这个定界符，即路由器检测到某个字节为0x7E就说明上个帧传输结束，开始下个帧的传输&lt;/p&gt;
+&lt;p&gt;PPP使用异步传输时，我们使用0x7D（01111101）作为转义符，&lt;/p&gt;
+&lt;p&gt;把信息字段中出现的每一个0x7E字节转变为2字节序列(0x7D，0x5E)。
+若信息字段中出现一个0x7D的字节(即出现了和转义字符一样的比特组合)，则把转义字符0x7D转变为2字节序列(0x7D，0x5D)。&lt;/p&gt;
+&lt;p&gt;0比特填充：连续5个1后加0&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702175819217.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702175819217&#34;
+	
+	
+&gt;&lt;img src=&#34;http://picgo.liagu-one.top/img/image-20240702175839259.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702175839259&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-3使用广播信道的数据链路层&#34;&gt;3-3使用广播信道的数据链路层
+&lt;/h2&gt;&lt;p&gt;局域网特点：为一个单位所拥有，地理范围和站点数目有限&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702175913547.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702175913547&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;局域网网络拓扑分类：星型网(中间是集线器 )，环形网，总线网，树形拓扑&lt;/p&gt;
+&lt;p&gt;共享信道采用的技术：静态划分信道(频分多址，时分多址，码分多址)，动态媒体接入控制(多点接入)&lt;/p&gt;
+&lt;p&gt;适配器作用：（已有）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;载波监听多点接入/碰撞检测)&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;先听后发，边听边发，冲突停发&lt;/p&gt;
+&lt;p&gt;96比特时间，帧间最小间隔，使接受方可以检测一个帧的结束&lt;/p&gt;
+&lt;p&gt;10Mbit/s 争用期是512比特时间，退避时间=争用期2&amp;amp;*随机数r（对于以太网，最小帧时间是确定的）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180010361.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180010361&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180027903.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180027903&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180204462.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180204462&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702191926362.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702191926362&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180246186.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180246186&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180304242.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180304242&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;检测空闲(512bit时间&amp;ndash;&amp;gt;争用期)后，等待96bit重发数据&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180324693.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180324693&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180342703.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180342703&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180435303.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180435303&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180500299.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180500299&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180558900.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180558900&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180759630.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180759630&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702180951126.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702180951126&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;怎么实现&lt;/p&gt;
+&lt;p&gt;使用集线器的星型拓扑：使用的还是CSMA/CD协议&lt;/p&gt;
+&lt;p&gt;一个集线器有许多端口&lt;/p&gt;
+&lt;p&gt;集线器工作在物理层、&lt;/p&gt;
+&lt;p&gt;以太网的信道利用率&lt;/p&gt;
+&lt;p&gt;以太网的mac层：48位&lt;/p&gt;
+&lt;p&gt;以太网交换机的特点：&lt;/p&gt;
+&lt;p&gt;1、以太网交换机的每个端口都直接与主机相连，并且一般都工作在全双工方式。
+2、交换机能同时连通许多对的端口，使每一对相互通信的主机都能像独占通信媒体那样，进行无冲突地传输数据。
+3、用户独占传输媒体的带宽，若一个接口到主机的带宽是10Mbit每秒，那么有10个接口的交换机的总容量是100Mbit每秒。这是交换机的最大优点。
+以太网交换机的自学习功能：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;虚拟局域网&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;一个vlan=一个广播域=一个网段&lt;/p&gt;
+&lt;p&gt;vlan标识符12位vid&lt;/p&gt;
+&lt;p&gt;连接两个交换机之间端口的链路成为&lt;strong&gt;汇聚链路&lt;/strong&gt;或&lt;strong&gt;干线链路&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;4-网络层&#34;&gt;4-网络层
+&lt;/h1&gt;&lt;p&gt;作用：将分组从源主机经过多个网络和多段链路传输到目的主机，可以将该任务划分为分组转发和路由选择两种重要的功能。&lt;/p&gt;
+&lt;p&gt;解决的问题：网络层的主要任务是实现网络互连，进而实现数据包在各网络之间的传输&lt;/p&gt;
+&lt;h2 id=&#34;41网络层的两个重要概念&#34;&gt;4.1网络层的两个重要概念
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;网络层的两种服务&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络层不提供服务质量的承诺，填空应该是&lt;u&gt;数据报服务&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702094047828.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702094047828&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;网络层的两个层面：&lt;u&gt;（转发）数据层面&lt;/u&gt;，&lt;u&gt;控制层面&lt;/u&gt;。一个是转发源主机和目的主机之间所传送的数据，另一个是传送路由信息。&lt;/p&gt;
+&lt;h2 id=&#34;42网际ip&#34;&gt;4.2网际ip
+&lt;/h2&gt;&lt;h4 id=&#34;网络互连有何实际意义进行网络互连时有哪些共同的问题需要解决&#34;&gt;&lt;strong&gt;网络互连有何实际意义?进行网络互连时，有哪些共同的问题需要解决?&lt;/strong&gt;
+&lt;/h4&gt;&lt;p&gt;不可能让所有的用户都使用相同的网络。这是因为用户的需求是多种多样的，没有一种单一的网络能够满足所有用户的需求。另外，网络技术是不断发展的，网络的制造厂家也要经常推出新的网络，在竞争中求生存。因此，在市场上总有很多种不同性能、不同网络协议的网络，供不同的用户选用。因此我们面临的现实就是:在客观上，世界上有很多特性各异的网络，但这些网络又希望能够相互通信，于是网络互连的意义非常重大。&lt;/p&gt;
+&lt;p&gt;网络互连会遇到许多问题需要解决，如:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不同的寻址方案:&lt;/li&gt;
+&lt;li&gt;不同的最大分组长度:&lt;/li&gt;
+&lt;li&gt;不同的网络接入机制:&lt;/li&gt;
+&lt;li&gt;不同的超时控制;&lt;/li&gt;
+&lt;li&gt;不同的差错恢复方法:&lt;/li&gt;
+&lt;li&gt;不同的状态报告方法:&lt;/li&gt;
+&lt;li&gt;不同的路由选择技术:&lt;/li&gt;
+&lt;li&gt;不同的用户接入控制:&lt;/li&gt;
+&lt;li&gt;不同的服务(面向连接服务和无连接服务);不同的管理与控制方式;等等&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h4 id=&#34;作为中间设备转发器网桥路由器和网关有何区别&#34;&gt;作为中间设备，转发器、网桥、路由器和网关有何区别?
+&lt;/h4&gt;&lt;p&gt;将网络互相连接起来要使用一些中间设备。根据中间设备所在的层次，有以下四种不同的中间设备:
+(1)物理层使用的中间设备叫作转发器
+(2)数据链路层使用的中间设备叫作网桥或交换机。
+(3)网络层使用的中间设备叫作路由器。
+(4)在网络层以上使用的中间设备叫作网关&lt;/p&gt;
+&lt;h4 id=&#34;ip地址分类&#34;&gt;ip地址分类
+&lt;/h4&gt;&lt;p&gt;ip由网络号和主机号组成，ABC类都是单播地址（一对一通信）D类是多播地址，一对多通信&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240701023603827.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240701023603827&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;目前是无分类(CIDR)的ip地址 (斜线记法)，只分网络前缀和主机号&lt;/p&gt;
+&lt;p&gt;使用其一个ip地址可能不属于任何的IP地址&lt;/p&gt;
+&lt;p&gt;当ip最后为0可以省略，128.14.31.0/24&amp;ndash;&amp;gt;128.14.31/24&lt;/p&gt;
+&lt;p&gt;计算机是通过子网掩码来判断网络前缀的长度，用and与运算来计算网络地址。&lt;/p&gt;
+&lt;h4 id=&#34;ip地址和mac地址&#34;&gt;ip地址和mac地址
+&lt;/h4&gt;&lt;p&gt;mac是数据链路层用的地址&amp;ndash;物理地址
+ip地址是网络层及其以上各层所用的地址&amp;ndash;逻辑地址&lt;/p&gt;
+&lt;p&gt;mac地址是对ip地址进行封装而成的，二者 首部都放地址。&lt;/p&gt;
+&lt;h4 id=&#34;ip地址与硬件地址的区别为什么要用这两种不同的地址-1&#34;&gt;ip地址与硬件地址的区别，为什么要用这两种不同的地址
+&lt;/h4&gt;&lt;p&gt;从层次的角度看，MAC地址是数据链路层和物理层使用的地址，而IP地址是网络层和以上各层使用的地址，是一种逻辑地址(称IP地址是逻辑地址是因为I地址是用软件实现的)。&lt;/p&gt;
+&lt;p&gt;1、长度的区别：&lt;/p&gt;
+&lt;p&gt;物理地址即硬件地址，由48bit构成；IP地址由32bit组成，是逻辑地址。&lt;/p&gt;
+&lt;p&gt;2、放置位置的区别：&lt;/p&gt;
+&lt;p&gt;IP地址放IP数据报的首部，而硬件地址则放在MAC帧的首部。&lt;/p&gt;
+&lt;p&gt;3、使用的区别:&lt;/p&gt;
+&lt;p&gt;在网络层和网络层以上使用IP地址，数据链路层及以下使用硬件地址。&lt;/p&gt;
+&lt;p&gt;由于全世界存在着各式各样的网络，它们使用不同的MAC地址。要使这些异构网络能够互相通信就必须进行非常复杂的 MAC地址转换工作，因此由用户或用户主机来完成这项工作几乎是不可能的事。但统一的IP地址把这个复杂问题解决了。连接到互联网的主机只需拥有统一的IP地址，它们之间的通信就像连接在同一个网络上那样简单方便。当需要把IP 地址转为MAC 地址时，调用ARP的复杂过程都由计算机软件自动进行，而用户是看不见这种调用过程的。因此，在虚拟的IP网络上用IP地址进行通信给广大的计算机用户带来很大的方便。&lt;/p&gt;
+&lt;h4 id=&#34;地址解析协议arp&#34;&gt;地址解析协议ARP
+&lt;/h4&gt;&lt;p&gt;地址解析协议 ARP:用来把一个机器(主机或路由器)的IP地址转换为相应的MAC地址(或硬件地址)。&lt;/p&gt;
+&lt;h4 id=&#34;ip数据报格式&#34;&gt;ip数据报格式
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702105333207.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702105333207&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;片偏移：较长的分组的分片中间的某个分片在原来的 IP 分组中的相对位置，当前字节除以8&lt;/p&gt;
+&lt;p&gt;标志字段中的最低位记为MF（More Fragment）：MF=1即表示后面“还有分片”的数据报。MF=0表示这已是若干数据报片中的最后一个。&lt;/p&gt;
+&lt;p&gt;例题&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702111047723.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702111047723&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h4 id=&#34;检验和计算&#34;&gt;检验和计算
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702110023208.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702110023208&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;16位一行划分，二进制依次相加再取反算出&lt;/p&gt;
+&lt;h4 id=&#34;ip地址划分&#34;&gt;ip地址划分
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702111401110.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702111401110&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;43ip转发分组的过程&#34;&gt;4.3IP转发分组的过程
+&lt;/h2&gt;&lt;p&gt;基于分组首部的ip地址：&lt;strong&gt;基于终点的转发&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;二叉线索查找转发表&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702110630446.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702110630446&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702110659975.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702110659975&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;依次计算，若不存在则为默认转发R4&lt;/p&gt;
+&lt;h2 id=&#34;44网际控制报文协议icmp&#34;&gt;4.4网际控制报文协议icmp
+&lt;/h2&gt;&lt;p&gt;分两种：ICMP差错报告报文和ICMP询问报文&lt;/p&gt;
+&lt;h2 id=&#34;45ipv4--ipv6的过渡&#34;&gt;4.5ipv4&amp;ndash;ipv6的过渡
+&lt;/h2&gt;&lt;p&gt;用到&lt;u&gt;双协议栈&lt;/u&gt;和&lt;u&gt;隧道检测技术&lt;/u&gt;&lt;/p&gt;
+&lt;h2 id=&#34;45互联网的路由选择协议&#34;&gt;4.5互联网的路由选择协议
+&lt;/h2&gt;&lt;p&gt;自治系统&amp;ndash;AS&lt;/p&gt;
+&lt;p&gt;分层次的路由选择协议有以下两个：&lt;/p&gt;
+&lt;p&gt;**内部网关协议IGP：**自治系统内部使用的路由选择协议&lt;/p&gt;
+&lt;p&gt;**外部网关协议EGP：**不同自治系统之间的路由选择&lt;/p&gt;
+&lt;p&gt;内部网关协议RIP：基于向量的路由选择协议&amp;ndash;&amp;gt;利用到距离向量算法&lt;/p&gt;
+&lt;p&gt;内部网关协议OSPF:利用了最短路径算法,最主要的特征是使用链路状态协议&lt;/p&gt;
+&lt;p&gt;外部网关协议BGP：自治系统之间交换“可达性”信息&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702114519070.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702114519070&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;ripospf和bgp路由选择协议的主要特点&#34;&gt;RIP，OSPF和BGP路由选择协议的主要特点。
+&lt;/h3&gt;&lt;p&gt;RIP是一种分布式的基于距离向量的路由选择协议，是互联网的标准协议，最大优点就是简单。RIP 协议的特点是:&lt;/p&gt;
+&lt;p&gt;(1)仅和相邻路由器交换信息。如果两个路由器之间的通信不需要经过另一个路由器，那么这两个路由器就是相邻的。RIP协议规定，不相邻的路由器不交换信息。
+(2)路由器交换的信息是当前本路由器所知道的全部信息，即自己的路由表。也就是说交换的信息是:“我到本自治系统中所有网络的(最短)距离，以及到每个网络应经过的下一跳路由器”。
+(3)按固定的时间间隔交换路由信息，例如每隔 30秒。然后，路由器根据收到的路由信息更新路由表。当网络拓扑发生变化时,路由器也及时向相邻路由器通告拓扑变化后的路由信息。&lt;/p&gt;
+&lt;p&gt;(4)坏消息传得慢&lt;/p&gt;
+&lt;p&gt;OSPF最主要的特征就是使用分布式的链路状态协议。OSPF协议的特点是:&lt;/p&gt;
+&lt;p&gt;(1)向本自治系统中的所有路由器发送信息。这里使用的方法是洪泛法，即路由器通过所有输出端口向所有相邻的路由器发送信息,而每一个相邻路由器又将此信息发往其所有的相邻路由器(但不再发送给刚刚发来信息的那个路由器)。这样，最终整个区域中所有的路由器都得到了这一信息的一个副本。
+(2)发送的信息就是与本路由器相邻的所有路由器的链路状态，但这只是路由器所知道的部分信息。所谓“链路状态”,就是说明本路由器都和哪些路由器相邻,以及该链路的“度量”。OSPF 将这个“度量”用来表示费用、距离、时延、带宽，等等。这些都由网络管理人员来决定，因此较为灵活。有时为了方便，称这个度量为“代价”。
+(3)只有当链路状态发生变化时，路由器才用洪泛法向所有路由器发送此信息&lt;/p&gt;
+&lt;p&gt;BGP是不同自治系统的路由器之间交换路由信息的协议，它采用路径向量路由选择协议BGP协议的主要特点是:
+(1)BGP在自治系统之间交换“可达性”信息(即“可到达”或“不可到达”)。例如，告诉相邻路由器:“到达目的网络N可经过 AS”。
+(2)自治系统之间的路由选择必须考虑有关策略。
+(3)BGP只能力求寻找一条能够到达目的网络且比较好的路由(不能兜圈子)，而并非要寻找一条最佳路由。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702120233805.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702120233805&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;rip距离向量算法更新路由表&#34;&gt;RIP距离向量算法更新路由表
+&lt;/h3&gt;&lt;p&gt;先把收到的更新信息的距离加1，下一跳改成自己。&lt;/p&gt;
+&lt;p&gt;与原有旧的比对；&lt;/p&gt;
+&lt;p&gt;下一跳相同，距离不同，需更新(更新成新的)（坏消息传的慢）&lt;/p&gt;
+&lt;p&gt;不同的下一跳，选距离短的替换&lt;/p&gt;
+&lt;p&gt;不同的下一跳，距离相同，不变&lt;/p&gt;
+&lt;h3 id=&#34;判断用哪个路由协议更好4-384-39&#34;&gt;判断用哪个路由协议更好（4-38/4-39）
+&lt;/h3&gt;&lt;h3 id=&#34;选择路由按最长前缀匹配原则4-49&#34;&gt;选择路由按最长前缀匹配原则（4-49）
+&lt;/h3&gt;&lt;h3 id=&#34;路由器输入和输出端口的处理&#34;&gt;路由器输入和输出端口的处理
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/IMG_202407022851_rotated.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240702124904_rotated&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20240702124904_rotated.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;微信图片_20240702124904_rotated&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;46ip多播&#34;&gt;4.6ip多播
+&lt;/h2&gt;&lt;p&gt;为了使路由器知道多播组成员的信息，需要利用网际组管理协议&lt;strong&gt;IGMP (Internet Group Management Protocol)。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;连接在局域网上的多播路由器还必须和互联网上的其他多播路由器协同工作，以便把多播数据报用最小代价传送给所有的组成员。这就需要使用&lt;strong&gt;多播路由选择协议&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_40452317/article/details/89944437&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1111&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/engineer0/article/details/115798429&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;2222&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;网际组管理协议IGMP&lt;/p&gt;
+&lt;p&gt;互联网组管理协议 (IGMP) 是允许多个设备共享一个 IP 地址以便它们可以接收相同数据的协议。&lt;/p&gt;
+&lt;p&gt;多播路由选择协议：连接在局域网上的 多播路由器 通过 多播路由选择协议 和 其它多播路由器 协同工作，把多播数据报用 最小代价 传送给所有的多播组成员&lt;/p&gt;
+&lt;p&gt;4.8虚拟专用网vpn和网络地址转换nat&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/fsdfafsdsd/article/details/139753226&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;1111&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&#34;5-运输层&#34;&gt;5-运输层
+&lt;/h1&gt;&lt;p&gt;解决的问题：运输层（传输层），解决的是计算机程序到计算机程序之间的通信问题，即所谓的“端”到 “端”的通信。&lt;/p&gt;
+&lt;h2 id=&#34;51运输层协议概述&#34;&gt;5.1运输层协议概述
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;运输层向上面的应用层提供通信服务&lt;/li&gt;
+&lt;li&gt;通信的两端是主机中进程之间的通信，即端到端的通信&lt;/li&gt;
+&lt;li&gt;重要功能：复用和分用&lt;/li&gt;
+&lt;li&gt;网络层为主机之间的通信提供服务，而运输层在网络层的基础上，为应用进程提供通信服务&lt;/li&gt;
+&lt;li&gt;传输协议：面向连接的TCP和无连接的UDP&lt;/li&gt;
+&lt;li&gt;向高层用户屏蔽了网络的核心细节&lt;/li&gt;
+&lt;li&gt;TCP协议尽管下面的网络不可靠，但这种逻辑通信信道相当于一个全双工的可靠信道&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;用户数据报协议：UDP&lt;/p&gt;
+&lt;p&gt;传输控制协议：TCP&lt;/p&gt;
+&lt;p&gt;两个对等运输实体之间传送的数据单位叫做运输协议数据单元&amp;ndash;TPDU&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702142525160.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702142525160&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;应用层所有的应用进程都可以通过运输层在传送到ip层，这就是&lt;strong&gt;复用&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;常见端口号&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702143012053.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702143012053&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;52用户数据报协议udp&#34;&gt;5.2用户数据报协议UDP
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;概述&lt;/strong&gt;：在ip的数据报服务上加了很少一片的功能，即复用和分用和差错检测的功能&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;UDP特点&lt;/strong&gt;：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;无连接的&lt;/li&gt;
+&lt;li&gt;使用尽最大努力交付&lt;/li&gt;
+&lt;li&gt;没有拥塞控制&lt;/li&gt;
+&lt;li&gt;支持一对一，一对多，多对一，多对多的交互通信&lt;/li&gt;
+&lt;li&gt;UDP首部开销小&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;首部格式及校验和计算&lt;/p&gt;
+&lt;p&gt;首部组成：源端口，目的端口，长度，校验和&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702195247737.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702195247737&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;53传输控制协议tcp&#34;&gt;5.3传输控制协议TCP
+&lt;/h2&gt;&lt;p&gt;TCP特点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;面向连接的运输层协议&lt;/li&gt;
+&lt;li&gt;每一条TCP只有两个端点&lt;/li&gt;
+&lt;li&gt;TCP提供可靠交付&lt;/li&gt;
+&lt;li&gt;提供全双工通信&lt;/li&gt;
+&lt;li&gt;面向字节流&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702195451151.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702195451151&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;TCP的连接：连接的端点叫套接字或插口，被通信两端的套接字对确定&lt;/p&gt;
+&lt;h2 id=&#34;54可靠的传输原理&#34;&gt;5.4可靠的传输原理
+&lt;/h2&gt;&lt;h3 id=&#34;停止等待协议&#34;&gt;停止等待协议
+&lt;/h3&gt;&lt;p&gt;每次发送一个分组（分组必须编号）（发送后保留发送的副本以便超时重传）后停止发送，等待确认，收到确认再发送下一个分组。&lt;/p&gt;
+&lt;p&gt;**超时重传：**超过一段时间没有收到确认，就重传前面的分组。要设置超时计时器(时间比往返时间更长)。&lt;/p&gt;
+&lt;p&gt;确认丢失和迟到：一是丢弃重复的分组，二是收下迟到的确认什么都不做。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702195658005.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702195658005&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;以上可靠传输 协议为自动重传请求ARQ，但是&lt;strong&gt;效率低&lt;/strong&gt;，可以采用连续ARQ协议和滑动窗口协议来实现高效。&lt;/p&gt;
+&lt;p&gt;信道利用率=发送的时间/(发送的时间+传输的时间+确认分组的时间)&lt;/p&gt;
+&lt;h3 id=&#34;连续arq协议&#34;&gt;连续ARQ协议
+&lt;/h3&gt;&lt;p&gt;优点：容易实现，即使部分确认丢失也不必重传。
+缺点：不能向发送方反映出接收方已经正确收到的所有分组的信息。&lt;/p&gt;
+&lt;h2 id=&#34;55tcp报文的首部格式&#34;&gt;5.5TCP报文的首部格式
+&lt;/h2&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702145057519.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702145057519&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;首部固定部分各字段意义如下：&lt;/p&gt;
+&lt;p&gt;1） &lt;strong&gt;源端口和目的端口&lt;/strong&gt;       各占2个字节，分别写入源端口和目的端口。&lt;/p&gt;
+&lt;p&gt;2） &lt;strong&gt;序号&lt;/strong&gt;              占4字节。序号范围是【0，2^32 - 1】，共2^32（即4294967296）个序号。序号增加到2^32-1后，下一个序号就又回到0。也就是说，序号使用mod 2^32运算。TCP是面向字节流的。在一个TCP连接中传送的字节流中的每一个字节都按顺序编号。整个要传送的字节流的起始序号必须在连接建立时设置。首部中的序号字段值则是指的是本报文段所发送的数据的第一个字节的序号。例如，一报文段的序号是301，而接待的数据共有100字节。这就表明：本报文段的数据的第一个字节的序号是301，最后一个字节的序号是400。显然，下一个报文段（如果还有的话）的数据序号应当从401开始，即下一个报文段的序号字段值应为401。这个字段的序号也叫“报文段序号”。&lt;/p&gt;
+&lt;p&gt;3） &lt;strong&gt;确认号&lt;/strong&gt;      占4字节，是期望收到对方下一个报文段的第一个数据字节的序号。例如，B正确收到了A发送过来的一个报文段，其序号字段值是501，而数据长度是200字节（序号501~700），这表明B正确收到了A发送的到序号700为止的数据。因此，B期望收到A的下一个数据序号是701，于是B在发送给A的确认报文段中把确认号置为701。注意，现在确认号不是501，也不是700，而是701。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;   总之：若确认号为= N，则表明：到序号N-1为止的所有数据都已正确收到。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;4） 数据偏移         占4位，它指出TCP报文段的数据起始处距离TCP报文段的起始处有多远。这个字段实际上是指出TCP报文段的首部长度。由于首部中还有长度不确定的选项字段，因此数据偏移字段是必要的，但应注意，“数据偏移”的单位是32位字（即以4字节的字为计算单位）。由于4位二进制数能表示的最大十进制数字是15，因此数据偏移的最大值是60字节，这也是TCP首部的最大字节（即选项长度不能超过40字节）。&lt;/p&gt;
+&lt;p&gt;5） 保留          占6位，保留为今后使用，但目前应置为0 。&lt;/p&gt;
+&lt;h2 id=&#34;56tcp可靠传输的实现&#34;&gt;5.6TCP可靠传输的实现（）
+&lt;/h2&gt;&lt;p&gt;基于以字节为单位的滑动窗口&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702201447660.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702201447660&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;也会超时重传，接收方只对按序收到的数据中的最高序号给出确认。&lt;/p&gt;
+&lt;h2 id=&#34;57tcp流量控制&#34;&gt;5.7TCP流量控制
+&lt;/h2&gt;&lt;p&gt;让发送方的发送速率不要太快，要让接收方来得及接受&lt;/p&gt;
+&lt;p&gt;否则会减少RWND值&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702202740777.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702202740777&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;58tcp的拥塞控制&#34;&gt;5.8TCP的拥塞控制
+&lt;/h2&gt;&lt;p&gt;对网络中某一资源的需求超过了网络可以提供的部分，性能就要变坏&lt;/p&gt;
+&lt;p&gt;当输入负载到达某一数值时，网络的吞吐量反而随着负载的增大而减小，这是网络就进入了拥塞状态。
+当输入负载继续增大到某一数值时，网络的吞吐量就减小为0，此时网络就无法工作了，这就是所谓的死锁。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;拥塞控制与流量控制的区别和联系（考）&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;TCP（传输控制协议）具有流量控制和拥塞控制两种机制，用于确保数据可靠传输，并防止网络过载。虽然它们的目标都有助于提高网络传输效率和稳定性，但它们在原理和实现方式上有所不同。
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;流量控制&lt;/strong&gt;：为了避免分组丢失，控制发送者的发送速度，使得接收者来得及接收，这就是流量控制。&lt;/p&gt;
+&lt;p&gt;实现：由滑动窗口协议（连续ARQ协议）实现。滑动窗口协议既保证了分组无差错、有序接收，也实现了流量控制。&lt;/p&gt;
+&lt;p&gt;**拥塞控制：**拥塞控制是作用于网络的，它是防止过多的数据注入到网络中，避免出现网络负载过大的情况；&lt;/p&gt;
+&lt;p&gt;实现：慢开始，拥塞避免、快重传、快恢复&lt;/p&gt;
+&lt;h2 id=&#34;5-9tcp的运输连接原理&#34;&gt;5-9：TCP的运输连接原理
+&lt;/h2&gt;&lt;p&gt;运输连接三个阶段：建立连接，数据传送，释放连接&lt;/p&gt;
+&lt;h3 id=&#34;tcp的连接建立&#34;&gt;TCP的连接建立
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702152722102.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702152722102&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;ACK：确认号字段，1表示确认&lt;/p&gt;
+&lt;p&gt;ack:表示序号多少之前的数据已经收到，ack=x+1对tcp客户进程初始序号的确认&lt;/p&gt;
+&lt;p&gt;rwnd表示滑动窗口&lt;/p&gt;
+&lt;p&gt;SYN为1表示是tcp连接请求报文段(不能携带数据，但消耗一个序号)&lt;/p&gt;
+&lt;p&gt;seq为x作为tcp客户进程所选择的初始序号，y表示服务进程&lt;/p&gt;
+&lt;h3 id=&#34;tcp的连接释放&#34;&gt;TCP的连接释放
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702152734242.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702152734242&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;FIN=1表示tcp连接释放，seq表示客户进程之前传输过的序号+1（消耗一个序号）&lt;/p&gt;
+&lt;p&gt;ack表示客户进程收到的序号+1&lt;/p&gt;
+&lt;p&gt;习题：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153040957.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153040957&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153126359.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153126359&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153145031.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153145031&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153237271.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153237271&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153342845.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153342845&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153356983.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153356983&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153532387.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153532387&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153548835.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153548835&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153730626.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153730626&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153758606.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153758606&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153813930.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153813930&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153912883.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153912883&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702153945594.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702153945594&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154003102.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154003102&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;最大报文段长度-MSS&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154203772.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154203772&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154331983.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154331983&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154355528.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154355528&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154434452.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154434452&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154609601.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154609601&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154639327.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154639327&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://picgo.liagu-one.top/img/image-20240702154710170.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154710170&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154812982.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154812982&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154826812.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154826812&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154842285.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154842285&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154902895.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154902895&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154916840.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154916840&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702154950223.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702154950223&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155004651.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155004651&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155025024.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155025024&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155042028.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155042028&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155101523.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155101523&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://picgo.liagu-one.top/img/image-20240702155116287.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155116287&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155126709.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155126709&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155716609.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155716609&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://picgo.liagu-one.top/img/image-20240702155732351.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155732351&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155759326.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155759326&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155810970.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155810970&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155854763.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155854763&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155933679.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155933679&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702155950072.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702155950072&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702160008894.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702160008894&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702160036692.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702160036692&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702160110803.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702160110803&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240702160147179.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240702160147179&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h1 id=&#34;6-应用层&#34;&gt;6-应用层
+&lt;/h1&gt;&lt;p&gt;任务作用功能：每个应用层协议都是为了解决某一类应用问题，而问题的解决又必须通过位于不同主机中的多个应用进程之间的通信和协调工作来完成。&lt;/p&gt;
+&lt;h2 id=&#34;域名系统dns&#34;&gt;域名系统dns
+&lt;/h2&gt;&lt;h2 id=&#34;域名结构顶级域二级域三级域&#34;&gt;域名结构：顶级域，二级域，三级域。
+&lt;/h2&gt;&lt;p&gt;文件传输协议FTP&lt;/p&gt;
+&lt;p&gt;基本工作原理：FTP有两个过程一个是控制连接，一个是数据传输。
+FTP协议需要两个端口，一个端口是作为控制连接端口，也就是FTP的21端口，用于发送指令给服务器以及等待服务器响应；另外一个端口用于数据传输端口，端口号为20（仅用PORT模式）。&lt;/p&gt;
+&lt;p&gt;FTP连接需要FTP服务器和客户端两方在网络上建立通信，建立FTP连接时会有两个不同的通信通道，一个被称为命令通道，另一个为数据通道。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Telnet协议&lt;/strong&gt;：它为用户提供了在本地计算机上完成远程主机工作的能力。&lt;/p&gt;
+&lt;p&gt;**万维网 (World Wide Web，WWW)：**是存储在Internet计算机中、数量巨大的文档的集合。这些文档称为页面，它是一种超文本(Hypertext)信息，可以用于描述超媒体。文本、图形、视频、音频等多媒体，也称为超媒体。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;统一资源定位符&lt;/strong&gt;，又叫URL（Uniform Resource Locator），是专为标识Internet网上资源位置而设置的一种编址方式，我们平时所说的网页地址指的即是URL。
+&lt;code&gt;http://主机名/路劲&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;超文本传输协议HTTP：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;http1.0缺点：短连接
+每一个请求建立一个TCP连接，请求完成后立马断开连接。这将会导致2个问题：连接无法复用。每请求一个文档会有两倍RTT的开销。&lt;/p&gt;
+&lt;p&gt;阻塞
+连接无法复用会导致每次请求都经历三次握手和慢启动。三次握手在高延迟的场景下影响较明显，慢启动则对文件类大请求影响较大。会导致带宽无法被充分利用，以及后续健康请求被阻塞。客户端同时发起的请求数目是固定的，如果太多就会排队阻塞。&lt;/p&gt;
+&lt;p&gt;**SMTP发送：**连接建立，邮件发送，连接释放。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;POP3和IMAP文件读取&lt;/strong&gt;：&lt;/p&gt;
+&lt;p&gt;POP3协议允许电子邮件客户端下载服务器上的邮件，但是在客户端的操作（如移动邮件、标记已读等），不会反馈到服务器上，比如通过客户端收取了邮箱中的3封邮件并移动到其他文件夹，邮箱服务器上的这些邮件是没有同时被移动的 。&lt;/p&gt;
+&lt;p&gt;而IMAP提供webmail 与电子邮件客户端之间的双向通信，客户端的操作都会反馈到服务器上，对邮件进行的操作，服务器上的邮件也会做相应的动作。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;MIME是什么&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;MIME是一种对二进制文件进行编码以便在互联网上传输的方法，MIME用于允许在互联网上传输各种各样的文件类型&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;动态主机配置协议&lt;/strong&gt;：自动分配IP地址，使设备可以进行通信&lt;/p&gt;</description>
+        </item>
+        <item>
+        <title>Matlab复习</title>
+        <link>https://hack.liagu-one.top/p/matlab%E5%A4%8D%E4%B9%A0/</link>
+        <pubDate>Sat, 29 Jun 2024 14:45:56 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/p/matlab%E5%A4%8D%E4%B9%A0/</guid>
+        <description>&lt;h1 id=&#34;第一章matlab系统环境&#34;&gt;第一章：MATLAB系统环境
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;最初matlab核心程序是**&lt;u&gt;FORTRAN语言&lt;/u&gt;**编写的&lt;/li&gt;
+&lt;li&gt;matlab特点是：&lt;strong&gt;&lt;u&gt;编程效率高&lt;/u&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;在命令行窗口执行命令，不想立即在命令行窗口输出结果，可以加**&lt;u&gt;分号&lt;/u&gt;**&lt;/li&gt;
+&lt;li&gt;matlab主要功能：&lt;u&gt;数值计算&lt;/u&gt;，&lt;u&gt;符号计算&lt;/u&gt;，&lt;u&gt;绘图功能&lt;/u&gt;，&lt;u&gt;程序设计语言功能&lt;/u&gt;，&lt;u&gt;工具箱的扩展功能&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;命令行窗口提示用户输入命令的符号是：&lt;strong&gt;&lt;u&gt;&amp;raquo;&lt;/u&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;matlab的帮助命令是：&lt;u&gt;lookfor，lookfor-all，help（没有search）&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;matlab功能区提三个选项卡：&lt;u&gt;主页&lt;/u&gt;，&lt;u&gt;绘图&lt;/u&gt;，&lt;u&gt;应用程序&lt;/u&gt;&lt;/li&gt;
+&lt;li&gt;设置matlab搜索路径有两种方法，一是&lt;u&gt;path&lt;/u&gt;命令，二是matlab主页选项卡的环境单机&lt;u&gt;设置路径&lt;/u&gt;按钮或者命令行窗口执行&lt;u&gt;pathtool&lt;/u&gt;命令&lt;/li&gt;
+&lt;li&gt;matlab命令提示符后面输入并执行命令成为MATLAB的&lt;u&gt;交互式命令&lt;/u&gt;操作&lt;/li&gt;
+&lt;li&gt;matlab的续航符：&lt;u&gt;&amp;hellip;&lt;/u&gt;，将下面一行看成这行的逻辑继续&lt;/li&gt;
+&lt;li&gt;注释以&lt;u&gt;%&lt;/u&gt;开头&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;第二章matlab数据及其运算&#34;&gt;第二章：MATLAB数据及其运算
+&lt;/h1&gt;&lt;h2 id=&#34;21矩阵建立&#34;&gt;2.1矩阵建立
+&lt;/h2&gt;&lt;h2 id=&#34;22冒号表达式&#34;&gt;2.2冒号表达式
+&lt;/h2&gt;&lt;p&gt;e1初始值:e2步长:e3终止值&lt;/p&gt;
+&lt;p&gt;linspace(a,b,n):ab之间产生n个等长&lt;/p&gt;
+&lt;p&gt;sub2ind（s,i,j）,ij是行列下标，s是size(A)&lt;/p&gt;
+&lt;p&gt;[i,j]=ind2ind(s,d):d是序号&lt;/p&gt;
+&lt;h2 id=&#34;23变量及其操作&#34;&gt;2.3变量及其操作
+&lt;/h2&gt;&lt;h2 id=&#34;24常用内部函数&#34;&gt;2.4常用内部函数
+&lt;/h2&gt;&lt;h2 id=&#34;25matlab运算&#34;&gt;2.5matlab运算
+&lt;/h2&gt;&lt;p&gt;点乘/除法&lt;/p&gt;
+&lt;p&gt;rem(a,b),a除b&lt;/p&gt;
+&lt;h2 id=&#34;26字符串&#34;&gt;2.6字符串
+&lt;/h2&gt;&lt;p&gt;字符串是单引号引起来的，字符数组是双引号&lt;/p&gt;
+&lt;p&gt;书p40/41&lt;/p&gt;
+&lt;h1 id=&#34;第三章matlab矩阵处理&#34;&gt;第三章：MATLAB矩阵处理
+&lt;/h1&gt;&lt;h2 id=&#34;31特殊矩阵&#34;&gt;3.1特殊矩阵
+&lt;/h2&gt;&lt;h1 id=&#34;第四章matlab程序流程控制&#34;&gt;第四章：MATLAB程序流程控制
+&lt;/h1&gt;&lt;h2 id=&#34;42程序控制结构&#34;&gt;4.2程序控制结构
+&lt;/h2&gt;&lt;p&gt;输入：A=input(提示信息)；&lt;/p&gt;
+&lt;p&gt;打印：disp(A)&lt;/p&gt;
+&lt;p&gt;暂停：pause(暂停时间)&lt;/p&gt;
+&lt;p&gt;字符串转数字：str2double(c)&lt;/p&gt;
+&lt;p&gt;数值矩阵转化单元矩阵：num2cell&lt;/p&gt;
+&lt;h3 id=&#34;ifelse&#34;&gt;ifelse
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;input&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;请输入一个字符：&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;s&amp;#39;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;if&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;A&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;Z&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;disp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;lower&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;elseif&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;a&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;z&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;disp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;upper&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;elseif&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;0&amp;#39;&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s&#34;&gt;&amp;#39;9&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;disp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;str2double&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;else&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	&lt;span class=&#34;nb&#34;&gt;disp&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;c&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;end&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;switch&#34;&gt;switch
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;price=input(&amp;#39;输入商品价格:&amp;#39;);
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;switch fix(price/100)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	case {0,1}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		rate=0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	case {2,3,4}
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		rate=3/100;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	case num2cell(5:9)
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		rate=5/100;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	otherwise
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;		rate=14/100;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;price=price*(1-rate);
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;try-catch&#34;&gt;try-catch
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;try 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	c=A*C
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;catch
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	error
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;for&#34;&gt;for
+&lt;/h3&gt;&lt;p&gt;按列作循环&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;for k=[1,2,4,6]
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	k
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;n=2;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;for k=1:2:n=8
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	n=5;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;	k
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;end
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;向量为空就不执行循环&lt;/p&gt;
+&lt;p&gt;fix()截尾取整&lt;/p&gt;
+&lt;p&gt;rem()计算两个数的余数&lt;/p&gt;
+&lt;h2 id=&#34;43函数文件&#34;&gt;4.3函数文件
+&lt;/h2&gt;&lt;p&gt;function 输出形参表 = 函数名(输入形参表)&lt;/p&gt;
+&lt;p&gt;matlab调用使用函数名，忽略文件名&lt;/p&gt;
+&lt;p&gt;return只代表结束不代表返回&lt;/p&gt;
+&lt;h2 id=&#34;44特殊形式的函数&#34;&gt;4.4特殊形式的函数
+&lt;/h2&gt;&lt;p&gt;子函数只能由同一文件的函数调用&lt;/p&gt;
+&lt;p&gt;以字符串形式存在的函数表达式可以通过内联函数inline()转换&lt;/p&gt;
+&lt;p&gt;匿名函数：sqr = @(x) x.^2;  a = sqr(5)&lt;/p&gt;
+&lt;h1 id=&#34;第五章matlab绘图&#34;&gt;第五章：MATLAB绘图
+&lt;/h1&gt;&lt;h2 id=&#34;51二维图形&#34;&gt;5.1二维图形
+&lt;/h2&gt;&lt;h3 id=&#34;基本函数&#34;&gt;基本函数
+&lt;/h3&gt;&lt;p&gt;plot(x,y)函数的基本用法：分别以x,y为横纵坐标画图（x,y向量长度相同）&lt;/p&gt;
+&lt;p&gt;当x是向量y是矩阵：x必须与y的行数或者列数相同，若等于行数，则以列数作为横纵坐标，反之亦然。&lt;/p&gt;
+&lt;h3 id=&#34;绘制图形辅助操作&#34;&gt;绘制图形辅助操作
+&lt;/h3&gt;&lt;h2 id=&#34;52其他形式的二维图形&#34;&gt;5.2其他形式的二维图形
+&lt;/h2&gt;&lt;h2 id=&#34;53三维图形&#34;&gt;5.3三维图形
+&lt;/h2&gt;&lt;h1 id=&#34;第六章matlab数据分析和多项式计算&#34;&gt;第六章：MATLAB数据分析和多项式计算
+&lt;/h1&gt;&lt;p&gt;&lt;strong&gt;拟合插值各看一个方法，看ppt（背背背案例），比较两者总结不一样的点（应用场景什么的）背下来，数据统计里面怎么求max，min，sub，average，求积，(这些命令怎么使用，传几个参数，穿哪些，有几个，先后顺序)标准相关系数&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;61数据统计分析&#34;&gt;6.1数据统计分析：
+&lt;/h2&gt;&lt;h3 id=&#34;最大最小值&#34;&gt;最大最小值
+&lt;/h3&gt;&lt;p&gt;1、**向量max()：**求向量或矩阵的最大/小元素。
+y=max(X):若x有复数则取模最大&lt;/p&gt;
+&lt;p&gt;[y,k]=max(X):y存入最大值，k存入序号&lt;/p&gt;
+&lt;p&gt;2、&lt;strong&gt;矩阵max():&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;max(A,[],dim):dim取1或者2，1是每一列的最大值，2是每一行的最大值（[]这个参数用来占位，表示忽略此参数。）&lt;/p&gt;
+&lt;p&gt;3、两个向量或者矩阵对应元素的比较&lt;/p&gt;
+&lt;p&gt;U=MAX(A,B),U与二者同型，结果是对应元素取最大的（A，B也同型）&lt;/p&gt;
+&lt;p&gt;U=MAX(A,n)，结果是A对应元素与n最大值&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;用什么方法只调用一次max 函数就能求得整个矩阵的最大值？&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;3&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;5&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;7&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;8&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;4&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;9&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;];&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;max_val&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;max&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;A&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(:));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;求和求积&#34;&gt;求和求积
+&lt;/h3&gt;&lt;p&gt;sum(X)：x为向量，返回各元素之和&lt;/p&gt;
+&lt;p&gt;sum(A)：A是矩阵，返回行向量，是各列的和&lt;/p&gt;
+&lt;p&gt;sum(A,dim)：1为列元素和，2为行元素和&lt;/p&gt;
+&lt;p&gt;求积用prod函数（乘积：product）&lt;/p&gt;
+&lt;h3 id=&#34;平均值中值&#34;&gt;平均值/中值
+&lt;/h3&gt;&lt;p&gt;mean(X)：x为向量，计算平均值&lt;/p&gt;
+&lt;p&gt;mean(A)：A是矩阵，返回行向量，是各列的平均值&lt;/p&gt;
+&lt;p&gt;mean(A,dim)：同上&lt;/p&gt;
+&lt;p&gt;median()：计算中值，同mean&lt;/p&gt;
+&lt;p&gt;分析哪一个更合理：mean对异常值（outliers）非常敏感。即使有少量极端值，也会显著影响均值。
+median不如均值易于计算和理解，尤其是对于较大的数据集。&lt;/p&gt;
+&lt;h3 id=&#34;累加累乘&#34;&gt;累加累乘
+&lt;/h3&gt;&lt;p&gt;consum(X)：x为向量，计算平均值&lt;/p&gt;
+&lt;p&gt;consum(A)：A是矩阵，返回行向量，是各列的累加和向量&lt;/p&gt;
+&lt;p&gt;consum(A,dim)：同上，1是列，2是行&lt;/p&gt;
+&lt;p&gt;conprod()：同上&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;求&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;！&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt;！&lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;&lt;span class=&#34;c&#34;&gt;...+6!&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;conprod&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;:&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mi&#34;&gt;1&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;2&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;6&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;24&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;120&lt;/span&gt; &lt;span class=&#34;mi&#34;&gt;720&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;sum&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;x&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;标准差和相关系数&#34;&gt;标准差和相关系数
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;标准差：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;std(X)：返回向量标准差&lt;/p&gt;
+&lt;p&gt;std(A)：返回矩阵每列标准差&lt;/p&gt;
+&lt;p&gt;调用方式：std(A，flag，dim)，flag取0调用公式一求标准差，1则是公式2。dim还是1求列，2求行。默认flag=0，dim=1&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;相关系数：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;corrcoef(X,Y)：求向量相关系数矩阵,求序列X,和Y的相关系数，结果是2x2的矩阵，对角线上是自相关系数矩阵，非对角线是X和Y，和Y和X的相关系数，是相等的。与corrcoef([X,Y])等价&lt;/p&gt;
+&lt;p&gt;corrcoef(X)：求矩阵相关系数，第i行第j列是矩阵X第i列和第j列的相关系数&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;randn产生的随机数是独立的&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;cov()：产生协方差矩阵与上面类似&lt;/p&gt;
+&lt;h3 id=&#34;排序&#34;&gt;排序
+&lt;/h3&gt;&lt;p&gt;sort(A,dim,mode)：dim=1按列排，为2按行排序，mode为ascend升序（默认不写），逆序为descend,要加单引号。&lt;/p&gt;
+&lt;h2 id=&#34;62多项式计算&#34;&gt;6.2多项式计算
+&lt;/h2&gt;&lt;p&gt;多项式系数的量包含0次数项，向量从高到低&lt;/p&gt;
+&lt;h3 id=&#34;多项式四则运算&#34;&gt;多项式四则运算
+&lt;/h3&gt;&lt;p&gt;加减：没有函数，对应相加减&lt;/p&gt;
+&lt;p&gt;乘：conv(A,B),A,B为系数向量&lt;/p&gt;
+&lt;p&gt;除法：[q,r]deconv(A,B),q返回A除B的商式，r返回余式&lt;/p&gt;
+&lt;p&gt;二者互为逆函数，A=B*q+r&lt;/p&gt;
+&lt;h3 id=&#34;多项式导函数&#34;&gt;多项式导函数
+&lt;/h3&gt;&lt;p&gt;polyder(P)：P的导函数&lt;/p&gt;
+&lt;p&gt;polyder(P,Q)：P*Q的导函数&lt;/p&gt;
+&lt;p&gt;[P,Q]polyder(P,Q)：P/Q的导函数，导数分子存p,分母存q&lt;/p&gt;
+&lt;h3 id=&#34;多项式求值&#34;&gt;多项式求值
+&lt;/h3&gt;&lt;p&gt;代数多项式求值：&lt;/p&gt;
+&lt;p&gt;polyval(P,x)，x为自变量，P为系数向量&lt;/p&gt;
+&lt;p&gt;矩阵多项式求值：&lt;/p&gt;
+&lt;p&gt;polyvalm(P,A)，调用相同含义不同，A为方阵&lt;/p&gt;
+&lt;h3 id=&#34;多项式求根&#34;&gt;多项式求根
+&lt;/h3&gt;&lt;p&gt;x=roots(P)&lt;/p&gt;
+&lt;p&gt;若已知多项式全部根，可以重新建立起多项式ploy(x)&lt;/p&gt;
+&lt;h2 id=&#34;63数据插值&#34;&gt;6.3数据插值
+&lt;/h2&gt;&lt;p&gt;从离散的数据，得到离散以外的数值&lt;/p&gt;
+&lt;h3 id=&#34;一维数据插值&#34;&gt;一维数据插值
+&lt;/h3&gt;&lt;p&gt;插值函数是一个单变量函数，采用一维插值，插值函数Y1=interp1(X,Y,X1,method)，是根据等长的已知向量X,Y，计算函数在X1处的值，超出X的插值点会出现NAN错误&lt;/p&gt;
+&lt;p&gt;插值方法：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;linear：线性插值，method不写为默认方法&lt;/li&gt;
+&lt;li&gt;nearest：最近点插值&lt;/li&gt;
+&lt;li&gt;pchip：分段3次埃米尔特插值&lt;/li&gt;
+&lt;li&gt;spline：3次样条插值，专门的函数spline(X,Y,X1)与interp1(X,Y,X1,spline)作用相同&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;二维数据插值&#34;&gt;二维数据插值
+&lt;/h3&gt;&lt;p&gt;自变量是两个变化时，插值函数Z1=interp1(X,Y,Z,X1,Y1,method)，采用二维插值，X,Y,Z可以是矩阵。二维插值不支持pchip方法，其他都一样。同样超出X，Y的插值点会出现NAN错误&lt;/p&gt;
+&lt;p&gt;interp1(X,Y,Z,X1,Y1,method)，在X1,Y1处插值&lt;/p&gt;
+&lt;p&gt;interp1(X,Y,Z,[X1,X2],Y1,method)，在（X1,Y1）（X2,Y1）插值&lt;/p&gt;
+&lt;p&gt;interp1(X,Y,Z,[X1,X2],[Y1,Y2],method)，在（X1,Y1）（X2,Y2）插值&lt;/p&gt;
+&lt;p&gt;interp1(X,Y,Z,[X1,X2]&amp;rsquo;,[Y1,Y2],method)，在（X1,Y1）（X1,Y2）（X2,Y1）（X2,Y2）插值&lt;/p&gt;
+&lt;h2 id=&#34;64曲线拟合&#34;&gt;6.4曲线拟合
+&lt;/h2&gt;&lt;p&gt;与插值类似，但又不同，不完全经过采样点，但希望拟合的函数g(x)靠近采样点。曲线拟合使用最小二乘逼近原理。&lt;/p&gt;
+&lt;h3 id=&#34;实现&#34;&gt;实现
+&lt;/h3&gt;&lt;p&gt;进行拟合时，实际是求一个系数向量，系数向量是多项式系数，matlab用polyfit函数求最小二乘拟合多项式的系数，再用ployval（）函数按照所得多项式计算给出点上的函数逼近值&lt;/p&gt;
+&lt;p&gt;P=polyfit(X,Y,m)&lt;/p&gt;
+&lt;p&gt;[P,S]=polyfit(X,Y,m)&lt;/p&gt;
+&lt;p&gt;[P,S,mu]=polyfit(X,Y,m)&lt;/p&gt;
+&lt;p&gt;采样点X和采样点函数值Y生成m次多项式，P是长度m+1向量，为多项式系数，mu(1)是mean()X,mu(2)是std(X)&lt;/p&gt;
+&lt;h2 id=&#34;数据插值和曲线拟合不一样的地方&#34;&gt;数据插值和曲线拟合不一样的地方
+&lt;/h2&gt;&lt;h3 id=&#34;1相同点&#34;&gt;1、相同点:
+&lt;/h3&gt;&lt;p&gt;①都属于函数逼近方法
+②都能进行数据估算&lt;/p&gt;
+&lt;h3 id=&#34;2不同点&#34;&gt;2、不同点:
+&lt;/h3&gt;&lt;p&gt;①实现方法不同： 数据插值要求逼近函数经过样本点，而曲线拟合不要求逼近函数经过样本点，只要求总体误差最小。
+②结果形式不同： 数据插值往往分段进行逼近，没有统一的逼近函数。曲线拟合用一个函数进行整体逼近，有确定的函数表达式。
+③侧重点不同： 数据插值一般用于样本区间内的插值计算，而曲线拟合不仅可以估算区间内其他点的函数值，还可以预测时序数据的发展趋势，以及从统计数据中总结一般性经验
+④应用场合不同： 如果样本数据为精确数据，适合采用数据插值方法；如果样本数据为统计数据或存在误差，则适合用曲线拟合的方法。&lt;/p&gt;
+&lt;h1 id=&#34;第七章matlab数值微分和积分&#34;&gt;第七章：MATLAB数值微分和积分
+&lt;/h1&gt;&lt;p&gt;差分差商最简单的例子要会，没有大题，有选择填空，看课本知识点&lt;/p&gt;
+&lt;h1 id=&#34;第八章matlab方程数值求解&#34;&gt;第八章：MATLAB方程数值求解
+&lt;/h1&gt;&lt;p&gt;三种方式（都得背）：直接求解（求幂，反除），迭代法（高斯迭代背下来），jacabi迭代背下来，直接迭代（lu分解，qr分解，背一种），最优问题求解（看ppt，相对简单，改一下参数）&lt;/p&gt;
+&lt;h2 id=&#34;81线性方程组求解&#34;&gt;8.1线性方程组求解
+&lt;/h2&gt;&lt;h3 id=&#34;直接求解法&#34;&gt;直接求解法
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;利用左除运算符求解&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;即Ax=b，x=A\b（谁在上是被除）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034302035.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240630034302035&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;利用矩阵分解&lt;/strong&gt;：将一个矩阵分解为若干矩阵的乘积&lt;/p&gt;
+&lt;p&gt;LU分解 ：矩阵的LU分解就是将一个n阶矩阵表示为一个下三角矩阵和一个上三角矩阵的 乘积。&lt;/p&gt;
+&lt;p&gt;[L,U]=lu(x),产生一个上三角U和下三角L,使之满足&lt;strong&gt;X=LU&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;[L,U,P]=lu(x),除了上面还有一个P置换矩阵使得&lt;strong&gt;PX=LU&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;inv()是求逆函数&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034723266.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240630034723266&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034950552.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240630034950552&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;QR分解&lt;/p&gt;
+&lt;p&gt;Cholesky分解&lt;/p&gt;
+&lt;h3 id=&#34;迭代求法&#34;&gt;迭代求法
+&lt;/h3&gt;&lt;p&gt;迭代法是一种不断用变量的原值推出它的新值的过程，是用计算机解决问 题的一种基本方法。&lt;/p&gt;
+&lt;h4 id=&#34;雅可比jacobi迭代法&#34;&gt;雅可比（Jacobi）迭代法
+&lt;/h4&gt;&lt;p&gt;公式推导&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630130830859.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20240630130830859&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://blog.csdn.net/qq_40264271/article/details/120611627&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://blog.csdn.net/qq_40264271/article/details/120611627&lt;/a&gt;&lt;/p&gt;
+&lt;h4 id=&#34;高斯-赛德尔gauss-serdel迭代法&#34;&gt;高斯-赛德尔（Gauss-Serdel）迭代法
+&lt;/h4&gt;&lt;p&gt;是上面公式的变化&lt;/p&gt;
+&lt;h3 id=&#34;求线性方程组的通解&#34;&gt;求线性方程组的通解
+&lt;/h3&gt;&lt;h2 id=&#34;82非线性方程组数值求解&#34;&gt;8.2非线性方程组数值求解
+&lt;/h2&gt;&lt;p&gt;非线性方程组求解和最优化问题，往往 调用最优化工具箱来解决&lt;/p&gt;
+&lt;h3 id=&#34;单变量非线性方程求解&#34;&gt;单变量非线性方程求解
+&lt;/h3&gt;&lt;p&gt;fzero函数求根&lt;/p&gt;
+&lt;p&gt;z=fzero(filename,x0)&lt;/p&gt;
+&lt;p&gt;filename待求根的函数，x0搜索的起点&lt;/p&gt;
+&lt;h3 id=&#34;非线性方程组求解&#34;&gt;非线性方程组求解
+&lt;/h3&gt;&lt;p&gt;最优化工具箱提供的函数fsolve&lt;/p&gt;
+&lt;p&gt;fsolve函数求解非线性方程组的根&lt;/p&gt;
+&lt;p&gt;X=fsolve(filename,X0,option)&lt;/p&gt;
+&lt;p&gt;filename待求根的函数,X0求解过程的初值,option优化参数&lt;/p&gt;
+&lt;p&gt;optimset可以将优化参数都显示出来&lt;/p&gt;
+&lt;p&gt;改变默认优化参数option=optimset(&amp;lsquo;Display&amp;rsquo;,&amp;lsquo;off&amp;rsquo;)&lt;/p&gt;
+&lt;h2 id=&#34;83最优化问题求解&#34;&gt;8.3最优化问题求解
+&lt;/h2&gt;&lt;h3 id=&#34;无约束最优化问题求解&#34;&gt;无约束最优化问题求解
+&lt;/h3&gt;&lt;p&gt;[xmin,fmin]=fminbnd(filename,x1,x2,option)&lt;/p&gt;
+&lt;p&gt;[xmin,fmin]=fminsearch(filename,x0,option)&lt;/p&gt;
+&lt;p&gt;[xmin,fmin]=fminunc(filename,x0,option)&lt;/p&gt;
+&lt;h4 id=&#34;有约束最优化问题求解&#34;&gt;有约束最优化问题求解
+&lt;/h4&gt;&lt;p&gt;求有约束条件下最小值的函数为： [xmin,fmin]=fmincon(filename,x0,A,b,Aeq,beq,Lbnd,Ubnd,NonF,option)&lt;/p&gt;
+&lt;p&gt;其中，xmin、fmin、filename、x0和option的含义与求最小值函数相同。其余参数为约束条件，包括线性不等式约束、线性等式约束、x的下界和上界以及定 义非线性约束的函数。如果某个约束不存在，则用空矩阵来表示。&lt;/p&gt;
+&lt;h4 id=&#34;线性规划问题求解&#34;&gt;线性规划问题求解
+&lt;/h4&gt;&lt;h2 id=&#34;84常微分初值问题的数值求解&#34;&gt;8.4常微分初值问题的数值求解
+&lt;/h2&gt;&lt;p&gt;书p200&lt;/p&gt;
+&lt;p&gt;解决刚性问题的有ode15s，ode23s，ode23tb&lt;/p&gt;
+&lt;h1 id=&#34;第九章matlab符号计算选填&#34;&gt;第九章：MATLAB符号计算（选填）
+&lt;/h1&gt;&lt;p&gt;不考大题，就是基础的知识点&lt;/p&gt;
+&lt;h1 id=&#34;总结&#34;&gt;总结：
+&lt;/h1&gt;&lt;p&gt;大题&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;数据，矩阵表示方法，怎么输入输出出来（结合if，else，for循环看一个例子，怎么写），结合字符串去做&lt;/li&gt;
+&lt;li&gt;画图绘图处理（二维的，同一个坐标系同一个布局，画什么样的图形，线条是什么样的）&lt;/li&gt;
+&lt;li&gt;数据分析，统计分析，每一个方法（怎么传递参数，得出结果处理结果，打印结果）&lt;/li&gt;
+&lt;li&gt;多项式考选择填空的，插值拟合分别会考，两者之间的应用场景有什么不一样的地方，做的是不是同一个事情&lt;/li&gt;
+&lt;li&gt;第七章微分积分，差分差商，通过数值的方法进行求导，通过采样得到函数，然后进行求导，傅里叶变化不考&lt;/li&gt;
+&lt;li&gt;第八章线性方程三种方法，直接方法，迭代两个都背下来。无约束的最优化手写敲一下！2和4节选择填空&lt;/li&gt;
+&lt;li&gt;第九章选择填空&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
