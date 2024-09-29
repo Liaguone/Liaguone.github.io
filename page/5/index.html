@@ -11,7 +11,7 @@
 <meta property='og:description' content="zh-cn">
 <meta property='og:url' content='https://hack.liagu-one.top/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-09-27T20:55:01&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-09-29T19:41:57&#43;08:00 '/>
 <meta name="twitter:title" content="Liagu' blog">
 <meta name="twitter:description" content="zh-cn"><link rel="alternate" type="application/rss&#43;xml" href="https://hack.liagu-one.top/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -162,6 +162,26 @@
         
         
         <li >
+            <a href='/goals/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Goals</span>
+            </a>
+        </li>
+        
+        
+        <li >
             <a href='/search/' >
                 
                 
@@ -272,7 +292,7 @@
                     <a href="/archives/#2024">
                         
                             <span class="year">2024</span>
-                            <span class="count">15</span>
+                            <span class="count">16</span>
                         
                     </a> 
                 </div>
@@ -315,12 +335,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="font_size_4">
-                小技巧
+            <a href="/categories/hugo/" class="font_size_4">
+                Hugo
             </a>
         
-            <a href="/categories/hugo/" class="font_size_3">
-                Hugo
+            <a href="/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="font_size_4">
+                小技巧
             </a>
         
             <a href="/categories/ctf/" class="font_size_2">
@@ -380,16 +400,16 @@
                 CTF
             </a>
         
+            <a href="/tags/hugo/" class="font_size_2">
+                Hugo
+            </a>
+        
             <a href="/tags/%E5%A4%A7%E5%AD%A6/" class="font_size_2">
                 大学
             </a>
         
             <a href="/tags/%E6%B8%97%E9%80%8F/" class="font_size_2">
                 渗透
-            </a>
-        
-            <a href="/tags/hugo/" class="font_size_1">
-                Hugo
             </a>
         
             <a href="/tags/sql/" class="font_size_1">
@@ -457,6 +477,18 @@
   
   var dataMap = new Map();
   
+    var key = "2024-09-29";
+    var value = dataMap.get(key);
+    var wordCount =  3 ;
+    var link = "/p/stack%E7%B2%BE%E8%AE%B2/";
+    var title = "Stack精讲";
+    
+    
+    if (value == null) {
+      dataMap.set(key, [{wordCount, link, title}]);
+    } else {
+      value.push({wordCount, link, title});
+    }
     var key = "2024-09-27";
     var value = dataMap.get(key);
     var wordCount =  310 ;
@@ -801,8 +833,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/ctf/" >
-                CTF
+            <a href="/categories/web%E5%BC%80%E5%8F%91/" >
+                Web开发
             </a>
         
     </header>
@@ -810,7 +842,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/87568/">(hu)2024育才杯</a>
+            <a href="/p/50a4c39/">MYSQL语法</a>
         </h2>
     
         
@@ -832,7 +864,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-04-27</time>
+                <time class="article-time--published">2024-05-11</time>
             </div>
         
 
@@ -855,8 +887,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/hugo/" >
-                Hugo
+            <a href="/categories/ctf/" >
+                CTF
             </a>
         
     </header>
@@ -864,7 +896,7 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/0492dcd/">Blog新建之始</a>
+            <a href="/p/87568/">(hu)2024育才杯</a>
         </h2>
     
         
@@ -1041,12 +1073,16 @@
 
     
 
+    
+
+    
+
     <section class="copyright">
         &copy; 
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67970字·共 17篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67973字·共 18篇文章</br><span><p>
         
     </section>
     
