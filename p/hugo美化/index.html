@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hack.liagu-one.top/p/hugo%E7%BE%8E%E5%8C%96/'>
 
-<link rel="stylesheet" href="/scss/style.min.649f3a93781e8db09b74bf90ed11d7669e3dfc16a319ddfbcb0eb52148b73787.css"><meta property='og:title' content="Hugo美化">
+<link rel="stylesheet" href="/scss/style.min.ed3ac9936b36673a749b7a4370acb21b40cdbafe83c60df9da95e02e25e4eb1f.css"><meta property='og:title' content="Hugo美化">
 <meta property='og:description' content="短代码以及stack配置学习他，真不错\n小玩意 复制按钮 在 /assets/ts/custom.ts 中加入以下代码：\n1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 // 显示语言和复制按钮 const highlights = document.querySelectorAll(&#39;.article-content div.highlight&#39;); const copyText = `📄拷贝`, copiedText = `已拷贝!`; highlights.forEach(highlight =&gt; { const copyButton = document.createElement(&#39;button&#39;); copyButton.innerHTML = copyText; copyButton.classList.add(&#39;copyCodeButton&#39;); highlight.appendChild(copyButton); const codeBlock = highlight.querySelector(&#39;code[data-lang]&#39;); // 获取语言 const lang = codeBlock.getAttribute(&#39;data-lang&#39;); if (!codeBlock) return; copyButton.addEventListener(&#39;click&#39;, () =&gt; { navigator.clipboard.writeText(codeBlock.textContent) .then(() =&gt; { copyButton.textContent = copiedText; setTimeout(() =&gt; { copyButton.textContent = copyText; }, 1000); }) .catch(err =&gt; { alert(err) console.log(&#39;Something went wrong&#39;, err); }); }); // Add language code button const languageButton = document.createElement(&#39;button&#39;); languageButton.innerHTML = lang.toUpperCase()+&#39;&amp;nbsp;&amp;nbsp;&#39;; languageButton.classList.add(&#39;languageCodeButton&#39;); highlight.appendChild(languageButton); }); new StackColorScheme(document.getElementById(&#39;dark-mode-toggle&#39;)); 在 /assets/scss/custom.scss 中加入以下代码（可按需自行修改）：\n">
 <meta property='og:url' content='https://hack.liagu-one.top/p/hugo%E7%BE%8E%E5%8C%96/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
@@ -274,6 +274,7 @@
         <li><a href="#修改背景色">修改背景色</a></li>
         <li><a href="#添加文章前端加密功能">添加文章前端加密功能</a></li>
         <li><a href="#鼠标指针">鼠标指针</a></li>
+        <li><a href="#背景图片美化">背景图片美化</a></li>
       </ol>
     </li>
   </ol>
@@ -1819,6 +1820,81 @@
 </span></span></span><span class="line"><span class="cl"><span class="c1">// 如 {cursor: url(&#39;https://cdn.jsdelivr.net/gh/Tomotoes/images/blog/default.cur&#39;), default;
 </span></span></span></code></pre></td></tr></table>
 </div>
+</div><h3 id="背景图片美化">背景图片美化
+</h3><p>scss里面的variables.scss添加，替换url，同时还能使得背景图固定
+推荐背景图的几个网站</p>
+<ul>
+<li><a class="link" href="https://www.wallpaperhub.app/"  target="_blank" rel="noopener"
+    >wallpaperhub</a></li>
+<li><a class="link" href="https://w.wallhaven.cc"  target="_blank" rel="noopener"
+    >https://w.wallhaven.cc</a></li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-gdscript3" data-lang="gdscript3"><span class="line"><span class="cl"><span class="p">:</span><span class="n">root</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s2">&#34;https://w.wallhaven.cc/full/3l/wallhaven-3lv8j6.jpg&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="n">cover</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">position</span><span class="p">:</span> <span class="n">center</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="p">:</span> <span class="n">no</span><span class="o">-</span><span class="n">repeat</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">opacity</span><span class="p">:</span> <span class="mf">0.7</span><span class="p">;</span> <span class="o">/*</span> <span class="err">设置透明度</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">/*</span> <span class="err">适用于</span> <span class="n">light</span> <span class="err">模式</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">[</span><span class="n">data</span><span class="o">-</span><span class="n">scheme</span><span class="o">=</span><span class="s2">&#34;light&#34;</span><span class="p">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="p">:</span> <span class="n">url</span><span class="p">(</span><span class="s2">&#34;https://w.wallhaven.cc/full/3l/wallhaven-3lv8j6.jpg&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">opacity</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">;</span> <span class="o">/*</span> <span class="err">调整</span> <span class="n">light</span> <span class="err">模式下的透明度</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">/*</span> <span class="err">创建一个伪元素作为背景层</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="n">body</span><span class="p">::</span><span class="n">before</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">content</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">position</span><span class="p">:</span> <span class="n">fixed</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">top</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">left</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">width</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">height</span><span class="p">:</span> <span class="mi">100</span><span class="o">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">background</span><span class="o">-</span><span class="n">image</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">size</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">background</span><span class="o">-</span><span class="n">position</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">position</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">repeat</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">background</span><span class="o">-</span><span class="n">attachment</span><span class="p">:</span> <span class="n">fixed</span><span class="p">;</span> <span class="o">/*</span> <span class="err">背景图片固定</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl">    <span class="n">opacity</span><span class="p">:</span> <span class="k">var</span><span class="p">(</span><span class="o">--</span><span class="n">body</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="n">opacity</span><span class="p">);</span> <span class="o">/*</span> <span class="err">背景透明度</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl">    <span class="n">z</span><span class="o">-</span><span class="n">index</span><span class="p">:</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="o">/*</span> <span class="err">确保背景层在内容后面</span> <span class="o">*/</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
 </div>
 </section>
 
@@ -1865,9 +1941,7 @@
 </script>
 
     
-    <div class="post-password">
-        
-    </div>
+    
     <footer class="site-footer">
     
 
@@ -1920,7 +1994,7 @@
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67764字·共 17篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67970字·共 17篇文章</br><span><p>
         
     </section>
     
