@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="第一章：MATLAB系统环境 最初matlab核心程序是**FORTRAN语言**编写的 matlab特点是：编程效率高 在命令行窗口执行命令，不想立即在命令行窗口输出结果，可以加**分号** matlab主要功能：数值计算，符号计算，绘图功能，程序设计语言功能，工具箱的扩展功能 命令行窗口提示用户输入命令的符号是：&raquo; matlab的帮助命令是：lookfor，lookfor-all，help（没有search） matlab功能区提三个选项卡：主页，绘图，应用程序 设置matlab搜索路径有两种方法，一是path命令，二是matlab主页选项卡的环境单机设置路径按钮或者命令行窗口执行pathtool命令 matlab命令提示符后面输入并执行命令成为MATLAB的交互式命令操作 matlab的续航符：&hellip;，将下面一行看成这行的逻辑继续 注释以%开头 第二章：MATLAB数据及其运算 2.1矩阵建立 2.2冒号表达式 e1初始值:e2步长:e3终止值\n">
+<title>Matlab复习</title>
+
+<link rel='canonical' href='https://hack.liagu-one.top/p/matlab%E5%A4%8D%E4%B9%A0/'>
+
+<link rel="stylesheet" href="/scss/style.min.ed3ac9936b36673a749b7a4370acb21b40cdbafe83c60df9da95e02e25e4eb1f.css"><meta property='og:title' content="Matlab复习">
+<meta property='og:description' content="第一章：MATLAB系统环境 最初matlab核心程序是**FORTRAN语言**编写的 matlab特点是：编程效率高 在命令行窗口执行命令，不想立即在命令行窗口输出结果，可以加**分号** matlab主要功能：数值计算，符号计算，绘图功能，程序设计语言功能，工具箱的扩展功能 命令行窗口提示用户输入命令的符号是：&raquo; matlab的帮助命令是：lookfor，lookfor-all，help（没有search） matlab功能区提三个选项卡：主页，绘图，应用程序 设置matlab搜索路径有两种方法，一是path命令，二是matlab主页选项卡的环境单机设置路径按钮或者命令行窗口执行pathtool命令 matlab命令提示符后面输入并执行命令成为MATLAB的交互式命令操作 matlab的续航符：&hellip;，将下面一行看成这行的逻辑继续 注释以%开头 第二章：MATLAB数据及其运算 2.1矩阵建立 2.2冒号表达式 e1初始值:e2步长:e3终止值\n">
+<meta property='og:url' content='https://hack.liagu-one.top/p/matlab%E5%A4%8D%E4%B9%A0/'>
+<meta property='og:site_name' content='Liagu&#39; blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='大学' /><meta property='article:published_time' content='2024-06-29T14:45:56&#43;08:00'/><meta property='article:modified_time' content='2024-06-29T14:45:56&#43;08:00'/>
+<meta name="twitter:title" content="Matlab复习">
+<meta name="twitter:description" content="第一章：MATLAB系统环境 最初matlab核心程序是**FORTRAN语言**编写的 matlab特点是：编程效率高 在命令行窗口执行命令，不想立即在命令行窗口输出结果，可以加**分号** matlab主要功能：数值计算，符号计算，绘图功能，程序设计语言功能，工具箱的扩展功能 命令行窗口提示用户输入命令的符号是：&raquo; matlab的帮助命令是：lookfor，lookfor-all，help（没有search） matlab功能区提三个选项卡：主页，绘图，应用程序 设置matlab搜索路径有两种方法，一是path命令，二是matlab主页选项卡的环境单机设置路径按钮或者命令行窗口执行pathtool命令 matlab命令提示符后面输入并执行命令成为MATLAB的交互式命令操作 matlab的续航符：&hellip;，将下面一行看成这行的逻辑继续 注释以%开头 第二章：MATLAB数据及其运算 2.1矩阵建立 2.2冒号表达式 e1初始值:e2步长:e3终止值\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/avatar.jpg" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🥷</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Liagu&#39; blog</a></h1>
+            <h2 class="site-description">路漫漫其修远兮，吾将上下而求索。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://bilibili.com'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://youtube.com'
+                        target="_blank"
+                        title="Youtube"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/goals/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Goals</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://music.shimoko.com/' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                
+                <span>Music</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+   
+</aside>
+
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#21矩阵建立">2.1矩阵建立</a></li>
+    <li><a href="#22冒号表达式">2.2冒号表达式</a></li>
+    <li><a href="#23变量及其操作">2.3变量及其操作</a></li>
+    <li><a href="#24常用内部函数">2.4常用内部函数</a></li>
+    <li><a href="#25matlab运算">2.5matlab运算</a></li>
+    <li><a href="#26字符串">2.6字符串</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#31特殊矩阵">3.1特殊矩阵</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#42程序控制结构">4.2程序控制结构</a>
+      <ol>
+        <li><a href="#ifelse">ifelse</a></li>
+        <li><a href="#switch">switch</a></li>
+        <li><a href="#try-catch">try-catch</a></li>
+        <li><a href="#for">for</a></li>
+      </ol>
+    </li>
+    <li><a href="#43函数文件">4.3函数文件</a></li>
+    <li><a href="#44特殊形式的函数">4.4特殊形式的函数</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#51二维图形">5.1二维图形</a>
+      <ol>
+        <li><a href="#基本函数">基本函数</a></li>
+        <li><a href="#绘制图形辅助操作">绘制图形辅助操作</a></li>
+      </ol>
+    </li>
+    <li><a href="#52其他形式的二维图形">5.2其他形式的二维图形</a></li>
+    <li><a href="#53三维图形">5.3三维图形</a></li>
+  </ol>
+
+  <ol>
+    <li><a href="#61数据统计分析">6.1数据统计分析：</a>
+      <ol>
+        <li><a href="#最大最小值">最大最小值</a></li>
+        <li><a href="#求和求积">求和求积</a></li>
+        <li><a href="#平均值中值">平均值/中值</a></li>
+        <li><a href="#累加累乘">累加累乘</a></li>
+        <li><a href="#标准差和相关系数">标准差和相关系数</a></li>
+        <li><a href="#排序">排序</a></li>
+      </ol>
+    </li>
+    <li><a href="#62多项式计算">6.2多项式计算</a>
+      <ol>
+        <li><a href="#多项式四则运算">多项式四则运算</a></li>
+        <li><a href="#多项式导函数">多项式导函数</a></li>
+        <li><a href="#多项式求值">多项式求值</a></li>
+        <li><a href="#多项式求根">多项式求根</a></li>
+      </ol>
+    </li>
+    <li><a href="#63数据插值">6.3数据插值</a>
+      <ol>
+        <li><a href="#一维数据插值">一维数据插值</a></li>
+        <li><a href="#二维数据插值">二维数据插值</a></li>
+      </ol>
+    </li>
+    <li><a href="#64曲线拟合">6.4曲线拟合</a>
+      <ol>
+        <li><a href="#实现">实现</a></li>
+      </ol>
+    </li>
+    <li><a href="#数据插值和曲线拟合不一样的地方">数据插值和曲线拟合不一样的地方</a>
+      <ol>
+        <li><a href="#1相同点">1、相同点:</a></li>
+        <li><a href="#2不同点">2、不同点:</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#81线性方程组求解">8.1线性方程组求解</a>
+      <ol>
+        <li><a href="#直接求解法">直接求解法</a></li>
+        <li><a href="#迭代求法">迭代求法</a>
+          <ol>
+            <li><a href="#雅可比jacobi迭代法">雅可比（Jacobi）迭代法</a></li>
+            <li><a href="#高斯-赛德尔gauss-serdel迭代法">高斯-赛德尔（Gauss-Serdel）迭代法</a></li>
+          </ol>
+        </li>
+        <li><a href="#求线性方程组的通解">求线性方程组的通解</a></li>
+      </ol>
+    </li>
+    <li><a href="#82非线性方程组数值求解">8.2非线性方程组数值求解</a>
+      <ol>
+        <li><a href="#单变量非线性方程求解">单变量非线性方程求解</a></li>
+        <li><a href="#非线性方程组求解">非线性方程组求解</a></li>
+      </ol>
+    </li>
+    <li><a href="#83最优化问题求解">8.3最优化问题求解</a>
+      <ol>
+        <li><a href="#无约束最优化问题求解">无约束最优化问题求解</a>
+          <ol>
+            <li><a href="#有约束最优化问题求解">有约束最优化问题求解</a></li>
+            <li><a href="#线性规划问题求解">线性规划问题求解</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+    <li><a href="#84常微分初值问题的数值求解">8.4常微分初值问题的数值求解</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%A7%E5%AD%A6/" >
+                大学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/matlab%E5%A4%8D%E4%B9%A0/">Matlab复习</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-06-29</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+    
+<div>
+     
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="第一章matlab系统环境">第一章：MATLAB系统环境
+</h1><ol>
+<li>最初matlab核心程序是**<u>FORTRAN语言</u>**编写的</li>
+<li>matlab特点是：<strong><u>编程效率高</u></strong></li>
+<li>在命令行窗口执行命令，不想立即在命令行窗口输出结果，可以加**<u>分号</u>**</li>
+<li>matlab主要功能：<u>数值计算</u>，<u>符号计算</u>，<u>绘图功能</u>，<u>程序设计语言功能</u>，<u>工具箱的扩展功能</u></li>
+<li>命令行窗口提示用户输入命令的符号是：<strong><u>&raquo;</u></strong></li>
+<li>matlab的帮助命令是：<u>lookfor，lookfor-all，help（没有search）</u></li>
+<li>matlab功能区提三个选项卡：<u>主页</u>，<u>绘图</u>，<u>应用程序</u></li>
+<li>设置matlab搜索路径有两种方法，一是<u>path</u>命令，二是matlab主页选项卡的环境单机<u>设置路径</u>按钮或者命令行窗口执行<u>pathtool</u>命令</li>
+<li>matlab命令提示符后面输入并执行命令成为MATLAB的<u>交互式命令</u>操作</li>
+<li>matlab的续航符：<u>&hellip;</u>，将下面一行看成这行的逻辑继续</li>
+<li>注释以<u>%</u>开头</li>
+</ol>
+<h1 id="第二章matlab数据及其运算">第二章：MATLAB数据及其运算
+</h1><h2 id="21矩阵建立">2.1矩阵建立
+</h2><h2 id="22冒号表达式">2.2冒号表达式
+</h2><p>e1初始值:e2步长:e3终止值</p>
+<p>linspace(a,b,n):ab之间产生n个等长</p>
+<p>sub2ind（s,i,j）,ij是行列下标，s是size(A)</p>
+<p>[i,j]=ind2ind(s,d):d是序号</p>
+<h2 id="23变量及其操作">2.3变量及其操作
+</h2><h2 id="24常用内部函数">2.4常用内部函数
+</h2><h2 id="25matlab运算">2.5matlab运算
+</h2><p>点乘/除法</p>
+<p>rem(a,b),a除b</p>
+<h2 id="26字符串">2.6字符串
+</h2><p>字符串是单引号引起来的，字符数组是双引号</p>
+<p>书p40/41</p>
+<h1 id="第三章matlab矩阵处理">第三章：MATLAB矩阵处理
+</h1><h2 id="31特殊矩阵">3.1特殊矩阵
+</h2><h1 id="第四章matlab程序流程控制">第四章：MATLAB程序流程控制
+</h1><h2 id="42程序控制结构">4.2程序控制结构
+</h2><p>输入：A=input(提示信息)；</p>
+<p>打印：disp(A)</p>
+<p>暂停：pause(暂停时间)</p>
+<p>字符串转数字：str2double(c)</p>
+<p>数值矩阵转化单元矩阵：num2cell</p>
+<h3 id="ifelse">ifelse
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">c</span><span class="p">=</span><span class="n">input</span><span class="p">(</span><span class="s">&#39;请输入一个字符：&#39;</span><span class="p">,</span><span class="s">&#39;s&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">c</span><span class="o">&gt;</span><span class="p">=</span><span class="s">&#39;A&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span><span class="o">&lt;</span><span class="p">=</span><span class="s">&#39;Z&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">disp</span><span class="p">(</span><span class="n">lower</span><span class="p">(</span><span class="n">c</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="k">elseif</span> <span class="n">c</span><span class="o">&gt;</span><span class="p">=</span><span class="s">&#39;a&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span><span class="o">&lt;</span><span class="p">=</span><span class="s">&#39;z&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">disp</span><span class="p">(</span><span class="n">upper</span><span class="p">(</span><span class="n">c</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="k">elseif</span> <span class="n">c</span><span class="o">&gt;</span><span class="p">=</span><span class="s">&#39;0&#39;</span> <span class="o">&amp;&amp;</span> <span class="n">c</span><span class="o">&lt;</span><span class="p">=</span><span class="s">&#39;9&#39;</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">disp</span><span class="p">(</span><span class="n">str2double</span><span class="p">(</span><span class="n">c</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">disp</span><span class="p">(</span><span class="n">c</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="switch">switch
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">price=input(&#39;输入商品价格:&#39;);
+</span></span><span class="line"><span class="cl">switch fix(price/100)
+</span></span><span class="line"><span class="cl">	case {0,1}
+</span></span><span class="line"><span class="cl">		rate=0;
+</span></span><span class="line"><span class="cl">	case {2,3,4}
+</span></span><span class="line"><span class="cl">		rate=3/100;
+</span></span><span class="line"><span class="cl">	case num2cell(5:9)
+</span></span><span class="line"><span class="cl">		rate=5/100;
+</span></span><span class="line"><span class="cl">	otherwise
+</span></span><span class="line"><span class="cl">		rate=14/100;
+</span></span><span class="line"><span class="cl">end
+</span></span><span class="line"><span class="cl">price=price*(1-rate);
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="try-catch">try-catch
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">try 
+</span></span><span class="line"><span class="cl">	c=A*C
+</span></span><span class="line"><span class="cl">catch
+</span></span><span class="line"><span class="cl">	error
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="for">for
+</h3><p>按列作循环</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">for k=[1,2,4,6]
+</span></span><span class="line"><span class="cl">	k
+</span></span><span class="line"><span class="cl">end
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">n=2;
+</span></span><span class="line"><span class="cl">for k=1:2:n=8
+</span></span><span class="line"><span class="cl">	n=5;
+</span></span><span class="line"><span class="cl">	k
+</span></span><span class="line"><span class="cl">end
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>向量为空就不执行循环</p>
+<p>fix()截尾取整</p>
+<p>rem()计算两个数的余数</p>
+<h2 id="43函数文件">4.3函数文件
+</h2><p>function 输出形参表 = 函数名(输入形参表)</p>
+<p>matlab调用使用函数名，忽略文件名</p>
+<p>return只代表结束不代表返回</p>
+<h2 id="44特殊形式的函数">4.4特殊形式的函数
+</h2><p>子函数只能由同一文件的函数调用</p>
+<p>以字符串形式存在的函数表达式可以通过内联函数inline()转换</p>
+<p>匿名函数：sqr = @(x) x.^2;  a = sqr(5)</p>
+<h1 id="第五章matlab绘图">第五章：MATLAB绘图
+</h1><h2 id="51二维图形">5.1二维图形
+</h2><h3 id="基本函数">基本函数
+</h3><p>plot(x,y)函数的基本用法：分别以x,y为横纵坐标画图（x,y向量长度相同）</p>
+<p>当x是向量y是矩阵：x必须与y的行数或者列数相同，若等于行数，则以列数作为横纵坐标，反之亦然。</p>
+<h3 id="绘制图形辅助操作">绘制图形辅助操作
+</h3><h2 id="52其他形式的二维图形">5.2其他形式的二维图形
+</h2><h2 id="53三维图形">5.3三维图形
+</h2><h1 id="第六章matlab数据分析和多项式计算">第六章：MATLAB数据分析和多项式计算
+</h1><p><strong>拟合插值各看一个方法，看ppt（背背背案例），比较两者总结不一样的点（应用场景什么的）背下来，数据统计里面怎么求max，min，sub，average，求积，(这些命令怎么使用，传几个参数，穿哪些，有几个，先后顺序)标准相关系数</strong></p>
+<h2 id="61数据统计分析">6.1数据统计分析：
+</h2><h3 id="最大最小值">最大最小值
+</h3><p>1、**向量max()：**求向量或矩阵的最大/小元素。
+y=max(X):若x有复数则取模最大</p>
+<p>[y,k]=max(X):y存入最大值，k存入序号</p>
+<p>2、<strong>矩阵max():</strong></p>
+<p>max(A,[],dim):dim取1或者2，1是每一列的最大值，2是每一行的最大值（[]这个参数用来占位，表示忽略此参数。）</p>
+<p>3、两个向量或者矩阵对应元素的比较</p>
+<p>U=MAX(A,B),U与二者同型，结果是对应元素取最大的（A，B也同型）</p>
+<p>U=MAX(A,n)，结果是A对应元素与n最大值</p>
+<p><em>用什么方法只调用一次max 函数就能求得整个矩阵的最大值？</em></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl"><span class="n">A</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">3</span> <span class="mi">5</span><span class="p">;</span> <span class="mi">7</span> <span class="mi">2</span> <span class="mi">8</span><span class="p">;</span> <span class="mi">4</span> <span class="mi">6</span> <span class="mi">9</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="n">max_val</span> <span class="p">=</span> <span class="n">max</span><span class="p">(</span><span class="n">A</span><span class="p">(:));</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="求和求积">求和求积
+</h3><p>sum(X)：x为向量，返回各元素之和</p>
+<p>sum(A)：A是矩阵，返回行向量，是各列的和</p>
+<p>sum(A,dim)：1为列元素和，2为行元素和</p>
+<p>求积用prod函数（乘积：product）</p>
+<h3 id="平均值中值">平均值/中值
+</h3><p>mean(X)：x为向量，计算平均值</p>
+<p>mean(A)：A是矩阵，返回行向量，是各列的平均值</p>
+<p>mean(A,dim)：同上</p>
+<p>median()：计算中值，同mean</p>
+<p>分析哪一个更合理：mean对异常值（outliers）非常敏感。即使有少量极端值，也会显著影响均值。
+median不如均值易于计算和理解，尤其是对于较大的数据集。</p>
+<h3 id="累加累乘">累加累乘
+</h3><p>consum(X)：x为向量，计算平均值</p>
+<p>consum(A)：A是矩阵，返回行向量，是各列的累加和向量</p>
+<p>consum(A,dim)：同上，1是列，2是行</p>
+<p>conprod()：同上</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-matlab" data-lang="matlab"><span class="line"><span class="cl">求<span class="mi">1</span>！<span class="o">+</span><span class="mi">2</span>！<span class="o">+</span><span class="c">...+6!</span>
+</span></span><span class="line"><span class="cl"><span class="n">x</span><span class="p">=</span><span class="n">conprod</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">x</span><span class="p">=</span><span class="mi">1</span> <span class="mi">2</span> <span class="mi">6</span> <span class="mi">24</span> <span class="mi">120</span> <span class="mi">720</span>
+</span></span><span class="line"><span class="cl"><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="标准差和相关系数">标准差和相关系数
+</h3><p><strong>标准差：</strong></p>
+<p>std(X)：返回向量标准差</p>
+<p>std(A)：返回矩阵每列标准差</p>
+<p>调用方式：std(A，flag，dim)，flag取0调用公式一求标准差，1则是公式2。dim还是1求列，2求行。默认flag=0，dim=1</p>
+<p><strong>相关系数：</strong></p>
+<p>corrcoef(X,Y)：求向量相关系数矩阵,求序列X,和Y的相关系数，结果是2x2的矩阵，对角线上是自相关系数矩阵，非对角线是X和Y，和Y和X的相关系数，是相等的。与corrcoef([X,Y])等价</p>
+<p>corrcoef(X)：求矩阵相关系数，第i行第j列是矩阵X第i列和第j列的相关系数</p>
+<p><em>randn产生的随机数是独立的</em></p>
+<p>cov()：产生协方差矩阵与上面类似</p>
+<h3 id="排序">排序
+</h3><p>sort(A,dim,mode)：dim=1按列排，为2按行排序，mode为ascend升序（默认不写），逆序为descend,要加单引号。</p>
+<h2 id="62多项式计算">6.2多项式计算
+</h2><p>多项式系数的量包含0次数项，向量从高到低</p>
+<h3 id="多项式四则运算">多项式四则运算
+</h3><p>加减：没有函数，对应相加减</p>
+<p>乘：conv(A,B),A,B为系数向量</p>
+<p>除法：[q,r]deconv(A,B),q返回A除B的商式，r返回余式</p>
+<p>二者互为逆函数，A=B*q+r</p>
+<h3 id="多项式导函数">多项式导函数
+</h3><p>polyder(P)：P的导函数</p>
+<p>polyder(P,Q)：P*Q的导函数</p>
+<p>[P,Q]polyder(P,Q)：P/Q的导函数，导数分子存p,分母存q</p>
+<h3 id="多项式求值">多项式求值
+</h3><p>代数多项式求值：</p>
+<p>polyval(P,x)，x为自变量，P为系数向量</p>
+<p>矩阵多项式求值：</p>
+<p>polyvalm(P,A)，调用相同含义不同，A为方阵</p>
+<h3 id="多项式求根">多项式求根
+</h3><p>x=roots(P)</p>
+<p>若已知多项式全部根，可以重新建立起多项式ploy(x)</p>
+<h2 id="63数据插值">6.3数据插值
+</h2><p>从离散的数据，得到离散以外的数值</p>
+<h3 id="一维数据插值">一维数据插值
+</h3><p>插值函数是一个单变量函数，采用一维插值，插值函数Y1=interp1(X,Y,X1,method)，是根据等长的已知向量X,Y，计算函数在X1处的值，超出X的插值点会出现NAN错误</p>
+<p>插值方法：</p>
+<ol>
+<li>linear：线性插值，method不写为默认方法</li>
+<li>nearest：最近点插值</li>
+<li>pchip：分段3次埃米尔特插值</li>
+<li>spline：3次样条插值，专门的函数spline(X,Y,X1)与interp1(X,Y,X1,spline)作用相同</li>
+</ol>
+<h3 id="二维数据插值">二维数据插值
+</h3><p>自变量是两个变化时，插值函数Z1=interp1(X,Y,Z,X1,Y1,method)，采用二维插值，X,Y,Z可以是矩阵。二维插值不支持pchip方法，其他都一样。同样超出X，Y的插值点会出现NAN错误</p>
+<p>interp1(X,Y,Z,X1,Y1,method)，在X1,Y1处插值</p>
+<p>interp1(X,Y,Z,[X1,X2],Y1,method)，在（X1,Y1）（X2,Y1）插值</p>
+<p>interp1(X,Y,Z,[X1,X2],[Y1,Y2],method)，在（X1,Y1）（X2,Y2）插值</p>
+<p>interp1(X,Y,Z,[X1,X2]&rsquo;,[Y1,Y2],method)，在（X1,Y1）（X1,Y2）（X2,Y1）（X2,Y2）插值</p>
+<h2 id="64曲线拟合">6.4曲线拟合
+</h2><p>与插值类似，但又不同，不完全经过采样点，但希望拟合的函数g(x)靠近采样点。曲线拟合使用最小二乘逼近原理。</p>
+<h3 id="实现">实现
+</h3><p>进行拟合时，实际是求一个系数向量，系数向量是多项式系数，matlab用polyfit函数求最小二乘拟合多项式的系数，再用ployval（）函数按照所得多项式计算给出点上的函数逼近值</p>
+<p>P=polyfit(X,Y,m)</p>
+<p>[P,S]=polyfit(X,Y,m)</p>
+<p>[P,S,mu]=polyfit(X,Y,m)</p>
+<p>采样点X和采样点函数值Y生成m次多项式，P是长度m+1向量，为多项式系数，mu(1)是mean()X,mu(2)是std(X)</p>
+<h2 id="数据插值和曲线拟合不一样的地方">数据插值和曲线拟合不一样的地方
+</h2><h3 id="1相同点">1、相同点:
+</h3><p>①都属于函数逼近方法
+②都能进行数据估算</p>
+<h3 id="2不同点">2、不同点:
+</h3><p>①实现方法不同： 数据插值要求逼近函数经过样本点，而曲线拟合不要求逼近函数经过样本点，只要求总体误差最小。
+②结果形式不同： 数据插值往往分段进行逼近，没有统一的逼近函数。曲线拟合用一个函数进行整体逼近，有确定的函数表达式。
+③侧重点不同： 数据插值一般用于样本区间内的插值计算，而曲线拟合不仅可以估算区间内其他点的函数值，还可以预测时序数据的发展趋势，以及从统计数据中总结一般性经验
+④应用场合不同： 如果样本数据为精确数据，适合采用数据插值方法；如果样本数据为统计数据或存在误差，则适合用曲线拟合的方法。</p>
+<h1 id="第七章matlab数值微分和积分">第七章：MATLAB数值微分和积分
+</h1><p>差分差商最简单的例子要会，没有大题，有选择填空，看课本知识点</p>
+<h1 id="第八章matlab方程数值求解">第八章：MATLAB方程数值求解
+</h1><p>三种方式（都得背）：直接求解（求幂，反除），迭代法（高斯迭代背下来），jacabi迭代背下来，直接迭代（lu分解，qr分解，背一种），最优问题求解（看ppt，相对简单，改一下参数）</p>
+<h2 id="81线性方程组求解">8.1线性方程组求解
+</h2><h3 id="直接求解法">直接求解法
+</h3><p><strong>利用左除运算符求解</strong></p>
+<p>即Ax=b，x=A\b（谁在上是被除）</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034302035.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20240630034302035"
+	
+	
+></p>
+<p><strong>利用矩阵分解</strong>：将一个矩阵分解为若干矩阵的乘积</p>
+<p>LU分解 ：矩阵的LU分解就是将一个n阶矩阵表示为一个下三角矩阵和一个上三角矩阵的 乘积。</p>
+<p>[L,U]=lu(x),产生一个上三角U和下三角L,使之满足<strong>X=LU</strong></p>
+<p>[L,U,P]=lu(x),除了上面还有一个P置换矩阵使得<strong>PX=LU</strong></p>
+<p>inv()是求逆函数</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034723266.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20240630034723266"
+	
+	
+></p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630034950552.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20240630034950552"
+	
+	
+></p>
+<p>QR分解</p>
+<p>Cholesky分解</p>
+<h3 id="迭代求法">迭代求法
+</h3><p>迭代法是一种不断用变量的原值推出它的新值的过程，是用计算机解决问 题的一种基本方法。</p>
+<h4 id="雅可比jacobi迭代法">雅可比（Jacobi）迭代法
+</h4><p>公式推导</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/image-20240630130830859.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20240630130830859"
+	
+	
+></p>
+<p><a class="link" href="https://blog.csdn.net/qq_40264271/article/details/120611627"  target="_blank" rel="noopener"
+    >https://blog.csdn.net/qq_40264271/article/details/120611627</a></p>
+<h4 id="高斯-赛德尔gauss-serdel迭代法">高斯-赛德尔（Gauss-Serdel）迭代法
+</h4><p>是上面公式的变化</p>
+<h3 id="求线性方程组的通解">求线性方程组的通解
+</h3><h2 id="82非线性方程组数值求解">8.2非线性方程组数值求解
+</h2><p>非线性方程组求解和最优化问题，往往 调用最优化工具箱来解决</p>
+<h3 id="单变量非线性方程求解">单变量非线性方程求解
+</h3><p>fzero函数求根</p>
+<p>z=fzero(filename,x0)</p>
+<p>filename待求根的函数，x0搜索的起点</p>
+<h3 id="非线性方程组求解">非线性方程组求解
+</h3><p>最优化工具箱提供的函数fsolve</p>
+<p>fsolve函数求解非线性方程组的根</p>
+<p>X=fsolve(filename,X0,option)</p>
+<p>filename待求根的函数,X0求解过程的初值,option优化参数</p>
+<p>optimset可以将优化参数都显示出来</p>
+<p>改变默认优化参数option=optimset(&lsquo;Display&rsquo;,&lsquo;off&rsquo;)</p>
+<h2 id="83最优化问题求解">8.3最优化问题求解
+</h2><h3 id="无约束最优化问题求解">无约束最优化问题求解
+</h3><p>[xmin,fmin]=fminbnd(filename,x1,x2,option)</p>
+<p>[xmin,fmin]=fminsearch(filename,x0,option)</p>
+<p>[xmin,fmin]=fminunc(filename,x0,option)</p>
+<h4 id="有约束最优化问题求解">有约束最优化问题求解
+</h4><p>求有约束条件下最小值的函数为： [xmin,fmin]=fmincon(filename,x0,A,b,Aeq,beq,Lbnd,Ubnd,NonF,option)</p>
+<p>其中，xmin、fmin、filename、x0和option的含义与求最小值函数相同。其余参数为约束条件，包括线性不等式约束、线性等式约束、x的下界和上界以及定 义非线性约束的函数。如果某个约束不存在，则用空矩阵来表示。</p>
+<h4 id="线性规划问题求解">线性规划问题求解
+</h4><h2 id="84常微分初值问题的数值求解">8.4常微分初值问题的数值求解
+</h2><p>书p200</p>
+<p>解决刚性问题的有ode15s，ode23s，ode23tb</p>
+<h1 id="第九章matlab符号计算选填">第九章：MATLAB符号计算（选填）
+</h1><p>不考大题，就是基础的知识点</p>
+<h1 id="总结">总结：
+</h1><p>大题</p>
+<ol>
+<li>数据，矩阵表示方法，怎么输入输出出来（结合if，else，for循环看一个例子，怎么写），结合字符串去做</li>
+<li>画图绘图处理（二维的，同一个坐标系同一个布局，画什么样的图形，线条是什么样的）</li>
+<li>数据分析，统计分析，每一个方法（怎么传递参数，得出结果处理结果，打印结果）</li>
+<li>多项式考选择填空的，插值拟合分别会考，两者之间的应用场景有什么不一样的地方，做的是不是同一个事情</li>
+<li>第七章微分积分，差分差商，通过数值的方法进行求导，通过采样得到函数，然后进行求导，傅里叶变化不考</li>
+<li>第八章线性方程三种方法，直接方法，迭代两个都背下来。无约束的最优化手写敲一下！2和4节选择填空</li>
+<li>第九章选择填空</li>
+</ol>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%A4%A7%E5%AD%A6/">大学</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/9e32d85/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"avatar":"","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Liagu","placeholder":"评论区"},"requiredMeta":["name","email","url"],"serverURL":"https://walinecomment-3o7dw0sxj-liaguones-projects.vercel.app","visitor":false});
+</script>
+
+    
+    
+    <footer class="site-footer">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <section class="copyright">
+        &copy; 
+        
+            2023-2024 - 
+        
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67995字·共 18篇文章</br><span><p>
+        
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+    </section>
+    <script>
+        var s1 = '2023-09-10';
+        s1 = new Date(s1.replace(/-/g, "/"));
+        s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+        </script>
+
+</footer>
+
+
+
+
+
+
+<span id="voyager">载入旅行者一号离地球距离信息...</span>
+
+<script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        
+        now.setTime(now.getTime()+250);
+        var start = new Date("08/01/2022 00:00:00"); 
+        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); 
+        var unit = (dis / 149600000).toFixed(6);  
+
+        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 "+ dis +" 千米，约为 "+ unit +" 个天文单位 🚀"
+    }
+    setInterval("createtime()",250); 
+</script> 
+
+
+
+
+   
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
+

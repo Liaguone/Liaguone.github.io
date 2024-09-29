@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="写给新手朋友入门，有了靶场丰富自己思路，也巩固自己的技术。当然新手老手都可以玩玩。\n这期盘点渗透靶场，排名不分前后，还有其他靶场欢迎留言提出！以及在留言当中评论出你最喜欢的靶场并附上理由。\n">
+<title>渗透必刷靶场</title>
+
+<link rel='canonical' href='https://hack.liagu-one.top/p/%E6%B8%97%E9%80%8F%E5%BF%85%E5%88%B7%E9%9D%B6%E5%9C%BA/'>
+
+<link rel="stylesheet" href="/scss/style.min.ed3ac9936b36673a749b7a4370acb21b40cdbafe83c60df9da95e02e25e4eb1f.css"><meta property='og:title' content="渗透必刷靶场">
+<meta property='og:description' content="写给新手朋友入门，有了靶场丰富自己思路，也巩固自己的技术。当然新手老手都可以玩玩。\n这期盘点渗透靶场，排名不分前后，还有其他靶场欢迎留言提出！以及在留言当中评论出你最喜欢的靶场并附上理由。\n">
+<meta property='og:url' content='https://hack.liagu-one.top/p/%E6%B8%97%E9%80%8F%E5%BF%85%E5%88%B7%E9%9D%B6%E5%9C%BA/'>
+<meta property='og:site_name' content='Liagu&#39; blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='渗透' /><meta property='article:published_time' content='2024-09-10T21:37:08&#43;08:00'/><meta property='article:modified_time' content='2024-09-10T21:37:08&#43;08:00'/>
+<meta name="twitter:title" content="渗透必刷靶场">
+<meta name="twitter:description" content="写给新手朋友入门，有了靶场丰富自己思路，也巩固自己的技术。当然新手老手都可以玩玩。\n这期盘点渗透靶场，排名不分前后，还有其他靶场欢迎留言提出！以及在留言当中评论出你最喜欢的靶场并附上理由。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/avatar.jpg" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🥷</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Liagu&#39; blog</a></h1>
+            <h2 class="site-description">路漫漫其修远兮，吾将上下而求索。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://bilibili.com'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://youtube.com'
+                        target="_blank"
+                        title="Youtube"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/goals/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Goals</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://music.shimoko.com/' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                
+                <span>Music</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+   
+</aside>
+
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#1dvwa">1、DVWA</a></li>
+    <li><a href="#2vulnhub">2、vulnhub</a></li>
+    <li><a href="#3pikachu">3、pikachu</a></li>
+    <li><a href="#4vulnstack">4、VulnStack</a></li>
+    <li><a href="#5vulhub">5、vulhub</a></li>
+    <li><a href="#6upload-labsxss-labssqli-labs">6、upload-labs、xss-labs、sqli-labs</a></li>
+    <li><a href="#7hack-the-box">7、hack the box</a></li>
+    <li><a href="#8墨者靶场">8、墨者靶场</a></li>
+    <li><a href="#9vulfocus">9、vulfocus</a></li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/draft/" >
+                Draft
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E6%B8%97%E9%80%8F%E5%BF%85%E5%88%B7%E9%9D%B6%E5%9C%BA/">渗透必刷靶场</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-09-10</time>
+            </div>
+        
+
+        
+    </footer>
+    
+
+    
+    
+<div>
+     
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>写给新手朋友入门，有了靶场丰富自己思路，也巩固自己的技术。当然新手老手都可以玩玩。</p>
+<p>这期盘点渗透靶场，排名不分前后，还有其他靶场欢迎留言提出！以及在留言当中评论出你最喜欢的靶场并附上理由。</p>
+<p>本期是盘点入门必刷，后期会盘点圈内所有的靶场以及靶场的writeup.</p>
+<h2 id="1dvwa">1、DVWA
+</h2><p>安全入门必刷靶场，很多新手朋友第一个选择的靶场就是DVWA，DVWA 一共包含了十个攻击模块，分别是：Brute Force（暴力破））、Command Injection（命令行注入）、CSRF（跨站请求伪造）、- File Inclusion（文件包含）、File Upload（文件上传）、Insecure CAPTCHA （不安全的验证码）、SQL Injection（SQL注入）、SQL Injection（Blind）（SQL盲注）、XSS（Reflected）（反射型跨站脚本）、XSS（Stored）（存储型跨站脚本）。包含了 OWASP TOP10 的所有攻击漏洞的练习环境，并且有低中高等级 循序渐进渗透测试学习。</p>
+<p><img src="https://img.4awl.net/img/c0/4143a9776df17aafa69121b29b306a.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图"
+	
+	
+></p>
+<h2 id="2vulnhub">2、vulnhub
+</h2><p>很多安全竞赛都有在这里面出题，系列非常之多，不仅仅有web方面的，也有系统方面的渗透。</p>
+<p>网上也有很多writeup，环境直接下载虚拟机压缩包，解压即可使用。新手朋友建议下载先自行测试，然后再看writeup解题</p>
+<p><a class="link" href="https://www.4awl.net/go?_=b7bc223df7aHR0cHM6Ly92dWxodWIub3JnLw%3D%3D"  target="_blank" rel="noopener"
+    >https://vulhub.org/</a>（在线版）</p>
+<p><a class="link" href="https://www.4awl.net/go?_=4c8b8b4383aHR0cHM6Ly9naXRodWIuY29tL3Z1bGh1Yi92dWxodWI%3D"  target="_blank" rel="noopener"
+    >https://github.com/vulhub/vulhub</a>（离线版）</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/7bb91a93a4f3609f1d015afd429add.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图1"
+	
+	
+></p>
+<h2 id="3pikachu">3、pikachu
+</h2><p>也是类似dvwa的靶场，带有常见的web安全漏洞</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/31bb96cb621c40d19244cd4dc28c0f.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图2"
+	
+	
+><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/746d89fe4f77989eb12983f9973df4.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图3"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=ce8a97b363aHR0cHM6Ly9naXRodWIuY29tL3podWlmZW5nc2hhb25pYW5oYW5sdS9waWthY2h1"  target="_blank" rel="noopener"
+    >https://github.com/zhuifengshaonianhanlu/pikachu</a></p>
+<h2 id="4vulnstack">4、VulnStack
+</h2><p>vulnstack是红日旗下的一个开源靶场平台，模拟国内企业环境，涵盖CMS、漏洞管理、域管理等，以ATT&amp;CK红队评估模式为设计思路，提供全方位的攻防训练体验。从环境搭建到漏洞利用、内网搜集、持久控制等。<img src="https://raw.githubusercontent.com/Liaguone/imgs/master/9957397c84409bff3787c81452999b.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图4"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=16dc738641aHR0cDovL3Z1bG5zdGFjay5xaXl1YW54dWV0YW5nLm5ldC92dWxuLw%3D%3D"  target="_blank" rel="noopener"
+    >http://vulnstack.qiyuanxuetang.net/vuln/</a></p>
+<h2 id="5vulhub">5、vulhub
+</h2><p>跟vulnhub名字很像，但是这个是属于web类，直接docker安装，一个基于docker和docker-compose的漏洞环境集合，一条语句即可启动一个全新的漏洞环境，非常方便。</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/aca8b8d5a2cbc135f8be20e403f8fe.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图5"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=b7bc223df7aHR0cHM6Ly92dWxodWIub3JnLw%3D%3D"  target="_blank" rel="noopener"
+    >https://vulhub.org/</a></p>
+<h2 id="6upload-labsxss-labssqli-labs">6、upload-labs、xss-labs、sqli-labs
+</h2><p>听名字就知道了，这些靶场分别专注于文件上传、xss、sql注入漏洞三个靶场</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/d9a6c40302b42b444c36a05501e08c.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图6"
+	
+	
+></p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/2bc691dcfb486f0783535902beaf5d.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图7"
+	
+	
+><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/95726811d9522da57ac1d1ac39431f.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图8"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=8d6d62eb24aHR0cHM6Ly9naXRodWIuY29tL2MwbnkxL3VwbG9hZC1sYWJz"  target="_blank" rel="noopener"
+    >https://github.com/c0ny1/upload-labs</a></p>
+<p><a class="link" href="https://www.4awl.net/go?_=72b44b115caHR0cHM6Ly9naXRodWIuY29tL2RvMGRsMy94c3MtbGFicw%3D%3D"  target="_blank" rel="noopener"
+    >https://github.com/do0dl3/xss-labs</a></p>
+<p><a class="link" href="https://www.4awl.net/go?_=b8fe4318d5aHR0cHM6Ly9naXRodWIuY29tL0F1ZGktMS9zcWxpLWxhYnM%3D"  target="_blank" rel="noopener"
+    >https://github.com/Audi-1/sqli-labs</a></p>
+<h2 id="7hack-the-box">7、hack the box
+</h2><p>是国外的一个网络安全在线靶场，靶场中被细分成若干种类，涵盖Web、病毒分析、密码学、逆向工程等领域。这些类别下各自拥有从基础到高阶的多个挑战项目，确保不同技能水平的用户都能找到匹配自身技术与知识水平的挑战进行尝试。</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/204f6a31bbb3f0ff58c0067c8505c1.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图9"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=e03b4d0b45aHR0cHM6Ly93d3cuaGFja3RoZWJveC5jb20v"  target="_blank" rel="noopener"
+    >https://www.hackthebox.com/</a></p>
+<h2 id="8墨者靶场">8、墨者靶场
+</h2><p>在线的靶场，无需搭建，直接注册账号后就可进行测试。不过有积分限制。</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/2a880d5074f5742536fb1520e8045b.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图10"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=06460fe5bcaHR0cHM6Ly93d3cubW96aGUuY24vYnVn"  target="_blank" rel="noopener"
+    >https://www.mozhe.cn/bug</a></p>
+<h2 id="9vulfocus">9、vulfocus
+</h2><p>白帽汇推出的一款漏洞集成平台，常见的fofa就是白帽汇的旗下的，内也有ctf。</p>
+<p><img src="https://raw.githubusercontent.com/Liaguone/imgs/master/f25bdc2b8a840ff0b4f84250893820.jpg"
+	
+	
+	
+	loading="lazy"
+	
+		alt="渗透必刷靶场大盘点插图11"
+	
+	
+></p>
+<p><a class="link" href="https://www.4awl.net/go?_=526250b5e0aHR0cHM6Ly92dWxmb2N1cy5jbi8%3D"  target="_blank" rel="noopener"
+    >https://vulfocus.cn/</a></p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%B8%97%E9%80%8F/">渗透</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/90307b6/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Hugo Fixit美化</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"avatar":"","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Liagu","placeholder":"评论区"},"requiredMeta":["name","email","url"],"serverURL":"https://walinecomment-3o7dw0sxj-liaguones-projects.vercel.app","visitor":false});
+</script>
+
+    
+    
+    <footer class="site-footer">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <section class="copyright">
+        &copy; 
+        
+            2023-2024 - 
+        
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 67995字·共 18篇文章</br><span><p>
+        
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+    </section>
+    <script>
+        var s1 = '2023-09-10';
+        s1 = new Date(s1.replace(/-/g, "/"));
+        s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+        </script>
+
+</footer>
+
+
+
+
+
+
+<span id="voyager">载入旅行者一号离地球距离信息...</span>
+
+<script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        
+        now.setTime(now.getTime()+250);
+        var start = new Date("08/01/2022 00:00:00"); 
+        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); 
+        var unit = (dis / 149600000).toFixed(6);  
+
+        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 "+ dis +" 千米，约为 "+ unit +" 个天文单位 🚀"
+    }
+    setInterval("createtime()",250); 
+</script> 
+
+
+
+
+   
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
+

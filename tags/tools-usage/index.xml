@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tools-Usage on Liagu&#39; blog</title>
+        <link>https://hack.liagu-one.top/tags/tools-usage/</link>
+        <description>Recent content in Tools-Usage on Liagu&#39; blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Liagu</copyright>
+        <lastBuildDate>Sat, 27 Apr 2024 14:34:31 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/tags/tools-usage/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>upx-usage</title>
+        <link>https://hack.liagu-one.top/p/0492dcd/</link>
+        <pubDate>Sat, 27 Apr 2024 14:34:31 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/p/0492dcd/</guid>
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;识别UPX壳&lt;/strong&gt;
+逆向的第一步通常是确认程序是否使用了UPX壳。这可以通过查看文件头信息、使用PE查看器检查导入表（Import Table）是否被UPX修改过，或者直接用&lt;code&gt;upx -d&lt;/code&gt;尝试解压文件来判断。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;脱壳 (Unpacking)&lt;/strong&gt;
+如果确定程序被UPX加壳，可以使用UPX本身来解压或“脱壳”：&lt;/p&gt;
+&lt;p&gt;Bash&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;1upx -d suspected_program.exe
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;这条命令尝试解压缩&lt;code&gt;suspected_program.exe&lt;/code&gt;，生成未压缩的原始可执行文件。成功后，原始程序将不再含有UPX壳，便于进一步的逆向分析。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;分析与调试&lt;/strong&gt;
+脱壳之后，可以使用逆向工程工具（如IDA Pro, Ghidra, OllyDbg, x64dbg等）来深入分析程序的汇编代码、函数调用、数据结构等。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;处理特殊情况&lt;/strong&gt;
+有时，程序可能使用了自定义或修改版的UPX壳，导致直接使用UPX脱壳失败。这种情况下，可能需要手动定位脱壳代码入口点，理解其工作原理，并编写脚本或修改UPX源码来适应这种特定壳。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;查找线索&lt;/strong&gt;
+在逆向过程中，注意寻找UPX壳留下的线索，比如特定的字符串、代码模式或导入的UPX相关函数，这些都可以帮助确认壳的存在并指导如何去除它。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;收到v服务规律i撒故后世爸爸说都i擦比较萨斯都v比较你&lt;/p&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
