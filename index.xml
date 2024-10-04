@@ -13618,123 +13618,16 @@ BlackPerl&lt;/p&gt;
 &lt;/h2&gt;</description>
         </item>
         <item>
-        <title>软考重点</title>
-        <link>https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/</link>
-        <pubDate>Mon, 29 Aug 2022 13:29:04 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/</guid>
-        <description>&lt;h2 id=&#34;网络信息安全概述&#34;&gt;网络信息安全概述
-&lt;/h2&gt;&lt;h3 id=&#34;网络安全基础&#34;&gt;网络安全基础
-&lt;/h3&gt;&lt;p&gt;信息社会主要特征&lt;/p&gt;
-&lt;h2 id=&#34;物理与环境安全技术&#34;&gt;物理与环境安全技术
-&lt;/h2&gt;&lt;h3 id=&#34;物理安全概述&#34;&gt;物理安全概述
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;物理安全威胁&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;(1)硬件木马：&lt;/p&gt;
-&lt;p&gt;(2)硬件协同的恶意代码：&lt;/p&gt;
-&lt;p&gt;(3)硬件安全漏洞利用：&lt;/p&gt;
-&lt;p&gt;(4)基于软件漏洞攻击硬件实体：&lt;/p&gt;
-&lt;p&gt;(5)基于环境攻击计算机实体：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;物理安全保护&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;(1)设备物理安全：防止电磁信息泄露，抗电磁干扰，电源保护，供应链安全，保证软硬件嵌入是可信的&lt;/p&gt;
-&lt;p&gt;(2)环境物理安全：机房选择，机房屏蔽，防水火雷鼠盗。&lt;/p&gt;
-&lt;p&gt;(3)系统物理安全：存储介质安全，灾难备份恢复，物理设备访问，设备管理和保护，资源利用。&lt;/p&gt;
-&lt;p&gt;物理安全保护的方法：安全合规、访问控制、安全屏蔽、故障容错、安全监测与预警、供应链安全管理和容灾备份等。(案例分析/选择)&lt;/p&gt;
-&lt;h3 id=&#34;机房安全分析与防护&#34;&gt;机房安全分析与防护
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;机房分区&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;(1)主要工作房间：主机房、终端室等；
-(2)第一类辅助房间：低压配电间、不间断电源室、蓄电池室、空调机室、发电机室、气体钢瓶室、监控室等
-(3)第二类辅助房间：资料室、维修室、技术人员办公室；
-(4)第三类辅助空间：储藏室、缓冲间、技术人员休息室、盟洗室。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;机房安全等级&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A级（严重损害）、 B级（较大损害）、C级（基本要求）三个基本级别&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;机房场地选择&lt;/strong&gt; ：应选用二层为宜，一层作为动力、配电、空调间等。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;数据中心建设与设计要求&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;数据中心分为三类：超大型数据中心、大型数据中心、中小型数据中心。&lt;/p&gt;
-&lt;h3 id=&#34;通信线路设备存储介质安全&#34;&gt;通信线路/设备/存储介质安全
-&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;网络通信线路安全分析与防护&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;网络通信线路物理威胁：线路被切断、电磁干扰、线路泄露信息。
-线路安全防护：设备冗余+线路冗余。屏蔽网线换传输光纤。加密传输。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;设备实体安全分析与防护&lt;/strong&gt;&lt;/p&gt;
-&lt;h2 id=&#34;认证技术与原理&#34;&gt;认证技术与原理
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;与密码学关联，考点&lt;/strong&gt;&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>数据结构问题集锦</title>
-        <link>https://hack.liagu-one.top/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6/</link>
-        <pubDate>Mon, 29 Aug 2022 10:31:40 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6/</guid>
-        <description>&lt;h2 id=&#34;线性表&#34;&gt;线性表
-&lt;/h2&gt;&lt;h3 id=&#34;01&#34;&gt;01
-&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;体详细讲讲p=p-&amp;gt;next是什么意思？&lt;/p&gt;
-&lt;p&gt;假设链表的节点结构如下&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
-&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
-&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
-&lt;td class=&#34;lntd&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Node&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;           &lt;span class=&#34;c1&#34;&gt;// 节点存储的数据
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Node&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 指向下一个节点的指针
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
-&lt;/div&gt;
-&lt;/div&gt;&lt;p&gt;在链表中，&lt;code&gt;p&lt;/code&gt; 是一个指向当前节点的指针，&lt;code&gt;p-&amp;gt;next&lt;/code&gt; 是当前节点的 &lt;code&gt;next&lt;/code&gt; 指针，它指向链表中的下一个节点。&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;p = p-&amp;gt;next;&lt;/code&gt; 这条语句的作用是：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;p-&amp;gt;next&lt;/code&gt; 获取当前节点 &lt;code&gt;p&lt;/code&gt; 的下一个节点的地址。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;p = p-&amp;gt;next&lt;/code&gt; 将 &lt;code&gt;p&lt;/code&gt; 更新为当前节点的下一个节点，即让 &lt;code&gt;p&lt;/code&gt; 指向下一个节点。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;02&#34;&gt;02
-&lt;/h3&gt;</description>
-        </item>
-        <item>
-        <title>Archives</title>
-        <link>https://hack.liagu-one.top/archives/</link>
-        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
-        
-        <guid>https://hack.liagu-one.top/archives/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title></title>
+        <title>知识点汇总</title>
         <link>https://hack.liagu-one.top/rk/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        <pubDate>Mon, 29 Aug 2022 13:29:17 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/rk/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/</guid>
-        <description>&lt;p&gt;title = &amp;ldquo;知识点汇总&amp;rdquo;
-description = &amp;quot;&amp;quot;
-date = &amp;ldquo;2024-08-29T13:29:17+08:00&amp;rdquo;
-image = &amp;quot;&amp;quot;
-[author]
-name = &amp;ldquo;Liagu&amp;rdquo;
-link = &amp;quot;&amp;quot;
-email = &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:2157210683@qq.com&#34; &gt;2157210683@qq.com&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;password = &amp;quot;&amp;quot;
-summary = &amp;quot;&amp;quot;
-comments = true
-draft = true&lt;/p&gt;
-&lt;h2 id=&#34;2022重点&#34;&gt;2022重点
+        <description>&lt;h2 id=&#34;2022重点&#34;&gt;2022重点
 &lt;/h2&gt;&lt;h3 id=&#34;选择&#34;&gt;选择
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;CIA三特性&lt;/strong&gt;：C机密性，I完整性，A可用性&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;网络安全信息系统&lt;/strong&gt;（略偏）&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241004153953447.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004153953447.png&#34;
 	
 	
 	
@@ -13900,7 +13793,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;也称公钥证书，是由证书认证机构(CA)签名的，包含公开密钥拥有者信息、公开密钥、签发者信息、有效期、以及扩展信息的一种数据结构。&lt;/p&gt;
 &lt;h3 id=&#34;模型&#34;&gt;模型
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;访问控制模型&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241004165536697.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004165536697.png&#34;
 	
 	
 	
@@ -13916,7 +13809,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 访问控制数据库:记录主体访问客体的权限及访问方式的信息。
 审计库:存储主体访问客体的操作信息。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;入侵检测模型&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241004171657375.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004171657375.png&#34;
 	
 	
 	
@@ -13986,7 +13879,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;&lt;strong&gt;网络审计数据保护常用的措施&lt;/strong&gt;有:&lt;/p&gt;
 &lt;p&gt;系统用户分权管理、审计数据强制访问、审计数据加密、审计数据隐私保护、审计数据完整性保护。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;利用漏洞&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hack.liagu-one.top/assets%5cimage-20241004175557644.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004175557644.png&#34;
 	
 	
 	
@@ -14078,7 +13971,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;li&gt;间谍软件&lt;/li&gt;
 &lt;li&gt;逻辑炸弹&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;https://hack.liagu-one.top/assets%5cimage-20241004180342811.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004180342811.png&#34;
 	
 	
 	
@@ -14091,7 +13984,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;&lt;strong&gt;数据隐私保护&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;隐私保护的常见技术措施有&lt;strong&gt;抑制、泛化、置换、扰动、裁剪&lt;/strong&gt;等。其中，抑制是通过将数据置空的方式限制数据发布:泛化是通过降低数据精度来提供匿名的方法:置换方法改变数据的属主;扰动是在数据发布时添加一定的噪声，包括数据增删、变换等，使攻击者无法区分真实数据和噪声数据，从而对攻击者造成干扰;裁剪是将敏感数据分开发布。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;风险评估&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hack.liagu-one.top/assets%5cimage-20241004182901093.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004182901093.png&#34;
 	
 	
 	
@@ -14104,7 +13997,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;&lt;strong&gt;电子证据与传统证据不同&lt;/strong&gt;，具有以下三个特点:&lt;/p&gt;
 &lt;p&gt;(1)高科技性是指电子证据的产生、储存和传输，都必须借助计算机技术、,存储技术、网络技术离开了相应技术设备，电子证据就无法保存和传输。(2)无形性是指电子证据肉眼不能够直接看见，必须借助适当的工具。(3)易破坏性是指电子证据很容易被篡改、删除而不留任何痕迹。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;渗透测试流程&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://hack.liagu-one.top/assets%5cimage-20241004183834237.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004183834237.png&#34;
 	
 	
 	
@@ -14140,7 +14033,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;li&gt;0racle监听进程密码，保存在文件“|istener.ora”(保存着所有的0racle执行密码)中，用于启动和停止0racle的监听进程。这就需要设置一个健壮的密码来代替默认的，并且必须对访问设置权限。入侵者可以通过这个弱点进行DoS攻击。&lt;/li&gt;
 &lt;li&gt;0racle的“orapw”文件权限控制，0racle内部密码和账号密码允许SYSDBA角色保存在“orapw’文本文件中，该文件的访问权限应该被限制。即使加密，也能被入侵者暴力破解。&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241004185235916.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/image-20241004185235916.png&#34;
 	
 	
 	
@@ -14163,6 +14056,101 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 (2)限制SNMP访问的IP地址。
 关闭SNMP访问。&lt;/p&gt;
 </description>
+        </item>
+        <item>
+        <title>软考重点</title>
+        <link>https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/</link>
+        <pubDate>Mon, 29 Aug 2022 13:29:04 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/</guid>
+        <description>&lt;h2 id=&#34;网络信息安全概述&#34;&gt;网络信息安全概述
+&lt;/h2&gt;&lt;h3 id=&#34;网络安全基础&#34;&gt;网络安全基础
+&lt;/h3&gt;&lt;p&gt;信息社会主要特征&lt;/p&gt;
+&lt;h2 id=&#34;物理与环境安全技术&#34;&gt;物理与环境安全技术
+&lt;/h2&gt;&lt;h3 id=&#34;物理安全概述&#34;&gt;物理安全概述
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;物理安全威胁&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(1)硬件木马：&lt;/p&gt;
+&lt;p&gt;(2)硬件协同的恶意代码：&lt;/p&gt;
+&lt;p&gt;(3)硬件安全漏洞利用：&lt;/p&gt;
+&lt;p&gt;(4)基于软件漏洞攻击硬件实体：&lt;/p&gt;
+&lt;p&gt;(5)基于环境攻击计算机实体：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;物理安全保护&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(1)设备物理安全：防止电磁信息泄露，抗电磁干扰，电源保护，供应链安全，保证软硬件嵌入是可信的&lt;/p&gt;
+&lt;p&gt;(2)环境物理安全：机房选择，机房屏蔽，防水火雷鼠盗。&lt;/p&gt;
+&lt;p&gt;(3)系统物理安全：存储介质安全，灾难备份恢复，物理设备访问，设备管理和保护，资源利用。&lt;/p&gt;
+&lt;p&gt;物理安全保护的方法：安全合规、访问控制、安全屏蔽、故障容错、安全监测与预警、供应链安全管理和容灾备份等。(案例分析/选择)&lt;/p&gt;
+&lt;h3 id=&#34;机房安全分析与防护&#34;&gt;机房安全分析与防护
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;机房分区&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;(1)主要工作房间：主机房、终端室等；
+(2)第一类辅助房间：低压配电间、不间断电源室、蓄电池室、空调机室、发电机室、气体钢瓶室、监控室等
+(3)第二类辅助房间：资料室、维修室、技术人员办公室；
+(4)第三类辅助空间：储藏室、缓冲间、技术人员休息室、盟洗室。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机房安全等级&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A级（严重损害）、 B级（较大损害）、C级（基本要求）三个基本级别&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;机房场地选择&lt;/strong&gt; ：应选用二层为宜，一层作为动力、配电、空调间等。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;数据中心建设与设计要求&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;数据中心分为三类：超大型数据中心、大型数据中心、中小型数据中心。&lt;/p&gt;
+&lt;h3 id=&#34;通信线路设备存储介质安全&#34;&gt;通信线路/设备/存储介质安全
+&lt;/h3&gt;&lt;p&gt;&lt;strong&gt;网络通信线路安全分析与防护&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;网络通信线路物理威胁：线路被切断、电磁干扰、线路泄露信息。
+线路安全防护：设备冗余+线路冗余。屏蔽网线换传输光纤。加密传输。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;设备实体安全分析与防护&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;认证技术与原理&#34;&gt;认证技术与原理
+&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;与密码学关联，考点&lt;/strong&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>数据结构问题集锦</title>
+        <link>https://hack.liagu-one.top/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6/</link>
+        <pubDate>Mon, 29 Aug 2022 10:31:40 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/408/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E9%97%AE%E9%A2%98%E9%9B%86%E9%94%A6/</guid>
+        <description>&lt;h2 id=&#34;线性表&#34;&gt;线性表
+&lt;/h2&gt;&lt;h3 id=&#34;01&#34;&gt;01
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;while&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;!=&lt;/span&gt;&lt;span class=&#34;nb&#34;&gt;NULL&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;i&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;p&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt; &lt;span class=&#34;n&#34;&gt;j&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;++&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;体详细讲讲p=p-&amp;gt;next是什么意思？&lt;/p&gt;
+&lt;p&gt;假设链表的节点结构如下&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-c&#34; data-lang=&#34;c&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Node&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;kt&#34;&gt;int&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;data&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;           &lt;span class=&#34;c1&#34;&gt;// 节点存储的数据
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;    &lt;span class=&#34;k&#34;&gt;struct&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;Node&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;*&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;next&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;;&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;// 指向下一个节点的指针
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;};&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;在链表中，&lt;code&gt;p&lt;/code&gt; 是一个指向当前节点的指针，&lt;code&gt;p-&amp;gt;next&lt;/code&gt; 是当前节点的 &lt;code&gt;next&lt;/code&gt; 指针，它指向链表中的下一个节点。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;p = p-&amp;gt;next;&lt;/code&gt; 这条语句的作用是：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;p-&amp;gt;next&lt;/code&gt; 获取当前节点 &lt;code&gt;p&lt;/code&gt; 的下一个节点的地址。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;p = p-&amp;gt;next&lt;/code&gt; 将 &lt;code&gt;p&lt;/code&gt; 更新为当前节点的下一个节点，即让 &lt;code&gt;p&lt;/code&gt; 指向下一个节点。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;02&#34;&gt;02
+&lt;/h3&gt;</description>
+        </item>
+        <item>
+        <title>Archives</title>
+        <link>https://hack.liagu-one.top/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://hack.liagu-one.top/archives/</guid>
+        <description></description>
         </item>
         <item>
         <title>Search</title>
