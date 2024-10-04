@@ -13718,7 +13718,19 @@ BlackPerl&lt;/p&gt;
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
         <guid>https://hack.liagu-one.top/rk/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/</guid>
-        <description>&lt;h2 id=&#34;2022重点&#34;&gt;2022重点
+        <description>&lt;p&gt;title = &amp;ldquo;知识点汇总&amp;rdquo;
+description = &amp;quot;&amp;quot;
+date = &amp;ldquo;2024-08-29T13:29:17+08:00&amp;rdquo;
+image = &amp;quot;&amp;quot;
+[author]
+name = &amp;ldquo;Liagu&amp;rdquo;
+link = &amp;quot;&amp;quot;
+email = &amp;ldquo;&lt;a class=&#34;link&#34; href=&#34;mailto:2157210683@qq.com&#34; &gt;2157210683@qq.com&lt;/a&gt;&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;password = &amp;quot;&amp;quot;
+summary = &amp;quot;&amp;quot;
+comments = true
+draft = true&lt;/p&gt;
+&lt;h2 id=&#34;2022重点&#34;&gt;2022重点
 &lt;/h2&gt;&lt;h3 id=&#34;选择&#34;&gt;选择
 &lt;/h3&gt;&lt;p&gt;&lt;strong&gt;CIA三特性&lt;/strong&gt;：C机密性，I完整性，A可用性&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;网络安全信息系统&lt;/strong&gt;（略偏）&lt;/p&gt;
