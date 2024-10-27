@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="网络信息安全概述 网络安全基础 信息社会主要特征\n物理与环境安全技术 物理安全概述 物理安全威胁\n(1)硬件木马：\n(2)硬件协同的恶意代码：\n(3)硬件安全漏洞利用：\n(4)基于软件漏洞攻击硬件实体：\n(5)基于环境攻击计算机实体：\n">
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="密码学 2020年1月1日《中华人民共和国密码法》正式施行。\n密码学主要由密码编码和密码分析两个部分组成。\n密码体制分类 根据密钥的特点，密码体制分为私钥和公钥密码体制两种，而介于私钥和公钥之间的密码体制称为混合密码体制。\n">
 <title>软考重点</title>
 
 <link rel='canonical' href='https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/'>
 
 <link rel="stylesheet" href="/scss/style.min.401682177c5aa4a6ac4ae608ecce2b200b01e2244cd5bfd104a4298836dd69d0.css"><meta property='og:title' content="软考重点">
-<meta property='og:description' content="网络信息安全概述 网络安全基础 信息社会主要特征\n物理与环境安全技术 物理安全概述 物理安全威胁\n(1)硬件木马：\n(2)硬件协同的恶意代码：\n(3)硬件安全漏洞利用：\n(4)基于软件漏洞攻击硬件实体：\n(5)基于环境攻击计算机实体：\n">
+<meta property='og:description' content="密码学 2020年1月1日《中华人民共和国密码法》正式施行。\n密码学主要由密码编码和密码分析两个部分组成。\n密码体制分类 根据密钥的特点，密码体制分为私钥和公钥密码体制两种，而介于私钥和公钥之间的密码体制称为混合密码体制。\n">
 <meta property='og:url' content='https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
 <meta property='og:type' content='article'><meta property='article:section' content='Rk' /><meta property='article:published_time' content='2022-08-29T13:29:04&#43;08:00'/><meta property='article:modified_time' content='2022-08-29T13:29:04&#43;08:00'/>
 <meta name="twitter:title" content="软考重点">
-<meta name="twitter:description" content="网络信息安全概述 网络安全基础 信息社会主要特征\n物理与环境安全技术 物理安全概述 物理安全威胁\n(1)硬件木马：\n(2)硬件协同的恶意代码：\n(3)硬件安全漏洞利用：\n(4)基于软件漏洞攻击硬件实体：\n(5)基于环境攻击计算机实体：\n">
+<meta name="twitter:description" content="密码学 2020年1月1日《中华人民共和国密码法》正式施行。\n密码学主要由密码编码和密码分析两个部分组成。\n密码体制分类 根据密钥的特点，密码体制分为私钥和公钥密码体制两种，而介于私钥和公钥之间的密码体制称为混合密码体制。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -271,6 +271,54 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
+    <li><a href="#密码体制分类">密码体制分类</a>
+      <ol>
+        <li><a href="#私钥密码体制">私钥密码体制</a></li>
+        <li><a href="#公钥密码体制">公钥密码体制</a></li>
+        <li><a href="#混合密码体制">混合密码体制</a></li>
+      </ol>
+    </li>
+    <li><a href="#常见密码算法">常见密码算法</a>
+      <ol>
+        <li><a href="#des算法">DES算法</a></li>
+        <li><a href="#rsa计算">RSA计算</a></li>
+        <li><a href="#国密">国密</a></li>
+      </ol>
+    </li>
+    <li><a href="#hash函数数字签名">HASH函数+数字签名</a>
+      <ol>
+        <li><a href="#hash函数">HASH函数</a></li>
+        <li><a href="#数字签名">数字签名</a></li>
+      </ol>
+    </li>
+  </ol>
+
+  <ol>
+    <li><a href="#iptables">iptables</a>
+      <ol>
+        <li><a href="#前置知识">前置知识</a></li>
+        <li><a href="#基本语法">基本语法</a></li>
+        <li><a href="#nat">NAT</a></li>
+      </ol>
+    </li>
+    <li><a href="#tcp_wrappers">TCP_Wrappers</a>
+      <ol>
+        <li><a href="#iptables和tcp_wrappers的区别">iptables和TCP_Wrappers的区别</a></li>
+        <li><a href="#配置">配置</a></li>
+      </ol>
+    </li>
+    <li><a href="#snorts">Snorts</a>
+      <ol>
+        <li><a href="#三种工作模式">三种工作模式</a></li>
+        <li><a href="#警报机制">警报机制</a></li>
+        <li><a href="#基础语法规则">基础语法/规则</a>
+          <ol>
+            <li><a href="#snort三个动作"><strong>Snort三个动作</strong></a></li>
+            <li><a href="#自定义规则">自定义规则</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
     <li><a href="#网络信息安全概述">网络信息安全概述</a>
       <ol>
         <li><a href="#网络安全基础">网络安全基础</a></li>
@@ -342,7 +390,328 @@
     <section class="article-content">
     
     
-    <h2 id="网络信息安全概述">网络信息安全概述
+    <h1 id="密码学">密码学
+</h1><p>2020年1月1日《中华人民共和国密码法》正式施行。</p>
+<p>密码学主要由<u>密码编码和密码分析</u>两个部分组成。</p>
+<h2 id="密码体制分类">密码体制分类
+</h2><p>根据密钥的特点，密码体制分为私钥和公钥密码体制两种，而介于私钥和公钥之间的密码体制称为混合密码体制。</p>
+<h3 id="私钥密码体制">私钥密码体制
+</h3><blockquote>
+<p>私钥密码体制又称为对称密码体制，指广泛应用的普通密码体制，该体制的特点是加密和解密使用相同的密钥。</p>
+</blockquote>
+<p>私钥密码典型算法有DES 、3DES、RC4、RC5、IDEA 、AES 、SM1、SM4等</p>
+<h3 id="公钥密码体制">公钥密码体制
+</h3><blockquote>
+<p>公钥密码体制又称为非对称密码体制，其基本原理是在加密和解密的过程中使用不同的密钥处理方式，其中，加密 密钥可以公开，而只需要把解密密钥安全存放即可。</p>
+</blockquote>
+<p>优点:</p>
+<ol>
+<li>密钥分发方便，能以公开方式分配加密密钥。</li>
+<li>密钥保管量少。</li>
+<li>支持数字签名。</li>
+</ol>
+<p>公钥密码典型算法有：RSA、椭圆曲线密码、SM2等。</p>
+<h3 id="混合密码体制">混合密码体制
+</h3><blockquote>
+<p>混合密码体制利用公钥密码体制分配私钥密码体制的密钥，消息的收发双方共用这个密钥，然后按照私钥密码体制 的方式，进行加密和解密运算。</p>
+</blockquote>
+<h2 id="常见密码算法">常见密码算法
+</h2><h3 id="des算法">DES算法
+</h3><blockquote>
+<p>DES (Data Encryption Standard) 是数据加密标准的简称，由IBM 公司研制。DES 是一个分组加密算法，能够支待 64 比特的明文块（分组）加密，秘钥长64位，但实际上是56位参与DES运算（第8、16、24、32、40、48、56、64 位是校验位），所以我们一般是记住其密钥长度为56 比特。DES 是世界上应用最广泛的密码算法。</p>
+</blockquote>
+<p>s盒计算</p>
+<p>注意3DES不是加密三次，而是两次加密一次解密。所以秘钥长度是112位。</p>
+<h3 id="rsa计算">RSA计算
+</h3><p>加密: C = M^e mod n</p>
+<p>解密: M = C^d mod n</p>
+<p>公钥: {e, n}</p>
+<p>私钥:{p, q, d}</p>
+<p>n = p*q   &mdash;p和q是素数(求n可以先列出前20个素数)</p>
+<p>函数  φ(n)=(q-1)*(p-1)</p>
+<p>e的选择: 0&lt; e &lt; φ(n)</p>
+<p>d的生成</p>
+<p>e d mod φ(n) ===1</p>
+<p>[k*φ(n) + 1 ]/e = d</p>
+<p>e*d + kφ(n) = 1</p>
+<h3 id="国密">国密
+</h3><blockquote>
+<p>目前，已经公布的国产密码算法主要有SM1分组密码算法、SM2 椭圆曲线公钥密码算法、SM3 密码杂凑算法、SM4 分组算法、SM9 标识密码算法</p>
+</blockquote>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027175105864.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027175105864"
+	
+	
+></p>
+<ol>
+<li>SM1 算法未公开，只能集成在芯片中。</li>
+<li>SM2 算法基于椭圆曲线，因1024位的RSA算法面临威胁，我国用SM2替换RSA算法。</li>
+<li>SM3 杂凑（哈希）算法主要用于数字签名及验证、消息认证码生成及验证、随机数生成。</li>
+<li>SM4 无线局域网标准的分组加密算法，对标AES。</li>
+<li>SM9 是标识密码算法主要用于身份认证，加密强度等同于3072位密钥的RSA加密算法。</li>
+</ol>
+<h2 id="hash函数数字签名">HASH函数+数字签名
+</h2><h3 id="hash函数">HASH函数
+</h3><p>常见的Hash 算法有MD5 、SHA 和SM3</p>
+<ol>
+<li>MD5 (Message Digest Algorithm-5) 算法以512 位数据块为单位来处理输入，产生128 位的消息摘要，即MD5 能产 生128 比特长度的哈希值。MD5 使用广泛，常用在文件完整性检查</li>
+<li>SHA (Secure Hash Algorithm) 算法与MD5 的设计原理类似，同样也以512 位数据块为单位来处理输入，产生160 位 的哈希值，具有比MD5 更强的安全性。SHA 算法的安全性不断改进，已发布的版本有SHA-2 、SHA-3 。SHA 产生的哈希值长度有SHA-224 、SHA-256 、SHA-384 、SHA-512 等。</li>
+<li>SM3 是国家密码管理局于2010 年公布的商用密码杂凑算法标准。该算法消息分组长度为512 比特，输出杂凑值长度 为256 比特，采用Merkle-Damgard 结构。</li>
+</ol>
+<h3 id="数字签名">数字签名
+</h3><p>数字签名(Digital Signature) 是指签名者使用私钥对待签名数据的杂凑值做密码运算得到的结果。该结果只能用签名 者的公钥进行验证，用于确认待签名数据的完整性、签名者身份的真实性和签名行为的抗抵赖性。</p>
+<ol>
+<li>一个数字签名方案一般由签名算法和验证算法组成。签名算法密钥是秘密的，只有签名的人掌握；而验证算法则是 公开的，以便他人验证。典型的数字签名方案有RSA 签名体制、Rabin签名体制、ElGamal 签名体制和DSS (Data Signature Standard) 标准。</li>
+<li>签名与加密的不同之处在于，加密的目的是保护信息不被非授权用户访问，而签名是使消息接收者确信信息的发送 者是谁，信息是否被他人篡改。</li>
+</ol>
+<h1 id="安全配置与管理">安全配置与管理
+</h1><ol>
+<li>Netfilter/Iptables</li>
+<li>TCP_Wrappers</li>
+<li>Snort</li>
+</ol>
+<h2 id="iptables">iptables
+</h2><blockquote>
+<p>管理防火墙规则的工具</p>
+<p>主要是网络层，针对IP数据包</p>
+<p>体现在对包内的IP地址、端口等信息的处理上</p>
+</blockquote>
+<h3 id="前置知识">前置知识
+</h3><p>默认内置五条规则链</p>
+<ul>
+<li>INPUT：处理入站数据包</li>
+<li>OUTPUT：处理出站数据包</li>
+<li>FORWARD：处理转发数据包</li>
+<li>PREROUTING链：在数据包达到本地主机前进行基本处理（DNAT）</li>
+<li>POSTROUTING链：在数据包离开本地主机后对数据包进行操作（SNAT）</li>
+</ul>
+<p>规则链之间的顺序</p>
+<p>入站：PREROUTING-INPUT
+出站：OUTPUT-POSTROUTING
+转发：PREROUTING-FORWARD-POSTROUTING</p>
+<p>内置四个表</p>
+<p>即filter表、nat表、mangle表和raw表。分别用于实现包过滤，网络地址转换，包重构和处理异常的功能。mangle和raw表用的少。</p>
+<ul>
+<li>
+<p><input checked="" disabled="" type="checkbox"> filter表：主要用于过滤数据包，该表根据系统管理员预定义的一组规则过滤符合条件的数据包。对于防火墙而 言，主要利用在filter表中指定的规则来实现<strong>对数据包的过滤</strong>。Filter表是默认的表，如果没有指定哪个表， iptables就默认使用filter表来执行所有命令。</p>
+</li>
+<li>
+<p><input checked="" disabled="" type="checkbox"> nat表：主要用于网络地址转换NAT</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> mangle表：<strong>主要提供修改数据包IP头部的功能</strong>，例如，修改数据包的TTL等。此外，mangle表中的规则还可以 对数据包打标记（mark），后续对于该数据包的处理可以用到这些标记，如策略路由。</p>
+</li>
+<li>
+<p><input disabled="" type="checkbox"> raw表：主要对收到的数据包在连接跟踪前进行处理。iptables提供一个有状态的防火墙，基于netfilter上建立了连接跟踪的特性，即connection tracking，简称conntrack。iptables在处理数据包时都会依赖之前已经判断过的数据包。例如一条NAT记录，在第一次处理过后就会被存储在conntrack的哈希表中，下次有相同的数据包，则复用处理结果。raw表提供的功能很简单：提供且仅提供一个让数据包绕过连接跟踪的框架。</p>
+</li>
+</ul>
+<p>规则表之间的顺序(优先级)：raw-mangle-nat-filter</p>
+<blockquote>
+<p>raw表:<code>iptables -t raw -A PREROUTING -d 192.168.56.102 -j NOTRACK</code></p>
+</blockquote>
+<blockquote>
+<p>mangl表:</p>
+<p>打上⼀个标签</p>
+<p><code>iptables -t mangle -A PREROUTING -i eth0 -p tcp --dport 80:443 -j MARK --set-mark 1 </code></p>
+<p><code>iptables -t mangle -A PREROUTING -i eth0 -p tcp --dport 20:21 -j MARK --set-mark 2</code></p>
+</blockquote>
+<h3 id="基本语法">基本语法
+</h3><p><code>iptables [-t 表名] 选项 [链名] [条件] [-j 控制类型]</code></p>
+<p><u>选项、链名、控制类型使用大写字母，其余均为小写</u></p>
+<p>常用管理选项汇总</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124841875.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027124841875"
+	
+	
+></p>
+<p>常见匹配条件汇总</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124953483.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027124953483"
+	
+	
+></p>
+<p>控制类型：</p>
+<ol>
+<li>ACCEPT：允许通过</li>
+<li>DROP：直接丢弃，不给出任何回应</li>
+<li>REJECT：拒绝通过，必要时会给出提示</li>
+<li>LOG：记录日志信息，然后传给下一条规 则继续匹配</li>
+<li>MASQUERADE：是SNAT的一种特殊形 式，适用于动态的地址分配。</li>
+<li>SNAT：源地址转换</li>
+<li>DNAT：目标地址转换。</li>
+</ol>
+<h3 id="nat">NAT
+</h3><p>分为两种：指Dnat和Snat两种。基于目的地址的转换，基于源地址的转换</p>
+<p>SNAT：将172.16.1.78转换成192.168.1.19</p>
+<p><code>iptables -t nat -A POSTROUTING -s 172.16.1.78 -j SNAT --to-source 192.168.1.19</code> • DNAT:访问192.168.1.19的端口就会转发到172.16.1.78的80端口</p>
+<p><code>iptables -t nat -A PREROUTING -d 192.168.1.19 -p tcp --dport 80 -j DNAT --to-destination 172.16.1.78</code></p>
+<h2 id="tcp_wrappers">TCP_Wrappers
+</h2><blockquote>
+<p>它被设计为一个介于外来服务请求和系统服务回应的中间处理软件。</p>
+</blockquote>
+<p>最常见的用法是与inetd（网络请求守护进程）一起使用。</p>
+<p>Telnet、SSH、FTP、POP和SMTP等很多网络服务都会用到TCP_Wrappers，它被设计为一个介于外来服务请求 和系统服务回应中间处理软件</p>
+<p>例如:<em>以ssh为例，每当ssh的连接请求时，先读取系统管理员所设置的访问控制文件，符合要求，则会把这次连接原封 不动的转给ssh进程，由ssh完成后续工作，如果这次连接发起的IP不符合访问控制文件中的设置，则会中断连接 请求。拒绝ssh服务。</em></p>
+<h3 id="iptables和tcp_wrappers的区别">iptables和TCP_Wrappers的区别
+</h3><ol>
+<li>iptables是防火墙软件，归于第4层传输层，作用于第3层和第4层，对IP、port、传输层协议（tcp、udp）进行 限定。</li>
+<li>TCP_Wrappers是安全工具，归于第7层应用层，作用于第3层和第7层，对IP、应用层协议（ssh、http、ftp等） 进行限定。</li>
+<li>由于配置中涉及应用层协议telnetd、sshd、ftpd等，虽然配置中有第三层的IP信息，可同时作用于第3层和第7 层，但仍然将TCP_Wapper归于第7层应用层。</li>
+<li>执行顺序：iptables-》TCP_Wrappers-》本地服务</li>
+<li>Linux 本身有两层安全防火墙，通过 IP过滤机制的iptables实现第一层防护。</li>
+</ol>
+<h3 id="配置">配置
+</h3><p>通过两个配置文件来控制：</p>
+<p>/etc/hosts.allow 定义允许的访问 /etc/hosts.deny 定义拒绝的访问</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">允许个别拒绝所有： hosts.allow 文件添加单个允许的策略，hosts.deny 文件添加 all
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">拒绝个别允许所有： hosts.deny 文件添加单个拒绝的策略，hosts.allow 文件为空
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>格式<code>daemon_list : client_list [[[: option] : option] ...]</code></p>
+<p><em>deamon:守护进程</em></p>
+<p>如果有掩码，则必须使用完整格式的掩码；</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027142058477.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027142058477"
+	
+	
+></p>
+<h2 id="snorts">Snorts
+</h2><blockquote>
+<p>Snort就是一个功能强大的<u>轻量级的网络入侵检测系统</u>(开源第三方)</p>
+</blockquote>
+<p>实时流量分析,有警报,可移植性好,检测不同的攻击.</p>
+<h3 id="三种工作模式">三种工作模式
+</h3><p>Snort有三种工作模式：嗅探器、包记录、网络入侵检测模式。</p>
+<ol>
+<li>
+<p>作为数据包嗅探器,从网络中读取数据包，并将其显示在使用者的控制台上。(不断滚动的显示)可以利用如下表所示的参数实现嗅探器功能。</p>
+<p><code>-v</code>：开启“Verbose”模式，显示详细的日志信息。</p>
+<p><code>-e</code>：输出数据链路层信息。</p>
+<p><code>-d</code>：显示数据包的应用层数据内容。</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130025127.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027130025127"
+	
+	
+></p>
+</li>
+<li>
+<p>包记录</p>
+<p>能把截获到的数据包记录到指定的日志文件中，此时需要指定日志文件的存放目录。以下的参数，可以帮助 完成数据包分析功能。</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130349397.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027130349397"
+	
+	
+></p>
+<p><code> ./snort -l /var/log/snort</code></p>
+</li>
+<li>
+<p>网络入侵检测</p>
+<p>可以匹配用户自定义的规则 , 帮助实现网络入侵检测功能的参数</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130452533.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027130452533"
+	
+	
+></p>
+</li>
+</ol>
+<p>启动入侵检测功能:<code>./snort -ved -l /var/log/snort -c /etc/snort/snort.conf</code></p>
+<h3 id="警报机制">警报机制
+</h3><p>snort的警报机制有<u>full、fast、socket、none、smb(winpopup)和syslog</u>等6种。其中，前4种警报机制可以使用-A 参数设置，其说明如下表。</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027131335386.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027131335386"
+	
+	
+></p>
+<h3 id="基础语法规则">基础语法/规则
+</h3><p>作为网络入侵检测系统，拥有自己的规则语言。从语法上看，该规则语言非常简单，又足够强大。</p>
+<p>从逻辑上分为<u>规则头和规则选项</u>两部分
+规则头: 规则动作、协议类型、源/目的地址 （对于特定网络地址还包括子网掩码）以及源/目的端口；
+规则选项: 报警消息和异常包的特征码信息</p>
+<p>最基本的规则只包含rules_action、protocol、ip_addr（包括src_ip和 dst_ip）以及port（包括src_port和dst_port）4个域</p>
+<h4 id="snort三个动作"><strong>Snort三个动作</strong>
+</h4><p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135218032.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027135218032"
+	
+	
+></p>
+<p>方向“-&gt;”表示定义规则所适用的通信方向，其左边是源地址，右边是目的地址。方向“&lt;&gt;”表示在源地址和目的 地址之间的通信</p>
+<p><code>alert tcp !192.168.0.0/24 any -&gt; 192.168.0.0/24 1024:65535(msg:”tcp traffice”;)</code></p>
+<p>这条规则使得将从非192.168.0.0/24网络的任意端口到内部网络192.168.0.0/24的1024至65535端口的数据包发 出警报。</p>
+<p>规则选项组成了入侵检测引擎的核心，它被包含着一对小括号中，既易用又强大还灵活。所有的规则 选项用分号“；”隔开，包括用冒号“:”分开的规则选项关键字和其参数。支持如下表所示的选项.</p>
+<p><img src="D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135519582.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241027135519582"
+	
+	
+></p>
+<h4 id="自定义规则">自定义规则
+</h4><p>了解了规则的语法后，可以为实际的应用添加自制的规则。具体步骤如下： 在snort.conf文件中$RULE_PATH变量指定的路径/etc/snort/rules目录下创建一个自制规则文件，命名new_rule.rules。 在new_rule.rules规则文件中，写入新添的规则，如加入以下规则： <code>alert tcp !192.168.0.0/24 any -&gt; 192.168.0.0/24 80 (msg:”Web traffic”;) </code>该规则表示警报从外网的任意端口到内外192.168.0.0/24的所有Web通信。 使用gedit文本编辑器打开<code>/etc/snort/snort.conf</code>文件，在文件末端添加如下的语句：<code>include new_rule.rules</code>重启，以使新的规则生效</p>
+<p>例如:</p>
+<ol>
+<li>记录所有登录到一个特定主机的数据包：<code>log tcp any any -&gt; 192.168.1.1/32 23</code></li>
+<li>这条规则允许双向的从内部到其他站点的http包： <code>pass tcp any 80 &lt; &gt; 192.168.1.0/24 any </code></li>
+<li>这一条规则记录了所有到达本地主机的icmp数据包：<code> log icmp any any -&gt; 192.168.1.0/24 any</code></li>
+<li>这条规则将会发现SYN FIN扫描：<code> alert tcp any any -&gt; 192.168.1.0/24 any (msg:&quot;SYN-FIN scan!&quot;; flags: SF;)</code></li>
+<li>这条规则将进行基于内容的查找以发现溢出攻击： <code>alert tcp any any -&gt; 192.168.1.0/24 143 (msg:&quot;IMAP Buffer overflow!&quot;; content:&quot;|90E8 C0FF FFFF|/bin/sh&quot;;)</code></li>
+</ol>
+<h2 id="网络信息安全概述">网络信息安全概述
 </h2><h3 id="网络安全基础">网络安全基础
 </h3><p>信息社会主要特征</p>
 <h2 id="物理与环境安全技术">物理与环境安全技术
@@ -470,12 +839,14 @@
 
     
 
+    
+
     <section class="copyright">
         &copy; 
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 75508字·共 18篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 80485字·共 18篇文章</br><span><p>
         
     </section>
     
