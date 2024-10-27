@@ -540,7 +540,9 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
         <pubDate>Mon, 29 Aug 2022 13:29:04 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/rk/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/</guid>
-        <description>&lt;h1 id=&#34;密码学&#34;&gt;密码学
+        <description>&lt;ol&gt;
+&lt;li&gt;
+&lt;h1 id=&#34;密码学&#34;&gt;密码学
 &lt;/h1&gt;&lt;p&gt;2020年1月1日《中华人民共和国密码法》正式施行。&lt;/p&gt;
 &lt;p&gt;密码学主要由&lt;u&gt;密码编码和密码分析&lt;/u&gt;两个部分组成。&lt;/p&gt;
 &lt;h2 id=&#34;密码体制分类&#34;&gt;密码体制分类
@@ -588,7 +590,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;目前，已经公布的国产密码算法主要有SM1分组密码算法、SM2 椭圆曲线公钥密码算法、SM3 密码杂凑算法、SM4 分组算法、SM9 标识密码算法&lt;/p&gt;
 &lt;/blockquote&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027175105864.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027175105864-1730023664154-1.png&#34;
 	
 	
 	
@@ -674,7 +676,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;/h3&gt;&lt;p&gt;&lt;code&gt;iptables [-t 表名] 选项 [链名] [条件] [-j 控制类型]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;u&gt;选项、链名、控制类型使用大写字母，其余均为小写&lt;/u&gt;&lt;/p&gt;
 &lt;p&gt;常用管理选项汇总&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124841875.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124841875-1730023664154-3.png&#34;
 	
 	
 	
@@ -685,7 +687,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;常见匹配条件汇总&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124953483.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027124953483-1730023664154-5.png&#34;
 	
 	
 	
@@ -743,7 +745,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;/div&gt;&lt;p&gt;格式&lt;code&gt;daemon_list : client_list [[[: option] : option] ...]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;deamon:守护进程&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;如果有掩码，则必须使用完整格式的掩码；&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027142058477.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027142058477-1730023664154-7.png&#34;
 	
 	
 	
@@ -766,7 +768,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;&lt;code&gt;-v&lt;/code&gt;：开启“Verbose”模式，显示详细的日志信息。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;-e&lt;/code&gt;：输出数据链路层信息。&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;-d&lt;/code&gt;：显示数据包的应用层数据内容。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130025127.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130025127-1730023664154-9.png&#34;
 	
 	
 	
@@ -780,7 +782,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;li&gt;
 &lt;p&gt;包记录&lt;/p&gt;
 &lt;p&gt;能把截获到的数据包记录到指定的日志文件中，此时需要指定日志文件的存放目录。以下的参数，可以帮助 完成数据包分析功能。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130349397.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130349397-1730023664154-11.png&#34;
 	
 	
 	
@@ -795,7 +797,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;li&gt;
 &lt;p&gt;网络入侵检测&lt;/p&gt;
 &lt;p&gt;可以匹配用户自定义的规则 , 帮助实现网络入侵检测功能的参数&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130452533.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027130452533-1730023664155-13.png&#34;
 	
 	
 	
@@ -810,7 +812,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;启动入侵检测功能:&lt;code&gt;./snort -ved -l /var/log/snort -c /etc/snort/snort.conf&lt;/code&gt;&lt;/p&gt;
 &lt;h3 id=&#34;警报机制&#34;&gt;警报机制
 &lt;/h3&gt;&lt;p&gt;snort的警报机制有&lt;u&gt;full、fast、socket、none、smb(winpopup)和syslog&lt;/u&gt;等6种。其中，前4种警报机制可以使用-A 参数设置，其说明如下表。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027131335386.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027131335386-1730023664155-15.png&#34;
 	
 	
 	
@@ -827,7 +829,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 规则选项: 报警消息和异常包的特征码信息&lt;/p&gt;
 &lt;p&gt;最基本的规则只包含rules_action、protocol、ip_addr（包括src_ip和 dst_ip）以及port（包括src_port和dst_port）4个域&lt;/p&gt;
 &lt;h4 id=&#34;snort三个动作&#34;&gt;&lt;strong&gt;Snort三个动作&lt;/strong&gt;
-&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135218032.png&#34;
+&lt;/h4&gt;&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135218032-1730023664155-17.png&#34;
 	
 	
 	
@@ -841,7 +843,7 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;p&gt;&lt;code&gt;alert tcp !192.168.0.0/24 any -&amp;gt; 192.168.0.0/24 1024:65535(msg:”tcp traffice”;)&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;这条规则使得将从非192.168.0.0/24网络的任意端口到内部网络192.168.0.0/24的1024至65535端口的数据包发 出警报。&lt;/p&gt;
 &lt;p&gt;规则选项组成了入侵检测引擎的核心，它被包含着一对小括号中，既易用又强大还灵活。所有的规则 选项用分号“；”隔开，包括用冒号“:”分开的规则选项关键字和其参数。支持如下表所示的选项.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135519582.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5crk%5cassets%5cimage-20241027135519582-1730023664155-19.png&#34;
 	
 	
 	
@@ -860,6 +862,8 @@ R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房
 &lt;li&gt;这一条规则记录了所有到达本地主机的icmp数据包：&lt;code&gt; log icmp any any -&amp;gt; 192.168.1.0/24 any&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;这条规则将会发现SYN FIN扫描：&lt;code&gt; alert tcp any any -&amp;gt; 192.168.1.0/24 any (msg:&amp;quot;SYN-FIN scan!&amp;quot;; flags: SF;)&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;这条规则将进行基于内容的查找以发现溢出攻击： &lt;code&gt;alert tcp any any -&amp;gt; 192.168.1.0/24 143 (msg:&amp;quot;IMAP Buffer overflow!&amp;quot;; content:&amp;quot;|90E8 C0FF FFFF|/bin/sh&amp;quot;;)&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&#34;网络信息安全概述&#34;&gt;网络信息安全概述
 &lt;/h2&gt;&lt;h3 id=&#34;网络安全基础&#34;&gt;网络安全基础
