@@ -271,162 +271,174 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#通用语法及分类">通用语法及分类</a>
+    <li><a href="#基础篇">基础篇</a>
       <ol>
-        <li><a href="#ddl数据定义语言">DDL（数据定义语言）</a>
+        <li><a href="#通用语法及分类">通用语法及分类</a>
           <ol>
-            <li><a href="#数据库操作">数据库操作</a></li>
-            <li><a href="#表操作">表操作</a></li>
+            <li><a href="#ddl数据定义语言">DDL（数据定义语言）</a>
+              <ol>
+                <li><a href="#数据库操作">数据库操作</a></li>
+                <li><a href="#表操作">表操作</a></li>
+              </ol>
+            </li>
+            <li><a href="#dml数据操作语言">DML（数据操作语言）</a>
+              <ol>
+                <li><a href="#添加数据">添加数据</a></li>
+                <li><a href="#更新和删除数据">更新和删除数据</a></li>
+              </ol>
+            </li>
+            <li><a href="#dql数据查询语言">DQL（数据查询语言）</a>
+              <ol>
+                <li><a href="#基础查询">基础查询</a></li>
+                <li><a href="#条件查询">条件查询</a></li>
+                <li><a href="#聚合查询聚合函数">聚合查询（聚合函数）</a></li>
+                <li><a href="#分组查询">分组查询</a></li>
+                <li><a href="#排序查询">排序查询</a></li>
+                <li><a href="#分页查询">分页查询</a></li>
+                <li><a href="#dql执行顺序">DQL执行顺序</a></li>
+              </ol>
+            </li>
+            <li><a href="#dcl">DCL</a>
+              <ol>
+                <li><a href="#管理用户">管理用户</a></li>
+                <li><a href="#权限控制">权限控制</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
-        <li><a href="#dml数据操作语言">DML（数据操作语言）</a>
+        <li><a href="#函数">函数</a>
           <ol>
-            <li><a href="#添加数据">添加数据</a></li>
-            <li><a href="#更新和删除数据">更新和删除数据</a></li>
+            <li><a href="#字符串函数">字符串函数</a></li>
+            <li><a href="#数值函数">数值函数</a></li>
+            <li><a href="#日期函数">日期函数</a></li>
+            <li><a href="#流程函数">流程函数</a></li>
           </ol>
         </li>
-        <li><a href="#dql数据查询语言">DQL（数据查询语言）</a>
+        <li><a href="#约束">约束</a>
           <ol>
-            <li><a href="#基础查询">基础查询</a></li>
-            <li><a href="#条件查询">条件查询</a></li>
-            <li><a href="#聚合查询聚合函数">聚合查询（聚合函数）</a></li>
-            <li><a href="#分组查询">分组查询</a></li>
-            <li><a href="#排序查询">排序查询</a></li>
-            <li><a href="#分页查询">分页查询</a></li>
-            <li><a href="#dql执行顺序">DQL执行顺序</a></li>
+            <li><a href="#常用约束">常用约束</a></li>
+            <li><a href="#外键约束">外键约束</a>
+              <ol>
+                <li><a href="#删除更新行为">删除/更新行为</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
-        <li><a href="#dcl">DCL</a>
+        <li><a href="#多表查询">多表查询</a>
           <ol>
-            <li><a href="#管理用户">管理用户</a></li>
-            <li><a href="#权限控制">权限控制</a></li>
+            <li><a href="#多表关系">多表关系</a>
+              <ol>
+                <li><a href="#一对多">一对多</a></li>
+                <li><a href="#多对多">多对多</a></li>
+                <li><a href="#一对一">一对一</a></li>
+              </ol>
+            </li>
+            <li><a href="#查询">查询</a></li>
+            <li><a href="#内连接查询">内连接查询</a></li>
+            <li><a href="#外连接查询">外连接查询</a></li>
+            <li><a href="#自连接查询">自连接查询</a></li>
+            <li><a href="#联合查询-union-union-all">联合查询 union, union all</a>
+              <ol>
+                <li><a href="#注意事项-7">注意事项</a></li>
+              </ol>
+            </li>
+            <li><a href="#子查询">子查询</a>
+              <ol>
+                <li><a href="#标量子查询">标量子查询</a></li>
+                <li><a href="#列子查询">列子查询</a></li>
+                <li><a href="#行子查询">行子查询</a></li>
+                <li><a href="#表子查询">表子查询</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#函数">函数</a>
+    <li><a href="#总结image-20230507195537239mdpad25e5259b25be25e725892587image-20230507195537239png">总结：<img src="../../../mdpad/%25E5%259B%25BE%25E7%2589%2587/image-20230507195537239.png" alt="image-20230507195537239"></a>
       <ol>
-        <li><a href="#字符串函数">字符串函数</a></li>
-        <li><a href="#数值函数">数值函数</a></li>
-        <li><a href="#日期函数">日期函数</a></li>
-        <li><a href="#流程函数">流程函数</a></li>
-      </ol>
-    </li>
-    <li><a href="#约束">约束</a>
-      <ol>
-        <li><a href="#常用约束">常用约束</a></li>
-        <li><a href="#外键约束">外键约束</a>
+        <li><a href="#事务">事务</a>
           <ol>
-            <li><a href="#删除更新行为">删除/更新行为</a></li>
+            <li><a href="#四大特性acid">四大特性ACID</a></li>
+            <li><a href="#并发事务">并发事务</a></li>
           </ol>
         </li>
       </ol>
     </li>
-    <li><a href="#多表查询">多表查询</a>
+    <li><a href="#进阶篇">进阶篇</a>
       <ol>
-        <li><a href="#多表关系">多表关系</a>
+        <li><a href="#存储引擎">存储引擎</a>
           <ol>
-            <li><a href="#一对多">一对多</a></li>
-            <li><a href="#多对多">多对多</a></li>
-            <li><a href="#一对一">一对一</a></li>
+            <li><a href="#innodb">InnoDB</a></li>
+            <li><a href="#myisam">MyISAM</a></li>
+            <li><a href="#memory">Memory</a></li>
+            <li><a href="#存储引擎特点">存储引擎特点</a></li>
+            <li><a href="#存储引擎的选择">存储引擎的选择</a></li>
           </ol>
         </li>
-        <li><a href="#查询">查询</a></li>
-        <li><a href="#内连接查询">内连接查询</a></li>
-        <li><a href="#外连接查询">外连接查询</a></li>
-        <li><a href="#自连接查询">自连接查询</a></li>
-        <li><a href="#联合查询-union-union-all">联合查询 union, union all</a>
+        <li><a href="#性能分析">性能分析</a>
           <ol>
-            <li><a href="#注意事项-7">注意事项</a></li>
+            <li><a href="#查看执行频次">查看执行频次</a></li>
+            <li><a href="#慢查询日志">慢查询日志</a></li>
+            <li><a href="#profile">profile</a></li>
+            <li><a href="#explain">explain</a></li>
           </ol>
         </li>
-        <li><a href="#子查询">子查询</a>
+        <li><a href="#索引">索引</a>
           <ol>
-            <li><a href="#标量子查询">标量子查询</a></li>
-            <li><a href="#列子查询">列子查询</a></li>
-            <li><a href="#行子查询">行子查询</a></li>
-            <li><a href="#表子查询">表子查询</a></li>
+            <li><a href="#索引结构">索引结构</a>
+              <ol>
+                <li><a href="#b-tree">B-Tree</a></li>
+                <li><a href="#btree">B+Tree</a></li>
+                <li><a href="#hash">Hash</a></li>
+                <li><a href="#面试题">面试题</a></li>
+              </ol>
+            </li>
+            <li><a href="#索引分类">索引分类</a>
+              <ol>
+                <li><a href="#思考题">思考题</a></li>
+              </ol>
+            </li>
+            <li><a href="#语法">语法</a></li>
+            <li><a href="#使用规则">使用规则</a>
+              <ol>
+                <li><a href="#最左前缀法则">最左前缀法则</a></li>
+                <li><a href="#索引失效情况">索引失效情况</a></li>
+                <li><a href="#sql-提示">SQL 提示</a></li>
+                <li><a href="#覆盖索引回表查询">覆盖索引&amp;回表查询</a></li>
+                <li><a href="#前缀索引">前缀索引</a></li>
+                <li><a href="#单列索引联合索引">单列索引&amp;联合索引</a></li>
+              </ol>
+            </li>
+            <li><a href="#设计原则">设计原则</a></li>
+          </ol>
+        </li>
+        <li><a href="#sql-优化">SQL 优化</a>
+          <ol>
+            <li><a href="#插入数据">插入数据</a></li>
+            <li><a href="#主键优化">主键优化</a></li>
+            <li><a href="#order-by优化">order by优化</a></li>
+            <li><a href="#group-by优化">group by优化</a></li>
+            <li><a href="#limit优化">limit优化</a></li>
+            <li><a href="#count优化">count优化</a></li>
+            <li><a href="#update优化避免行锁升级为表锁">update优化（避免行锁升级为表锁）</a></li>
           </ol>
         </li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li><a href="#事务">事务</a>
+    <li><a href="#数据类型">数据类型</a>
       <ol>
-        <li><a href="#四大特性acid">四大特性ACID</a></li>
-        <li><a href="#并发事务">并发事务</a></li>
+        <li><a href="#整型">整型</a></li>
+        <li><a href="#浮点型">浮点型</a></li>
+        <li><a href="#日期和时间">日期和时间</a></li>
+        <li><a href="#字符串">字符串</a></li>
+        <li><a href="#二进制类型">二进制类型</a></li>
       </ol>
     </li>
-  </ol>
-
-  <ol>
-    <li><a href="#存储引擎">存储引擎</a>
-      <ol>
-        <li><a href="#innodb">InnoDB</a></li>
-        <li><a href="#myisam">MyISAM</a></li>
-        <li><a href="#memory">Memory</a></li>
-        <li><a href="#存储引擎特点">存储引擎特点</a></li>
-        <li><a href="#存储引擎的选择">存储引擎的选择</a></li>
-      </ol>
-    </li>
-    <li><a href="#性能分析">性能分析</a>
-      <ol>
-        <li><a href="#查看执行频次">查看执行频次</a></li>
-        <li><a href="#慢查询日志">慢查询日志</a></li>
-        <li><a href="#profile">profile</a></li>
-        <li><a href="#explain">explain</a></li>
-      </ol>
-    </li>
-    <li><a href="#索引">索引</a>
-      <ol>
-        <li><a href="#索引结构">索引结构</a>
-          <ol>
-            <li><a href="#b-tree">B-Tree</a></li>
-            <li><a href="#btree">B+Tree</a></li>
-            <li><a href="#hash">Hash</a></li>
-            <li><a href="#面试题">面试题</a></li>
-          </ol>
-        </li>
-        <li><a href="#索引分类">索引分类</a>
-          <ol>
-            <li><a href="#思考题">思考题</a></li>
-          </ol>
-        </li>
-        <li><a href="#语法">语法</a></li>
-        <li><a href="#使用规则">使用规则</a>
-          <ol>
-            <li><a href="#最左前缀法则">最左前缀法则</a></li>
-            <li><a href="#索引失效情况">索引失效情况</a></li>
-            <li><a href="#sql-提示">SQL 提示</a></li>
-            <li><a href="#覆盖索引回表查询">覆盖索引&amp;回表查询</a></li>
-            <li><a href="#前缀索引">前缀索引</a></li>
-            <li><a href="#单列索引联合索引">单列索引&amp;联合索引</a></li>
-          </ol>
-        </li>
-        <li><a href="#设计原则">设计原则</a></li>
-      </ol>
-    </li>
-    <li><a href="#sql-优化">SQL 优化</a>
-      <ol>
-        <li><a href="#插入数据">插入数据</a></li>
-        <li><a href="#主键优化">主键优化</a></li>
-        <li><a href="#order-by优化">order by优化</a></li>
-        <li><a href="#group-by优化">group by优化</a></li>
-        <li><a href="#limit优化">limit优化</a></li>
-        <li><a href="#count优化">count优化</a></li>
-        <li><a href="#update优化避免行锁升级为表锁">update优化（避免行锁升级为表锁）</a></li>
-      </ol>
-    </li>
-  </ol>
-
-  <ol>
-    <li><a href="#整型">整型</a></li>
-    <li><a href="#浮点型">浮点型</a></li>
-    <li><a href="#日期和时间">日期和时间</a></li>
-    <li><a href="#字符串">字符串</a></li>
-    <li><a href="#二进制类型">二进制类型</a></li>
+    <li><a href="#权限一览表">权限一览表</a></li>
+    <li><a href="#图形化界面工具">图形化界面工具</a></li>
+    <li><a href="#安装">安装</a></li>
+    <li><a href="#小技巧">小技巧</a></li>
+    <li><a href="#后续内容">后续内容</a></li>
   </ol>
 </nav>
         </div>
@@ -480,6 +492,20 @@
             </div>
         
 
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 35 分钟
+                </time>
+            </div>
         
     </footer>
     
@@ -3224,6 +3250,30 @@ InnoDB 在执行 count(*) 时，需要把数据一行一行地从引擎里面读
 
 
     
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
 </article>
 
     
@@ -3336,7 +3386,7 @@ InnoDB 在执行 count(*) 时，需要把数据一行一行地从引擎里面读
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 80485字·共 18篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 82739字·共 18篇文章</br><span><p>
         
     </section>
     

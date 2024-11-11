@@ -273,14 +273,21 @@
   <ol>
     <li>
       <ol>
-        <li><a href="#1-拉取镜像">1. 拉取镜像</a></li>
-        <li><a href="#2-使用-docker-compose-启动靶场并指定端口">2. 使用 <code>docker-compose</code> 启动靶场并指定端口</a></li>
-        <li><a href="#3-查看当前所有镜像">3. 查看当前所有镜像</a></li>
-        <li><a href="#4-查看正在运行的容器">4. 查看正在运行的容器</a></li>
-        <li><a href="#5-关闭所有开启的容器">5. 关闭所有开启的容器</a></li>
-        <li><a href="#6-删除所有容器">6. 删除所有容器</a></li>
-        <li><a href="#7-删除所有镜像">7. 删除所有镜像</a></li>
-        <li><a href="#8-查看容器日志">8. 查看容器日志</a></li>
+        <li>
+          <ol>
+            <li><a href="#1-拉取镜像">1. 拉取镜像</a></li>
+            <li><a href="#2-使用-docker-compose-启动靶场并指定端口">2. 使用 <code>docker-compose</code> 启动靶场并指定端口</a></li>
+            <li><a href="#3-查看当前所有镜像">3. 查看当前所有镜像</a></li>
+            <li><a href="#4-查看正在运行的容器">4. 查看正在运行的容器</a></li>
+            <li><a href="#5-关闭所有开启的容器">5. 关闭所有开启的容器</a></li>
+            <li><a href="#6-删除所有容器">6. 删除所有容器</a></li>
+            <li><a href="#7-删除镜像">7. 删除镜像</a></li>
+            <li><a href="#8-查看容器日志">8. 查看容器日志</a></li>
+            <li><a href="#9查看镜像使用磁盘空间情况">9.查看镜像使用磁盘空间情况</a></li>
+            <li><a href="#10清理无用资源">10.清理无用资源</a></li>
+            <li><a href="#11查看容器日志">11.查看容器日志</a></li>
+          </ol>
+        </li>
       </ol>
     </li>
   </ol>
@@ -336,6 +343,20 @@
             </div>
         
 
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
         
     </footer>
     
@@ -462,14 +483,43 @@
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker rm $(docker ps -aq)
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="7-删除所有镜像">7. 删除所有镜像
+</div><h3 id="7-删除镜像">7. 删除镜像
 </h3><p>如果需要删除所有镜像，使用以下命令（操作需谨慎）：</p>
+<p>删除特定镜像</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker rmi &lt;IMAGE_ID或IMAGE_NAME&gt;
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>删除所有镜像</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker rmi $(docker images -q)
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>强制删除加上<code>-f</code>参数</p>
+<p>删除未使用的镜像</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker image prune
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>加上 <code>-a</code> 选项可以删除所有未被使用的镜像</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker image prune -a
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="8-查看容器日志">8. 查看容器日志
@@ -480,6 +530,37 @@
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker logs 容器ID或容器名
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="9查看镜像使用磁盘空间情况">9.查看镜像使用磁盘空间情况
+</h3><p><code>docker system df</code> 命令用于查看 Docker 使用的磁盘空间情况，包括镜像、容器、卷和构建缓存的使用情况。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker system df
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>docker system df -verbose</code> 显示更详细的输出，包括每个镜像、容器和卷的具体信息。</p>
+<h3 id="10清理无用资源">10.清理无用资源
+</h3><p>配合 <code>docker system prune</code> 命令，可以清理不再使用的资源，以释放磁盘空间。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker system prune -f
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>在 <code>docker images -q</code> 中，<code>-q</code> 是 <code>--quiet</code> 的简写，表示 <strong>安静模式</strong>。使用该选项时，<code>docker images</code> 命令只输出镜像的 ID，而不会显示其他详细信息（如仓库名、标签、大小等）。这样可以方便地将镜像 ID 列表传递给其他命令。</em></p>
+<h3 id="11查看容器日志">11.查看容器日志
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">docker logs &lt;container_id&gt;
 </span></span></code></pre></td></tr></table>
 </div>
 </div>
@@ -496,6 +577,30 @@
     </footer>
 
 
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
     
 </article>
 
@@ -635,7 +740,7 @@
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 80485字·共 18篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 82739字·共 18篇文章</br><span><p>
         
     </section>
     
