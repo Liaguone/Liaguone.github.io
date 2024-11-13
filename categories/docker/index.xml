@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Docker on Liagu&#39; blog</title>
+        <link>https://hack.liagu-one.top/categories/docker/</link>
+        <description>Recent content in Docker on Liagu&#39; blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Liagu</copyright>
+        <lastBuildDate>Tue, 12 Nov 2024 18:30:55 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/docker/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>GZCTF环境部署</title>
+        <link>https://hack.liagu-one.top/p/gzctf%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</link>
+        <pubDate>Tue, 12 Nov 2024 18:30:55 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/p/gzctf%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</guid>
+        <description>&lt;p&gt;新生赛GZCTF环境部署&lt;/p&gt;
+&lt;p&gt;以下是服务器安装完GZCTF后的操作&lt;/p&gt;
+&lt;h2 id=&#34;制作镜像&#34;&gt;制作镜像
+&lt;/h2&gt;&lt;p&gt;AI辅助，制作很简单，需要Dockerfile，docker-compose.ym，题目源代码，并且网上有相应的模板。&lt;a class=&#34;link&#34; href=&#34;https://github.com/CTF-Archives/ctf-docker-template/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;题目模板&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;动态flag实现&#34;&gt;动态flag实现
+&lt;/h2&gt;&lt;p&gt;flag.sh 配置&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;#!/bin/sh	#必需的东西没什么好讲的
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;cp&#34;&gt;&lt;/span&gt;sed -i &lt;span class=&#34;s2&#34;&gt;&amp;#34;s/flag{testflag}/&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$GZCTF_FLAG&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;/&amp;#34;&lt;/span&gt; /var/www/html/index.php &lt;span class=&#34;c1&#34;&gt;#使用平台的动态flag替换&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;index.php中的flag，这里我使用的平台为GZCTF，因此动态flag环境变量为&lt;span class=&#34;nv&#34;&gt;$GZCTF_FLAG&lt;/span&gt;，其他平台一般为&lt;span class=&#34;nv&#34;&gt;$FLAG&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;GZCTF_FLAG&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;	&lt;span class=&#34;c1&#34;&gt;#环境变量置空，防止flag泄露&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;接下来编写Dockerfile&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;FROM ctftraining/base_image_nginx_mysql_php_56 &lt;span class=&#34;c1&#34;&gt;#web题docker基础镜像，这里使用ctftraing打包好&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;的，包含了基础的nginx，mysql，php环境，并且会自动运行flag.sh脚本&lt;span class=&#34;o&#34;&gt;(&lt;/span&gt;后面会提到&lt;span class=&#34;o&#34;&gt;)&lt;/span&gt;，本题使用php环境。
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;COPY src /var/www/html &lt;span class=&#34;c1&#34;&gt;#  将你编写的网页源码复制到docker容器中，这里为php网页，因此只需要&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;复制源码到/var/www/html就可以了，其他类型网页按照实际部署情况COPY到docker中相应目录下就可以了
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;RUN mv /var/www/html/flag.sh /  &lt;span class=&#34;c1&#34;&gt;#把你源码中的flag.sh复制到根目录以便自动执行&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;o&#34;&gt;&amp;amp;&amp;amp;&lt;/span&gt; chmod +x /flag.sh  &lt;span class=&#34;c1&#34;&gt;#添加运行权限&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;使用build命令，构建本地的题目镜像&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;docker build -t . &lt;/code&gt; 或者&lt;code&gt;docker-compose up -d &lt;/code&gt;&lt;/p&gt;
+&lt;h2 id=&#34;上传镜像&#34;&gt;上传镜像
+&lt;/h2&gt;&lt;p&gt;这里推送 Docker 镜像到Github Registry,不过镜像保存途径主要为docker hub与github的镜像仓，但是github用久了，还是介绍推送镜像至Github的镜像仓库吧。&lt;/p&gt;
+&lt;p&gt;GitHub 提供了一个名为 GitHub Container Registry 的服务（即packages），可以存储和管理 Docker 镜像。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;首先构建镜像，Docker镜像已经存在于本地，可以使用以下命令构建镜像：&lt;code&gt;  docker build -t &amp;lt;your-image-name&amp;gt; .&lt;/code&gt;&lt;strong&gt;前提是已经登录且有权限&lt;/strong&gt;，获取Github的个人访问令牌（PAT），即Personal Access Token，需要确保 PAT 具有 &lt;code&gt;read:packages&lt;/code&gt; 和 &lt;code&gt;write:packages&lt;/code&gt; 权限。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;推送镜像&#34;&gt;推送镜像
+&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;登录 GitHub Container Registry：&lt;/strong&gt; 在终端或命令行中，使用 GitHub 用户名和 GitHub 的个人访问令牌（PAT）登录 GitHub Container Registry。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &amp;lt;PAT&amp;gt; &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; docker login ghcr.io -u &amp;lt;your-github-username&amp;gt; --password-stdin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将 &lt;code&gt;&amp;lt;PAT&amp;gt;&lt;/code&gt; 替换为个人访问令牌，将 &lt;code&gt;&amp;lt;your-github-username&amp;gt;&lt;/code&gt; 替换为 GitHub 用户名。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;标记你的 Docker 镜像：&lt;/strong&gt; 使用以下命令将 Docker 镜像标记为 GitHub Container Registry 镜像：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker tag &amp;lt;your-image-name&amp;gt;:&amp;lt;tag&amp;gt; ghcr.io/&amp;lt;your-github-username&amp;gt;/&amp;lt;your-image-name&amp;gt;:&amp;lt;tag&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;将 &lt;code&gt;&amp;lt;your-image-name&amp;gt;:&amp;lt;tag&amp;gt;&lt;/code&gt; 替换为本地 Docker 镜像名与tag名，&lt;code&gt;&amp;lt;your-github-username&amp;gt;&lt;/code&gt; 替换为 GitHub 用户名，&lt;code&gt;&amp;lt;tag&amp;gt;&lt;/code&gt; 替换想要使用的标签（例如默认的&lt;code&gt;latest&lt;/code&gt;标签）。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;推送 Docker 镜像到 GitHub：&lt;/strong&gt; 使用以下命令将 Docker 镜像推送到 GitHub Container Registry：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;docker push ghcr.io/&amp;lt;your-github-username&amp;gt;/&amp;lt;your-image-name&amp;gt;:&amp;lt;tag&amp;gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;完成以上步骤后，就可以在 GitHub个人账号的 的 “Packages” 部分看到Docker 镜像了，但是该镜像默认为private镜像，Pull使用时需要先登录。&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
