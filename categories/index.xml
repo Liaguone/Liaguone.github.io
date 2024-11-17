@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Categories on Liagu&#39; blog</title>
+        <title>CTF on Liagu&#39; blog</title>
         <link>https://hack.liagu-one.top/categories/</link>
-        <description>Recent content in Categories on Liagu&#39; blog</description>
+        <description>Recent content in CTF on Liagu&#39; blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Liagu</copyright>
-        <lastBuildDate>Wed, 13 Nov 2024 13:48:02 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 17 Nov 2024 17:57:45 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Draft</title>
+        <link>https://hack.liagu-one.top/categories/draft/</link>
+        <pubDate>Sun, 17 Nov 2024 17:57:45 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/categories/draft/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>大杂烩_教程</title>
+        <link>https://hack.liagu-one.top/categories/%E5%A4%A7%E6%9D%82%E7%83%A9_%E6%95%99%E7%A8%8B/</link>
+        <pubDate>Sat, 16 Nov 2024 18:38:30 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/categories/%E5%A4%A7%E6%9D%82%E7%83%A9_%E6%95%99%E7%A8%8B/</guid>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739b701d9123.jpg" alt="Featured image of post 大杂烩_教程" /&gt;</description>
+        </item>
+        <item>
         <title>Hugo</title>
         <link>https://hack.liagu-one.top/categories/hugo/</link>
-        <pubDate>Wed, 13 Nov 2024 13:48:02 +0800</pubDate>
+        <pubDate>Thu, 14 Nov 2024 01:11:16 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/hugo/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/13/6734420de1128.jpg" alt="Featured image of post Hugo" /&gt;</description>
         </item>
         <item>
         <title>CTF</title>
@@ -21,7 +37,7 @@
         <pubDate>Tue, 12 Nov 2024 18:30:55 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/ctf/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739ac6d242dd.jpeg" alt="Featured image of post CTF" /&gt;</description>
         </item>
         <item>
         <title>Docker</title>
@@ -29,39 +45,15 @@
         <pubDate>Tue, 12 Nov 2024 18:30:55 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/docker/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Rk</title>
-        <link>https://hack.liagu-one.top/categories/rk/</link>
-        <pubDate>Sat, 19 Oct 2024 15:29:20 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/categories/rk/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>小技巧</title>
-        <link>https://hack.liagu-one.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</link>
-        <pubDate>Thu, 12 Sep 2024 13:56:12 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/categories/%E5%B0%8F%E6%8A%80%E5%B7%A7/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Draft</title>
-        <link>https://hack.liagu-one.top/categories/draft/</link>
-        <pubDate>Tue, 10 Sep 2024 21:37:08 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/categories/draft/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739ac6e8a745.jpg" alt="Featured image of post Docker" /&gt;</description>
         </item>
         <item>
         <title>渗透</title>
         <link>https://hack.liagu-one.top/categories/%E6%B8%97%E9%80%8F/</link>
-        <pubDate>Tue, 10 Sep 2024 21:31:35 +0800</pubDate>
+        <pubDate>Tue, 10 Sep 2024 21:37:08 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/%E6%B8%97%E9%80%8F/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739b07c8777b.jpg" alt="Featured image of post 渗透" /&gt;</description>
         </item>
         <item>
         <title>大学</title>
@@ -69,7 +61,7 @@
         <pubDate>Mon, 01 Jul 2024 21:12:31 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/%E5%A4%A7%E5%AD%A6/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739b07c0ba5d.jpg" alt="Featured image of post 大学" /&gt;</description>
         </item>
         <item>
         <title>Web开发</title>
@@ -77,23 +69,15 @@
         <pubDate>Sat, 25 May 2024 13:35:35 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/web%E5%BC%80%E5%8F%91/</guid>
-        <description></description>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739ac6c7ea8c.jpg" alt="Featured image of post Web开发" /&gt;</description>
         </item>
         <item>
-        <title>Tools</title>
-        <link>https://hack.liagu-one.top/categories/tools/</link>
-        <pubDate>Sat, 27 Apr 2024 14:34:31 +0800</pubDate>
+        <title>算法</title>
+        <link>https://hack.liagu-one.top/categories/%E7%AE%97%E6%B3%95/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://hack.liagu-one.top/categories/tools/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>数据结构</title>
-        <link>https://hack.liagu-one.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
-        <pubDate>Mon, 29 Aug 2022 10:31:40 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</guid>
-        <description></description>
+        <guid>https://hack.liagu-one.top/categories/%E7%AE%97%E6%B3%95/</guid>
+        <description>&lt;img src="http://figure.liagu-one.top/i/2024/11/17/6739b701d5c2b.jpg" alt="Featured image of post 算法" /&gt;</description>
         </item>
         
     </channel>

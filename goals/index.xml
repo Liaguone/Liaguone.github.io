@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Goals on Liagu&#39; blog</title>
+        <link>https://hack.liagu-one.top/goals/</link>
+        <description>Recent content in Goals on Liagu&#39; blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>Liagu</copyright>
+        <lastBuildDate>Sun, 17 Nov 2024 17:57:45 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/goals/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>2025</title>
+        <link>https://hack.liagu-one.top/goals/2025/</link>
+        <pubDate>Sun, 17 Nov 2024 17:57:45 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/goals/2025/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 撒发射点发生&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 阿斯蒂芬撒地方&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 啊实打实的&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>2024-11</title>
+        <link>https://hack.liagu-one.top/goals/2024-11/</link>
+        <pubDate>Sun, 17 Nov 2024 17:56:14 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/goals/2024-11/</guid>
+        <description>&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 学习逆向基础&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 学习算法，攻克蓝桥杯&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ky操作系统&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; ky数学&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

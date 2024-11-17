@@ -7,7 +7,176 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Liagu</copyright>
-        <lastBuildDate>Tue, 10 Sep 2024 21:31:35 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/%E6%B8%97%E9%80%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 10 Sep 2024 21:37:08 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/%E6%B8%97%E9%80%8F/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>渗透必刷靶场</title>
+        <link>https://hack.liagu-one.top/p/%E6%B8%97%E9%80%8F%E5%BF%85%E5%88%B7%E9%9D%B6%E5%9C%BA/</link>
+        <pubDate>Tue, 10 Sep 2024 21:37:08 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/p/%E6%B8%97%E9%80%8F%E5%BF%85%E5%88%B7%E9%9D%B6%E5%9C%BA/</guid>
+        <description>&lt;p&gt;写给新手朋友入门，有了靶场丰富自己思路，也巩固自己的技术。当然新手老手都可以玩玩。&lt;/p&gt;
+&lt;p&gt;这期盘点渗透靶场，排名不分前后，还有其他靶场欢迎留言提出！以及在留言当中评论出你最喜欢的靶场并附上理由。&lt;/p&gt;
+&lt;p&gt;本期是盘点入门必刷，后期会盘点圈内所有的靶场以及靶场的writeup.&lt;/p&gt;
+&lt;h2 id=&#34;1dvwa&#34;&gt;1、DVWA
+&lt;/h2&gt;&lt;p&gt;安全入门必刷靶场，很多新手朋友第一个选择的靶场就是DVWA，DVWA 一共包含了十个攻击模块，分别是：Brute Force（暴力破））、Command Injection（命令行注入）、CSRF（跨站请求伪造）、- File Inclusion（文件包含）、File Upload（文件上传）、Insecure CAPTCHA （不安全的验证码）、SQL Injection（SQL注入）、SQL Injection（Blind）（SQL盲注）、XSS（Reflected）（反射型跨站脚本）、XSS（Stored）（存储型跨站脚本）。包含了 OWASP TOP10 的所有攻击漏洞的练习环境，并且有低中高等级 循序渐进渗透测试学习。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://img.4awl.net/img/c0/4143a9776df17aafa69121b29b306a.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;2vulnhub&#34;&gt;2、vulnhub
+&lt;/h2&gt;&lt;p&gt;很多安全竞赛都有在这里面出题，系列非常之多，不仅仅有web方面的，也有系统方面的渗透。&lt;/p&gt;
+&lt;p&gt;网上也有很多writeup，环境直接下载虚拟机压缩包，解压即可使用。新手朋友建议下载先自行测试，然后再看writeup解题&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=b7bc223df7aHR0cHM6Ly92dWxodWIub3JnLw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://vulhub.org/&lt;/a&gt;（在线版）&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=4c8b8b4383aHR0cHM6Ly9naXRodWIuY29tL3Z1bGh1Yi92dWxodWI%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/vulhub/vulhub&lt;/a&gt;（离线版）&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/7bb91a93a4f3609f1d015afd429add.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图1&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3pikachu&#34;&gt;3、pikachu
+&lt;/h2&gt;&lt;p&gt;也是类似dvwa的靶场，带有常见的web安全漏洞&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/31bb96cb621c40d19244cd4dc28c0f.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图2&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/746d89fe4f77989eb12983f9973df4.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图3&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=ce8a97b363aHR0cHM6Ly9naXRodWIuY29tL3podWlmZW5nc2hhb25pYW5oYW5sdS9waWthY2h1&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/zhuifengshaonianhanlu/pikachu&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;4vulnstack&#34;&gt;4、VulnStack
+&lt;/h2&gt;&lt;p&gt;vulnstack是红日旗下的一个开源靶场平台，模拟国内企业环境，涵盖CMS、漏洞管理、域管理等，以ATT&amp;amp;CK红队评估模式为设计思路，提供全方位的攻防训练体验。从环境搭建到漏洞利用、内网搜集、持久控制等。&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/9957397c84409bff3787c81452999b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图4&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=16dc738641aHR0cDovL3Z1bG5zdGFjay5xaXl1YW54dWV0YW5nLm5ldC92dWxuLw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;http://vulnstack.qiyuanxuetang.net/vuln/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;5vulhub&#34;&gt;5、vulhub
+&lt;/h2&gt;&lt;p&gt;跟vulnhub名字很像，但是这个是属于web类，直接docker安装，一个基于docker和docker-compose的漏洞环境集合，一条语句即可启动一个全新的漏洞环境，非常方便。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/aca8b8d5a2cbc135f8be20e403f8fe.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图5&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=b7bc223df7aHR0cHM6Ly92dWxodWIub3JnLw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://vulhub.org/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;6upload-labsxss-labssqli-labs&#34;&gt;6、upload-labs、xss-labs、sqli-labs
+&lt;/h2&gt;&lt;p&gt;听名字就知道了，这些靶场分别专注于文件上传、xss、sql注入漏洞三个靶场&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/d9a6c40302b42b444c36a05501e08c.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图6&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/2bc691dcfb486f0783535902beaf5d.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图7&#34;
+	
+	
+&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/95726811d9522da57ac1d1ac39431f.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图8&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=8d6d62eb24aHR0cHM6Ly9naXRodWIuY29tL2MwbnkxL3VwbG9hZC1sYWJz&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/c0ny1/upload-labs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=72b44b115caHR0cHM6Ly9naXRodWIuY29tL2RvMGRsMy94c3MtbGFicw%3D%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/do0dl3/xss-labs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=b8fe4318d5aHR0cHM6Ly9naXRodWIuY29tL0F1ZGktMS9zcWxpLWxhYnM%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://github.com/Audi-1/sqli-labs&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;7hack-the-box&#34;&gt;7、hack the box
+&lt;/h2&gt;&lt;p&gt;是国外的一个网络安全在线靶场，靶场中被细分成若干种类，涵盖Web、病毒分析、密码学、逆向工程等领域。这些类别下各自拥有从基础到高阶的多个挑战项目，确保不同技能水平的用户都能找到匹配自身技术与知识水平的挑战进行尝试。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/204f6a31bbb3f0ff58c0067c8505c1.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图9&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=e03b4d0b45aHR0cHM6Ly93d3cuaGFja3RoZWJveC5jb20v&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.hackthebox.com/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;8墨者靶场&#34;&gt;8、墨者靶场
+&lt;/h2&gt;&lt;p&gt;在线的靶场，无需搭建，直接注册账号后就可进行测试。不过有积分限制。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/2a880d5074f5742536fb1520e8045b.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图10&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=06460fe5bcaHR0cHM6Ly93d3cubW96aGUuY24vYnVn&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://www.mozhe.cn/bug&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;9vulfocus&#34;&gt;9、vulfocus
+&lt;/h2&gt;&lt;p&gt;白帽汇推出的一款漏洞集成平台，常见的fofa就是白帽汇的旗下的，内也有ctf。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://raw.githubusercontent.com/Liaguone/imgs/master/f25bdc2b8a840ff0b4f84250893820.jpg&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;渗透必刷靶场大盘点插图11&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.4awl.net/go?_=526250b5e0aHR0cHM6Ly92dWxmb2N1cy5jbi8%3D&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://vulfocus.cn/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>渗透测试练习靶场汇总</title>
         <link>https://hack.liagu-one.top/p/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E7%BB%83%E4%B9%A0%E9%9D%B6%E5%9C%BA%E6%B1%87%E6%80%BB/</link>
         <pubDate>Tue, 10 Sep 2024 21:31:35 +0800</pubDate>

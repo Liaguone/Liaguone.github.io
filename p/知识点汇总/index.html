@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="2022重点 选择 CIA三特性：C机密性，I完整性，A可用性\n网络安全信息系统（略偏）\n国密算法(重点)\n算法名称 特征描述 SM1 对称加密，分组长度和密钥长度都为128比特 SM2 非对称加密，用于公钥加密算法、密钥交换协议、数字签名算法(椭圆曲线问题) SM3 杂凑算法(哈希)，分组512位，输出杂凑值长度为256位 SM4 对称加密，分组长度和密钥长度都为128比特 SM9 标识密码算法，支持公钥加密、密钥交换、数字签名等安全功能 域名故障：域名系统出现网络与信息安全事件时，应当在24小时内向电信管理机构报告。\n">
+<title>知识点汇总</title>
+
+<link rel='canonical' href='https://hack.liagu-one.top/p/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/'>
+
+<link rel="stylesheet" href="/scss/style.min.3ed352058ff4a8bbeb880f94d19ecfab9c8f0ede456b7e5db9b37a63b7c9cd54.css"><meta property='og:title' content="知识点汇总">
+<meta property='og:description' content="2022重点 选择 CIA三特性：C机密性，I完整性，A可用性\n网络安全信息系统（略偏）\n国密算法(重点)\n算法名称 特征描述 SM1 对称加密，分组长度和密钥长度都为128比特 SM2 非对称加密，用于公钥加密算法、密钥交换协议、数字签名算法(椭圆曲线问题) SM3 杂凑算法(哈希)，分组512位，输出杂凑值长度为256位 SM4 对称加密，分组长度和密钥长度都为128比特 SM9 标识密码算法，支持公钥加密、密钥交换、数字签名等安全功能 域名故障：域名系统出现网络与信息安全事件时，应当在24小时内向电信管理机构报告。\n">
+<meta property='og:url' content='https://hack.liagu-one.top/p/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/'>
+<meta property='og:site_name' content='Liagu&#39; blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='备考' /><meta property='article:published_time' content='2022-08-29T13:29:17&#43;08:00'/><meta property='article:modified_time' content='2022-08-29T13:29:17&#43;08:00'/>
+<meta name="twitter:title" content="知识点汇总">
+<meta name="twitter:description" content="2022重点 选择 CIA三特性：C机密性，I完整性，A可用性\n网络安全信息系统（略偏）\n国密算法(重点)\n算法名称 特征描述 SM1 对称加密，分组长度和密钥长度都为128比特 SM2 非对称加密，用于公钥加密算法、密钥交换协议、数字签名算法(椭圆曲线问题) SM3 杂凑算法(哈希)，分组512位，输出杂凑值长度为256位 SM4 对称加密，分组长度和密钥长度都为128比特 SM9 标识密码算法，支持公钥加密、密钥交换、数字签名等安全功能 域名故障：域名系统出现网络与信息安全事件时，应当在24小时内向电信管理机构报告。\n">
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    <img src="/images/avatar.jpg" width="300" height="300" class="site-logo" loading="lazy" alt="Avatar">
+                
+                </a>
+                
+                    <span class="emoji">🥷</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Liagu&#39; blog</a></h1>
+            <h2 class="site-description">当坚持成为一种热爱，极致成为一种精神，那么成功就是必然的。</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://bilibili.com'
+                        target="_blank"
+                        title="Bilibili"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-bilibili"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 10a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4v-6z" /><path d="M8 3l2 3" /><path d="M16 3l-2 3" /><path d="M9 13v-2" /><path d="M15 11v2" /></svg>
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://github.com'
+                        target="_blank"
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='https://youtube.com'
+                        target="_blank"
+                        title="Youtube"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-youtube"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M2 8a4 4 0 0 1 4 -4h12a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-12a4 4 0 0 1 -4 -4v-8z" /><path d="M10 9l5 3l-5 3z" /></svg>
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>about</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>Links</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='https://music.shimoko.com/' target="_blank">
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                
+                <span>Music</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+   
+</aside>
+
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li>
+      <ol>
+        <li><a href="#2022重点">2022重点</a>
+          <ol>
+            <li><a href="#选择">选择</a></li>
+            <li><a href="#模型">模型</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%A7%E5%AD%A6/" >
+                大学
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/%E7%9F%A5%E8%AF%86%E7%82%B9%E6%B1%87%E6%80%BB/">知识点汇总</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2022-08-29</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 16 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+    
+<div>
+     
+</header>
+
+    <section class="article-content">
+    
+    
+    <h2 id="2022重点">2022重点
+</h2><h3 id="选择">选择
+</h3><p><strong>CIA三特性</strong>：C机密性，I完整性，A可用性</p>
+<p><strong>网络安全信息系统</strong>（略偏）</p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b1b93e75e.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004153953447"
+	
+	
+></p>
+<p><strong>国密算法</strong>(重点)</p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>算法名称</th>
+          <th>特征描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>SM1</td>
+          <td>对称加密，分组长度和密钥长度都为128比特</td>
+      </tr>
+      <tr>
+          <td>SM2</td>
+          <td>非对称加密，用于公钥加密算法、密钥交换协议、数字签名算法(椭圆曲线问题)</td>
+      </tr>
+      <tr>
+          <td>SM3</td>
+          <td>杂凑算法(哈希)，分组512位，输出杂凑值长度为256位</td>
+      </tr>
+      <tr>
+          <td>SM4</td>
+          <td>对称加密，分组长度和密钥长度都为128比特</td>
+      </tr>
+      <tr>
+          <td>SM9</td>
+          <td>标识密码算法，支持公钥加密、密钥交换、数字签名等安全功能</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>域名故障</strong>：域名系统出现网络与信息安全事件时，应当在24小时内向电信管理机构报告。</p>
+<p>**密码分类：**核心密码，普通密码，商用密码</p>
+<p>核心密码、普通密码用于保护国家秘密信息，属于国家秘密，由密码管理部门依法实行严格统一管理。商用密码用于保护不属于国家秘密的信息，公民、法人和其他组织均可依法使用。</p>
+<p><strong>法律实施日期</strong></p>
+<ol>
+<li>密码法</li>
+<li>数据安全法</li>
+<li>网络安全法</li>
+</ol>
+<p><strong>攻击树</strong></p>
+<ol>
+<li>优点:采取专家的头脑风暴法，并将这些意见融合到攻击树中去，能够进行费效分析或者概率分析，能够建模非常复杂的攻击场景。</li>
+<li>缺点:树内部存在限制，攻击树不能用于建模多重尝试攻击、时间依赖及访问控制等场景，不能用来建模循环事件，对于现实的大规模网络，处理起来会特别复杂。</li>
+</ol>
+<p><strong>攻击设计后门的方法</strong></p>
+<ol>
+<li>放宽文件许可权;</li>
+<li>重新开放不安全的服务如REXD、TFTP等；</li>
+<li>修改系统的配置，如系统启动文件、网络服务配置文件等；</li>
+<li>替换系统本身的共享库文件；</li>
+<li>修改系统的源代码，安装各种特洛伊木马；</li>
+<li>安装嗅探器:建立隐蔽信道。</li>
+</ol>
+<p><strong>主动攻击和被动攻击</strong></p>
+<ol>
+<li>主动攻击涉及修改数据流或创建错误的数据流，它包括假冒、重放、修改信息和拒绝服务等</li>
+<li>被动攻击是指一切窃密的攻击，典型的攻击方式是<strong>网络窃听</strong>和<strong>流量分析</strong>，通过截取数据包或流量分析，从中窃取重要的敏感信息。</li>
+</ol>
+<p><strong>常见的拒绝服务攻击</strong></p>
+<ul>
+<li>(1)同步包风暴(SYNFlooding):利用TCP协议缺陷发送大量伪造的TCP连接请求，使得被攻击者资源耗尽。三次握手，进行了两次，不进行第三次握手，连接队列处于等待状态，大量这样的等待，会占满全部队列空间，使得系统挂起。</li>
+<li>(2)Smurf攻击:攻击者伪装目标主机向局域网的广播地址发送大量欺骗性的ICMP请求，这些包被放大，并发送到被欺骗的地址，大量的计算机向一台计算机回应ECHO包，目标系统会崩溃。</li>
+<li>(3)Ping of Death攻击:攻击者故意发送大于65535字节的IP数据包给对方，导致内存溢出这时主机会出现内存分配错误而导致TCP/IP堆栈崩溃，导致死机。</li>
+<li>(4)Teardrop攻击:分段攻击，伪造数据报文向目标主机发送含有重叠偏移的数据分段，通过将各个分段重叠来使目标系统崩溃或挂起。</li>
+<li>(5)Winnuke攻击:针对windows系统开放的139端口，只要向该端口发送1字节的TCPO0B数据(TCP连接的一种特殊数据，设置了URG标志，优先级更高)，就可以使windows系统出现蓝屏错误，并且网络功能完全瘫痪。</li>
+<li>(6)Land攻击:也是利用三次握手的缺陷进行攻击，将SYN数据包的源地址和目的地址都设置为目标主机的地址，目标主机向自己回以SYN+ACK包，导致自己又给自己回一个ACK并建立自己与自己的连接当这种无效连接达到一定的数量，目标主机将会拒绝新的连接请求。</li>
+<li>(7)电子邮件轰炸:针对服务端口(SMTP端口，端口号25)的攻击，攻击者通过连接到邮件服务器的25端口，按照SMTP协议发送几行头信息加上一堆文字垃圾，反复发送形成邮件轰炸。</li>
+</ul>
+<p><strong>AES算法</strong></p>
+<p>美国颁布AES时规定数据块的长度为128位，密钥的长度可分别选择为128位，192位或256位。</p>
+<p><strong>三重DES</strong></p>
+<p>标准定义了三种密钥选项:密钥选项1:三个密钥是独立的。
+密钥选项2:K1和K2是独立的，而K3=K1。密钥选项3:三个密钥均相等，即K1=K2=K3。一般情况是用两个密钥对明文进行3次加密。假设两个密钥是K1和K2(K3=K1)，其算法步骤如下:</p>
+<p>①)用密钥K1进行DES加密。
+②)用K2对步骤1的结果进行DES解密。
+③)对步骤2的结果再使用密钥K1进行DES加密</p>
+<p><strong>SSH(安全外壳协议)是基于公钥的安全应用协议</strong></p>
+<p><u>由SSH传输层协议</u>、<u>SSH用户认证协议</u>和<u>SSH连接协议</u>三个子协议组成，实现加密认证、完整性检查等多种安全服务。SSH传输层协议提供算法协商和密钥交换，并实现服务器的认证，最终形成一个加密的安全连接，该安全连接提供完整性、保密性和压缩选项服务。SSH用户认证协议:用于向服务器提供客户端用户鉴别功能。</p>
+<p><strong>PGP(Pretty Good Privacy)</strong></p>
+<p>是一个完整的<strong>电子邮件安全软件包</strong>(应用层)，PGP提供数据加密和数字签名两种服务。采用<strong>RSA</strong>公钥证书进行身份验证，使用<strong>IDEA</strong>进行数据加密，使用<strong>MD5</strong>进行数据完整性验证。</p>
+<p><strong>PPDR模型</strong></p>
+<p>PDRR模型:PDRR改进了传统的只有保护的单安全防御思想，强调信息安全保障的四个重要环节:</p>
+<ol>
+<li>保护(Protection)的内容主要有加密机制、数据签名机制、访问控制机制、认证机制、信息隐藏、防火墙技术等。</li>
+<li>检测(Detection)的内容主要有入侵检测、系统脆弱性检测、数据完整性检测、攻击性检测等。</li>
+<li>恢复(Recovery)的内容主要有数据备份、数据修复、系统恢复。</li>
+<li>响应(Response)的内容主要有应急策略、应急机制、应急手段、入侵过程分析及安全状态评估等</li>
+</ol>
+<p><strong>BLP两个特性</strong>(防止非授权信息的扩散)</p>
+<ol>
+<li>简单安全特性。主体对客体进行读访问的必要条件是主体的安全级别不小于客体的安全级别，主体的范畴集合包含客体的全部范畴，<strong>即主体只能向下读，不能向上读。</strong></li>
+<li>*特性。一个主体对客体进行写访问的必要条件是客体的安全级支配主体的安全级，即客体的保密级别不小于主体的保密级别，客体的范畴集合包含主体的全部范畴，<strong>即主体只向上写，不能向下写。</strong></li>
+</ol>
+<p><strong>BIBA模型</strong></p>
+<p><strong>等级保护五个等级</strong></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>层次</th>
+          <th>名称</th>
+          <th>程度</th>
+          <th>说明</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>一级</td>
+          <td>用户自主保护</td>
+          <td>自主</td>
+          <td>本级的计算机信息系统可信计算基通过隔离用户与数据，使用户具备自主安全保护的能力。它具有多种形式的控制能力，对用户实施访问控制，即为用户提供可行的手段，保护用户和用户组信息，避免其他用户对数据的非法读写与破坏。</td>
+      </tr>
+      <tr>
+          <td>二级</td>
+          <td>系统审计保护</td>
+          <td>指导</td>
+          <td>与用户自主保护级相比，本级的计算机信息系统可信计算基实施了粒度更细的自主访问控制，它通过登录规程、审计安全性相关事件和隔离资源，使用户对自己的行为负责。</td>
+      </tr>
+      <tr>
+          <td>三级</td>
+          <td>安全标记保护</td>
+          <td>监督</td>
+          <td>本级的计算机信息系统可信计算基具有系统审计保护级的所有功能。此外，还提供有关安全策略模型、数据标记以及主体对客体强制访问控制的非形式化描述;具有准确地标记输出信息的能力;消除通过测试发现的任何错误。</td>
+      </tr>
+      <tr>
+          <td>四级</td>
+          <td>结构化保护</td>
+          <td>强制</td>
+          <td>本级的计算机信息系统可信计算基建立于一个明确定义的形式化安全策略模型之上，它要求将第三级系统中的自主和强制访问控制扩展到所有主体与客体。此外，还要考虑隐蔽通道。</td>
+      </tr>
+      <tr>
+          <td>五级</td>
+          <td>访问验证保护</td>
+          <td>专控</td>
+          <td>本级的计算信息系统可信计算基满足访问监控器需求。访问监控器仲裁主体的全部访问。访问监控器本身是抗篡改的;必须足够小，能够分析和测试。系统具有很高的抗渗透能力。</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>NIST网络安全框架</strong></p>
+<p>访问控制，意识和培训，数据安全，信息保护流程和规程，维护，保护技术</p>
+<p><strong>IDC机房分三级</strong></p>
+<p>R1级IDC机房的机房基础设施和网络系统的主要部分应具备一定的冗余能力，机房基础设施和网络系统可支撑的IDC业务的可用性不应小于99.5%。
+R2级IDC机房的机房基础设施和网络系统应具备冗余能力，机房基础设施和网络系统可支撑的1D0业务的可用性不应小于99.9%。
+R3级IDC机房的机房基础设施和网络系统应具备容错能力，机房基础设施和网络系统可支撑的IDC业务的可用性不应小于99.99%。</p>
+<p><strong>Kerberos系统涉及四个基本实体:</strong>
+(1)Kerberos客户机，用户用来访问服务器设备。
+(2)AS(Authentication Server，认证服务器)，识别用户身份并提供TGS会话密钥。
+(3)TGS(Ticket Granting Server，票据发放服务器)，为申请服务的用户授予票据(Ticket)。
+(4)应用服务器(Application Server)，为用户提供服务的设备或系统。</p>
+<p>AS和TGS组成KDC</p>
+<p><strong>PKI体系</strong></p>
+<p>数字证书</p>
+<p>RA注册，CA签发</p>
+<p>也称公钥证书，是由证书认证机构(CA)签名的，包含公开密钥拥有者信息、公开密钥、签发者信息、有效期、以及扩展信息的一种数据结构。</p>
+<h3 id="模型">模型
+</h3><p><strong>访问控制模型</strong></p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b1b83505f.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004165536697"
+	
+	
+></p>
+<p>主体:操作实施者，是人、进程或设备。
+客体:被主体操作的对象。
+参考监视器:访问控制的决策单元和执行单元的集合体。
+访问控制数据库:记录主体访问客体的权限及访问方式的信息。
+审计库:存储主体访问客体的操作信息。</p>
+<p><strong>入侵检测模型</strong></p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b1b9cf369.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004171657375"
+	
+	
+></p>
+<p><strong>自主访问控制(基于行基于列)</strong></p>
+<p>基于行的自主访问控制:能力表、前缀表、口令。</p>
+<p>基于列的自主访问控制:保护位、访问控制表。</p>
+<p><strong>包过滤防火墙</strong></p>
+<p>标准访问控制格式</p>
+<p>扩展访问控制格式</p>
+<p><strong>VPN安全服务</strong></p>
+<p>保密性服务，完整性服务，认证服务</p>
+<p>VPN有多种实现技术，按照VPN在TCP/IP协议层的实现方式，可以将其分为链路层VPN网络层VPN、传输层VPN。</p>
+<ol>
+<li>链路层 VPN的实现方式有ATM、Frame Relay、多协议标签交换MPLS;</li>
+<li>网络层VPN的实现方式有受控路由过滤、隧道技术</li>
+<li>传输层VPN则通过SSL来实现。</li>
+</ol>
+<p><strong>IPSec协议</strong></p>
+<p>AH:是一段报文认证代码，在发送IP包前已计算好。发送方用加密密钥计算出AH，接收方用另一密钥对其进行验证。提供数据源认证、数据完整性以及防中继保护。ESP:对整个IP包进行封装加密，通常使用DES算法。</p>
+<p>IKE:(DH)密钥交换</p>
+<p><strong>SSL协议分为两层:</strong>
+(1)SSL记录协议(SSL Record Protocol)它建立在可靠的传输协议(如TCP)之上，为高层协议提供数据封装、压缩、加密等基本功能的支持。</p>
+<p>(2)SSL握手协议(SSL Handshake Protocol)它建立在SSL记录协议之上，用于在实际的数据传输开始前，通讯双方进行身份认证、协商加密算法、交换加密密钥等。</p>
+<p><strong>误用检测系统方法</strong>：snort基于规则的误用检测方法，网络入侵检测系统</p>
+<p><strong>物理隔离和逻辑隔离</strong>：网闸和防火墙</p>
+<p>网闸</p>
+<p>防火墙</p>
+<p><strong>计算机信息系统安全保护能力5个等级</strong></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>级别类型</th>
+          <th>安全审计要求</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>用户自主保护级</td>
+          <td>无</td>
+      </tr>
+      <tr>
+          <td>系统审计保护级</td>
+          <td>计算机信息系统可信计算基能创建和维护受保护客体的访问审计跟踪记录，并能阻止非授权的用户对它访问或破坏。计算机信息系统可信计算基能记录下述事件:使用身份鉴别机制:将客体引入用户地址空间(例如:打开文件、程序初始化);删除客体;由操作员、系统管理员或(和)系统安全管理员实施的动作，以及其他与系统安全有关的事件。对于每一事件，其审计记录包括:事件的日期和时间、用户、事件类型、事件是否成功。对于身份鉴别事件，审计记录包含请求的来源(例如:终端标识符):对于客体引入用户地址空间的事件及客体删除事件，审计记录包含客体名。对不能由计算机信息系统可信计算基独立分辨的审计事件，审计机制提供审计记录接口，可由授权主体调用。这些审计记录区别于计算机信息系统可信计算基独立分辨的审计记录</td>
+      </tr>
+      <tr>
+          <td>安全标记保护级</td>
+          <td>在系统审计保护级的基础上，要求增强的审计功能是:审计记录包含客体名及客体的安全级别。此外，计算机信息系统可信计算基具有审计更改可读输出记号的能力</td>
+      </tr>
+      <tr>
+          <td>结构化保护级</td>
+          <td>在安全标记保护级的基础上，要求增强的审计功能是:计算机信息系统可信计算基能够审计利用隐蔽存储信道时可能被使用的事件</td>
+      </tr>
+      <tr>
+          <td>访问验证保护级</td>
+          <td>在结构化保护级的基础上，要求增强的审计功能是:计算机信息系统可信计算基包含能够监控可审计安全事件发生与积累的机制，当超过值时，能够立即向安全管理员发出报警。并且，如果这些与安全相关的事件继续发生或积累，系统应以最小的代价中止它们</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>Windows审计/日志机制:</strong></p>
+<p>日志文件是Windows系统中一个比较特殊的文件，它记录Windows系统的运行状况，如各种系统服务的启动、运行、关闭等信息。Windows日志有三种类型:系统日志、应用程序日志和安全日志,它们对应的文件名为SysEvent.evt、AppEvent.evt和SecEvent.evt。这些日志文件通常存放在操作系统安装的区域“system32\config”目录下。<strong>只允许系统管理员访问的是安全日志。</strong></p>
+<p><strong>网络审计数据保护常用的措施</strong>有:</p>
+<p>系统用户分权管理、审计数据强制访问、审计数据加密、审计数据隐私保护、审计数据完整性保护。</p>
+<p><strong>利用漏洞</strong></p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b1be02388.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004175557644"
+	
+	
+></p>
+<p><strong>安全漏洞来源</strong></p>
+<ol>
+<li>
+<p>技术性安全漏洞</p>
+<p>(1)设计错误
+(2)输入验证错误
+(3)缓冲区溢出
+(4)意外情况处置错误
+(5)访问验证错误
+(6)配置错误
+(7)竞争条件
+(8)环境错误</p>
+</li>
+<li>
+<p>非技术性安全漏洞</p>
+<p>(1)网络安全责任主体不明确
+(2)网络安全策略不完备
+(3)网络安全操作技能不足
+(4)网络安全监督缺失
+(5)网络安全特权控制不完备</p>
+</li>
+</ol>
+<p><strong>工具软件</strong></p>
+<div class="table-wrapper"><table>
+  <thead>
+      <tr>
+          <th>工具名称</th>
+          <th>简要描述</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Flawfinder</td>
+          <td>利用词法分析技术发现以C语言编写的源程序安全漏洞</td>
+      </tr>
+      <tr>
+          <td>Splint</td>
+          <td>检查以C语言编写的程序安全漏洞</td>
+      </tr>
+      <tr>
+          <td>ITS4</td>
+          <td>检查以C和C++语言编写的源程序安全漏洞</td>
+      </tr>
+      <tr>
+          <td>Grep</td>
+          <td>自定义漏洞模式，检查任意源程序安全漏洞</td>
+      </tr>
+      <tr>
+          <td>MOPS</td>
+          <td>利用状态机技术来分析以C语言编写的源程序安全漏洞</td>
+      </tr>
+      <tr>
+          <td>W3AF</td>
+          <td>Web应用程序漏洞验证</td>
+      </tr>
+      <tr>
+          <td>Wireshark</td>
+          <td>网络数据包分析软件</td>
+      </tr>
+      <tr>
+          <td>Metasploit</td>
+          <td>网络安全漏洞验证软件</td>
+      </tr>
+      <tr>
+          <td>0IIyDBG</td>
+          <td>分析调试器</td>
+      </tr>
+  </tbody>
+</table></div>
+<p><strong>恶意代码分类</strong></p>
+<p>主动传播</p>
+<ol>
+<li>网络蠕虫</li>
+<li>其他</li>
+</ol>
+<p>被动传播</p>
+<ol>
+<li>计算机病毒</li>
+<li>特洛伊木马</li>
+<li>间谍软件</li>
+<li>逻辑炸弹</li>
+</ol>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b21e73ae9.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004180342811"
+	
+	
+></p>
+<p><strong>数据隐私保护</strong></p>
+<p>隐私保护的常见技术措施有<strong>抑制、泛化、置换、扰动、裁剪</strong>等。其中，抑制是通过将数据置空的方式限制数据发布:泛化是通过降低数据精度来提供匿名的方法:置换方法改变数据的属主;扰动是在数据发布时添加一定的噪声，包括数据增删、变换等，使攻击者无法区分真实数据和噪声数据，从而对攻击者造成干扰;裁剪是将敏感数据分开发布。</p>
+<p><strong>风险评估</strong></p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b2203040a.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004182901093"
+	
+	
+></p>
+<p><strong>电子证据与传统证据不同</strong>，具有以下三个特点:</p>
+<p>(1)高科技性是指电子证据的产生、储存和传输，都必须借助计算机技术、,存储技术、网络技术离开了相应技术设备，电子证据就无法保存和传输。(2)无形性是指电子证据肉眼不能够直接看见，必须借助适当的工具。(3)易破坏性是指电子证据很容易被篡改、删除而不留任何痕迹。</p>
+<p><strong>渗透测试流程</strong></p>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b224e2766.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004183834237"
+	
+	
+></p>
+<p><strong>日志文件</strong>的每一行表示一个消息，由四个域的固定格式组成:</p>
+<ul>
+<li>时间标签(Timestamp)，表示消息发出的日期和时间。</li>
+<li>主机名(Hostname)，表示生成消息的计算机的名字。</li>
+<li>生成消息的子系统的名字，表示消息来自内核或者是进程的名字。</li>
+<li>消息(Message)，即消息的内容。</li>
+</ul>
+<p><strong>安全策略</strong></p>
+<p>在Windows系统中需要配置的安全策略主要有账户策略、审计策略、远程访问、文件共享等。其中，策略中又要涉及多个参数，以配置账户策略为例，策略包含下列项目:
+(1)密码复杂度要求。(2)账户锁定阈值。(范围为0<del>999，如果将阈值设为0，将无法锁定用户，可以无限尝试密码)(3)账户锁定时间。(定义用户锁定的时间，0</del>99999分钟)(4)重置账户锁定计数器。(该策略决定了当一个账户被锁定后，需要等待多长时间，系统才自动将记录的失败次数清零。可设置的值是0~99999。)</p>
+<p><strong>数据库所处的环境日益开放，所面临的数据库安全威胁日益增多，</strong></p>
+<p>主要阐述如下:</p>
+<p>(1)授权的误用(Misuses of Authority)。合法用户越权获得他们不应该获得的资源，窃取程序或存储介质，修改或破坏数据。授权用户将自身的访问特权不适当地授予其他用户，导致系统安全策略受到威胁，使用户数据泄露。</p>
+<p>(2)逻辑推断和汇聚(Logical|nference and Aggregation)。利用逻辑推理，把不太敏感的数据结合起来可以推断出敏感信息。进行逻辑推断也可能要用到某些数据库系统以外的知识。与逻辑推断紧密相关的是数据汇聚安全问题，即个别的数据项是不敏感的，但是当足够多的个别数据值收集在一起时，就成为敏感的数据集。
+(3)伪装(Masquerade)。攻击者假冒用户身份获取数据库系统的访问权限。
+(4)旁路控制(Bypassing Controls)。在数据库设置后门，绕过数据库系统的安全访问控制机制。</p>
+<p>(5)隐蔽信道(Covert Channels)。通常储存在数据库中的数据经由合法的数据信道被取出。与正常的合法信道相反，隐蔽信道利用非正常的通信途径传输数据以躲避数据库安全机制的控制，如共享内
+存、临时文件。。攻击者利用数据库应用程序的输入未进行安全检查的漏洞，(6)SQL注入攻击(SQLInjection)欺骗数据库服务器执行恶意的SQL命令。SQL注入攻击常常导致数据库信息泄露，甚至会造成数据系统
+的失控。
+(7)数据库口令密码破解。利用口今字典或手动猜测数据库用户密码，以达到非授权访问数据库系统的目的。互联网常见的黑客攻击技术手段有“撞库”，其技术原理就是通过收集互联网已泄露的用户+口令密码信息，生成对应的字典表，尝试批量登录其他网站后，得到一系列可以登录的用户(8)硬件及介质攻击。对数据库系统相关的设备和存储介质的物理攻击。</p>
+<p><strong>密码存储</strong></p>
+<ol>
+<li>0racle内部密码，储存在strXXX.cmd文件中，其中XXX是0racle系统ID和SID，默认是“ORCL”这个密码用于数据库启动进程,提供完全访问数据库资源。这个文件在WindowsNT中需要设置权限。</li>
+<li>0racle监听进程密码，保存在文件“|istener.ora”(保存着所有的0racle执行密码)中，用于启动和停止0racle的监听进程。这就需要设置一个健壮的密码来代替默认的，并且必须对访问设置权限。入侵者可以通过这个弱点进行DoS攻击。</li>
+<li>0racle的“orapw”文件权限控制，0racle内部密码和账号密码允许SYSDBA角色保存在“orapw’文本文件中，该文件的访问权限应该被限制。即使加密，也能被入侵者暴力破解。</li>
+</ol>
+<p><img src="http://figure.liagu-one.top/i/2024/11/17/6739b226de410.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241004185235916"
+	
+	
+></p>
+<p><strong>五代交换机</strong></p>
+<ol>
+<li>第一代交换机:集线器，工作于0SI(开放系统互联参考模型)的物理层，主要功能是对接收到的信号进行再生整形放大，延长网络通信线路的传输距离，同时，把网络中的节点汇聚到集线器的一个中心节点上。集线器会把收到的报文向所有端口转发。</li>
+<li>第二代交换机又称为以太网交换机，工作于0Sl的数据链路层，称为二层交换机。二层交换机识别数据中的MAC地址信息，并根据MAC地址选择转发端口。</li>
+<li>第三代交换机通俗地称为三层交换机，针对ARP/DHCP等广播报文对终端和交换机的影响，三层交换机实现了虚拟网络(VLAN)技术来抑制广播风暴，将不同用户划分为不同的VLAN，VLAN之间的数据包转发通过交换机内置的硬件路由查找功能完成。三层交换机工作于0SI模型的网络层。</li>
+<li>第四代交换机为满足业务的安全性、可靠性、QoS等需求，在第二、第三代交换机功能的基础上新增业务功能，如防火墙、负载均衡、IPS 等。这些功能通常由多核CPU实现。</li>
+<li>第五代交换机通常支持软件定义网络(SDN)，具有强大的QoS能力。</li>
+</ol>
+<p><strong>SNMP 访问控制措施:</strong>
+(1)SNMP访问认证。
+(2)限制SNMP访问的IP地址。
+关闭SNMP访问。</p>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E5%A4%87%E8%80%83/">备考</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+        <link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI&#43;WdtXRGWt2kTvGFasHpSy3SV"crossorigin="anonymous"
+            ><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG&#43;vnGctmUb0ZY0l8"crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"integrity="sha384-&#43;VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4&#43;/RRE05"crossorigin="anonymous"
+                defer
+                >
+            </script><script>
+    window.addEventListener("DOMContentLoaded", () => {
+        renderMathInElement(document.body, {
+            delimiters: [
+                { left: "$$", right: "$$", display: true },
+                { left: "$", right: "$", display: false },
+                { left: "\\(", right: "\\)", display: false },
+                { left: "\\[", right: "\\]", display: true }
+            ],
+            ignoredClasses: ["gist"]
+        });})
+</script>
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E8%BD%AF%E8%80%83%E9%87%8D%E7%82%B9/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">软考重点</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/9e32d85/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">计算机网络</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/matlab%E5%A4%8D%E4%B9%A0/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Matlab复习</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet'/>
+<div id="waline" class="waline-container"></div>
+<style>
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+</style><script>
+    
+    Waline.init({"avatar":"","dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo"],"lang":"zh-CN","locale":{"admin":"Liagu","placeholder":"评论区"},"requiredMeta":["name","email","url"],"serverURL":"https://walinecomment-3o7dw0sxj-liaguones-projects.vercel.app","visitor":false});
+</script>
+
+    
+    
+    <footer class="site-footer">
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    <section class="copyright">
+        &copy; 
+        
+            2023-2024 - 
+        
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 85859字·共 24篇文章</br><span><p>
+        
+    </section>
+    
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.26.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+        
+    </section>
+    <script>
+        var s1 = '2023-09-10';
+        s1 = new Date(s1.replace(/-/g, "/"));
+        s2 = new Date();
+        var days = s2.getTime() - s1.getTime();
+        var number_of_days = parseInt(days / (1000 * 60 * 60 * 24));
+        document.getElementById('days').innerHTML = number_of_days;
+        </script>
+
+</footer>
+
+
+
+
+
+
+<span id="voyager">载入旅行者一号离地球距离信息...</span>
+
+<script language="javascript"> 
+    var now = new Date();
+    function createtime(){
+        
+        now.setTime(now.getTime()+250);
+        var start = new Date("08/01/2022 00:00:00"); 
+        var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); 
+        var unit = (dis / 149600000).toFixed(6);  
+
+        document.getElementById("voyager").innerHTML = "旅行者 1 号当前距离地球 "+ dis +" 千米，约为 "+ unit +" 个天文单位 🚀"
+    }
+    setInterval("createtime()",250); 
+</script> 
+
+
+
+
+   
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+<script src="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://npm.elemecdn.com/nprogress@0.2.0/nprogress.css" crossorigin="anonymous" />
+<script>
+    NProgress.start();
+    document.addEventListener("readystatechange", () => {
+        if (document.readyState === "interactive") NProgress.inc(0.8);
+        if (document.readyState === "complete") NProgress.done();
+    });
+</script>
+
+    </body>
+</html>
+
