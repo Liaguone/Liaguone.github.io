@@ -96,7 +96,7 @@
 &lt;p&gt;可能等待时间有点长，看服务器配置了&lt;/p&gt;
 &lt;h2 id=&#34;安装插件&#34;&gt;安装插件
 &lt;/h2&gt;&lt;h3 id=&#34;php80-在宝塔安装插件&#34;&gt;php8.0 在宝塔安装插件
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dbf1c1db.png&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/img/image-20241112232302875.png&#34;
 	
 	
 	
@@ -128,7 +128,7 @@
 &lt;p&gt;找到对应的函数点击 Del 删除即可&lt;/p&gt;
 &lt;h2 id=&#34;部署&#34;&gt;部署
 &lt;/h2&gt;&lt;p&gt;进入创建站点&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dc4004ec.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/img/image-20241112232302875.png&#34;
 	
 	
 	
@@ -139,7 +139,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;我们进入网站目录&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dc60196d.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/lsky-bt-pro-006.png&#34;
 	
 	
 	
@@ -158,7 +158,7 @@
 &lt;p&gt;mysql-5.7&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;上传解压文件&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dc7a97ef.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/img/image-20241112232746530.png&#34;
 	
 	
 	
@@ -170,7 +170,7 @@
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;设置运行目录&#34;&gt;设置运行目录
 &lt;/h3&gt;&lt;p&gt;在网站中将此站点的运行目录设置为 &lt;strong&gt;public&lt;/strong&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dd4197cf.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/img/image-20241112232915016.png&#34;
 	
 	
 	
@@ -195,7 +195,7 @@
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
 &lt;/div&gt;
 &lt;/div&gt;&lt;p&gt;填入即可。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dd622914.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/image-20241112233144207.png&#34;
 	
 	
 	
@@ -207,7 +207,7 @@
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;安装自定义web图床插件&#34;&gt;安装自定义web图床插件
 &lt;/h2&gt;&lt;p&gt;完成后，打开PicGo，选择&lt;strong&gt;插件设置&lt;/strong&gt;，搜索&lt;strong&gt;web-uploader&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dd958e59.png&#34;
+&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5cpost%5chugo%5cassets%5c4281450f547ad3cdaa14e4ef9de8e2e1.png&#34;
 	
 	
 	
@@ -220,7 +220,7 @@
 &lt;p&gt;按照后台给的教程，我们直接去post一下，google或者百度一下就能找到很多支持&lt;a class=&#34;link&#34; href=&#34;https://www.sojson.com/http/test.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;在线post&lt;/a&gt;的网站。&lt;/p&gt;
 &lt;p&gt;这里我选择的json格式上传的参数&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343ddb95973.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/655c587f5bbc8.jpg&#34;
 	
 	
 	
@@ -231,7 +231,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;然后在图床设置中，设置兰空图床的参数。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343dde7b61e.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/jc8tohzwpa.png&#34;
 	
 	
 	
@@ -247,7 +247,7 @@
 &lt;h2 id=&#34;完成&#34;&gt;完成
 &lt;/h2&gt;&lt;p&gt;至此，我们的picgo使用兰空2.0的方法就完成了&lt;/p&gt;
 &lt;p&gt;然后其他的参数可以根据插件readme来进行设置，一般可以不用动。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;http://figure.liagu-one.top/i/2024/11/13/67343de12175c.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/zlthvjl2df.png&#34;
 	
 	
 	
@@ -298,7 +298,7 @@
     &gt;他&lt;/a&gt;，真不错&lt;/p&gt;
 &lt;h2 id=&#34;小玩意&#34;&gt;小玩意
 &lt;/h2&gt;&lt;h3 id=&#34;给分类--标签添加图片和简介&#34;&gt;给分类 / 标签添加图片和简介
-&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;D:%5cdesktop%5cLiagu%5ccontent%5cpost%5chugo%5cassets%5ctaxonomy.1d43c6bd.jpg&#34;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://figure.liagu-one.top/uploads/taxonomy.1d43c6bd.jpg&#34;
 	
 	
 	
