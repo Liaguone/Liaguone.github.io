@@ -7,10 +7,18 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Liagu</copyright>
-        <lastBuildDate>Sun, 17 Nov 2024 17:57:45 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 26 Nov 2024 23:53:14 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Web开发</title>
+        <link>https://hack.liagu-one.top/categories/web%E5%BC%80%E5%8F%91/</link>
+        <pubDate>Tue, 26 Nov 2024 23:53:14 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/categories/web%E5%BC%80%E5%8F%91/</guid>
+        <description>&lt;img src="https://figure.liagu-one.top/img/分类17.jpg" alt="Featured image of post Web开发" /&gt;</description>
+        </item>
+        <item>
         <title>Draft</title>
         <link>https://hack.liagu-one.top/categories/draft/</link>
-        <pubDate>Sun, 17 Nov 2024 17:57:45 +0800</pubDate>
+        <pubDate>Sun, 24 Nov 2024 21:17:47 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/draft/</guid>
         <description></description>
@@ -62,14 +70,6 @@
         
         <guid>https://hack.liagu-one.top/categories/%E5%A4%A7%E5%AD%A6/</guid>
         <description>&lt;img src="https://figure.liagu-one.top/img/分类15.jpg" alt="Featured image of post 大学" /&gt;</description>
-        </item>
-        <item>
-        <title>Web开发</title>
-        <link>https://hack.liagu-one.top/categories/web%E5%BC%80%E5%8F%91/</link>
-        <pubDate>Sat, 25 May 2024 13:35:35 +0800</pubDate>
-        
-        <guid>https://hack.liagu-one.top/categories/web%E5%BC%80%E5%8F%91/</guid>
-        <description>&lt;img src="https://figure.liagu-one.top/img/分类17.jpg" alt="Featured image of post Web开发" /&gt;</description>
         </item>
         <item>
         <title>算法</title>
