@@ -270,7 +270,8 @@
         <pubDate>Sun, 29 Sep 2024 19:41:57 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/p/stack%E7%B2%BE%E8%AE%B2/</guid>
-        <description>&lt;p&gt;先欠着&lt;/p&gt;
+        <description>&lt;h1 id=&#34;代码块引入macos窗口样式&#34;&gt;代码块引入MacOS窗口样式
+&lt;/h1&gt;&lt;p&gt;使用这个样式可以使代码块更有逼格,首先在博客根目录下的&lt;code&gt;static&lt;/code&gt;文件夹中创建名为&lt;code&gt;img&lt;/code&gt;的文件夹,然后再&lt;code&gt;img&lt;/code&gt;文件夹中创建一个名为&lt;code&gt;code-header.svg&lt;/code&gt;的文件,在文件中写入以下内容:&lt;/p&gt;
 </description>
         </item>
         <item>

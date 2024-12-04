@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="经过两天的折磨，stack主题的美化几乎完工了">
-<title>Stack精讲</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="四平方和 四平方和定理，又称为拉格朗日定理：\n每个正整数都可以表示为至多 44 个正整数的平方和。\n如果把 00 包括进去，就正好可以表示为 44 个数的平方和。\n比如：\n5=02+02+12+225=02+02+12+22\n7=12+12+12+227=12+12+12+22\n对于一个给定的正整数，可能存在多种平方和的表示法。\n">
+<title>四平方和&#43;最大距离&#43;map函数</title>
 
-<link rel='canonical' href='https://hack.liagu-one.top/p/stack%E7%B2%BE%E8%AE%B2/'>
+<link rel='canonical' href='https://hack.liagu-one.top/p/%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C-%E6%9C%80%E5%A4%A7%E8%B7%9D%E7%A6%BB-map%E5%87%BD%E6%95%B0/'>
 
-<link rel="stylesheet" href="/scss/style.min.c13489e00ede5b3fc92f1f90535dbe53ab4941e3767f8613ed8dfdce93704d60.css"><meta property='og:title' content="Stack精讲">
-<meta property='og:description' content="经过两天的折磨，stack主题的美化几乎完工了">
-<meta property='og:url' content='https://hack.liagu-one.top/p/stack%E7%B2%BE%E8%AE%B2/'>
+<link rel="stylesheet" href="/scss/style.min.c13489e00ede5b3fc92f1f90535dbe53ab4941e3767f8613ed8dfdce93704d60.css"><meta property='og:title' content="四平方和+最大距离+map函数">
+<meta property='og:description' content="四平方和 四平方和定理，又称为拉格朗日定理：\n每个正整数都可以表示为至多 44 个正整数的平方和。\n如果把 00 包括进去，就正好可以表示为 44 个数的平方和。\n比如：\n5=02+02+12+225=02+02+12+22\n7=12+12+12+227=12+12+12+22\n对于一个给定的正整数，可能存在多种平方和的表示法。\n">
+<meta property='og:url' content='https://hack.liagu-one.top/p/%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C-%E6%9C%80%E5%A4%A7%E8%B7%9D%E7%A6%BB-map%E5%87%BD%E6%95%B0/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='hugo' /><meta property='article:published_time' content='2024-09-29T19:41:57&#43;08:00'/><meta property='article:modified_time' content='2024-09-29T19:41:57&#43;08:00'/>
-<meta name="twitter:title" content="Stack精讲">
-<meta name="twitter:description" content="经过两天的折磨，stack主题的美化几乎完工了">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='蓝桥杯' /><meta property='article:published_time' content='2024-11-29T19:55:36&#43;08:00'/><meta property='article:modified_time' content='2024-11-29T19:55:36&#43;08:00'/>
+<meta name="twitter:title" content="四平方和+最大距离+map函数">
+<meta name="twitter:description" content="四平方和 四平方和定理，又称为拉格朗日定理：\n每个正整数都可以表示为至多 44 个正整数的平方和。\n如果把 00 包括进去，就正好可以表示为 44 个数的平方和。\n比如：\n5=02+02+12+225=02+02+12+22\n7=12+12+12+227=12+12+12+22\n对于一个给定的正整数，可能存在多种平方和的表示法。\n">
     <link rel="shortcut icon" href="/favicon.ico" />
 
     </head>
@@ -289,7 +289,36 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#代码块引入macos窗口样式">代码块引入MacOS窗口样式</a></li>
+    <li><a href="#四平方和">四平方和</a>
+      <ol>
+        <li>
+          <ol>
+            <li>
+              <ol>
+                <li><a href="#输入格式">输入格式</a></li>
+                <li><a href="#输出格式">输出格式</a></li>
+                <li><a href="#数据范围">数据范围</a></li>
+                <li><a href="#输入样例">输入样例：</a></li>
+                <li><a href="#输出样例">输出样例：</a></li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+        <li><a href="#暴力">暴力</a></li>
+        <li><a href="#优化">优化</a></li>
+      </ol>
+    </li>
+    <li><a href="#最大距离">最大距离</a>
+      <ol>
+        <li><a href="#map函数详解">map函数详解</a>
+          <ol>
+            <li><a href="#语法">语法：</a></li>
+            <li><a href="#返回值">返回值：</a></li>
+            <li><a href="#示例">示例</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -308,8 +337,8 @@
     
     <header class="article-category">
         
-            <a href="/categories/hugo/" >
-                Hugo
+            <a href="/categories/web%E5%BC%80%E5%8F%91/" >
+                Web开发
             </a>
         
     </header>
@@ -317,13 +346,9 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/stack%E7%B2%BE%E8%AE%B2/">Stack精讲</a>
+            <a href="/p/%E5%9B%9B%E5%B9%B3%E6%96%B9%E5%92%8C-%E6%9C%80%E5%A4%A7%E8%B7%9D%E7%A6%BB-map%E5%87%BD%E6%95%B0/">四平方和&#43;最大距离&#43;map函数</a>
         </h2>
     
-        
-        <h3 class="article-subtitle">
-            经过两天的折磨，stack主题的美化几乎完工了
-        </h3>
         
     </div>
 
@@ -343,7 +368,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">2024-09-29</time>
+                <time class="article-time--published">2024-11-29</time>
             </div>
         
 
@@ -358,7 +383,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -374,8 +399,150 @@
     <section class="article-content">
     
     
-    <h1 id="代码块引入macos窗口样式">代码块引入MacOS窗口样式
-</h1><p>使用这个样式可以使代码块更有逼格,首先在博客根目录下的<code>static</code>文件夹中创建名为<code>img</code>的文件夹,然后再<code>img</code>文件夹中创建一个名为<code>code-header.svg</code>的文件,在文件中写入以下内容:</p>
+    <h1 id="四平方和">四平方和
+</h1><p>四平方和定理，又称为拉格朗日定理：</p>
+<p>每个正整数都可以表示为至多 44 个正整数的平方和。</p>
+<p>如果把 00 包括进去，就正好可以表示为 44 个数的平方和。</p>
+<p>比如：</p>
+<p>5=02+02+12+225=02+02+12+22</p>
+<p>7=12+12+12+227=12+12+12+22</p>
+<p>对于一个给定的正整数，可能存在多种平方和的表示法。</p>
+<p>要求你对 44 个数排序：</p>
+<p>0≤a≤b≤c≤d 0≤a≤b≤c≤d</p>
+<p>并对所有的可能表示法按 a,b,c,da,b,c,d 为联合主键升序排列，最后输出第一个表示法。</p>
+<h4 id="输入格式">输入格式
+</h4><p>输入一个正整数 NN。</p>
+<h4 id="输出格式">输出格式
+</h4><p>输出4个非负整数，按从小到大排序，中间用空格分开。</p>
+<h4 id="数据范围">数据范围
+</h4><p>0&lt;N&lt;5∗1060&lt;N&lt;5∗106</p>
+<h4 id="输入样例">输入样例：
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">5
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="输出样例">输出样例：
+</h4><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">0 0 1 2
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="暴力">暴力
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">四平方和,输入一个n
+</span></span></span><span class="line"><span class="cl"><span class="s2">寻找四个整数a,b,c,d，a&lt;b&lt;c&lt;d
+</span></span></span><span class="line"><span class="cl"><span class="s2">使得N=a2+b2+c2+d2
+</span></span></span><span class="line"><span class="cl"><span class="s2">求最小的结果
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">sys</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</span></span><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;请输入n:&#34;</span><span class="p">))</span>         <span class="c1">#sqrt的浮点数转化整数</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">b</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">+</span><span class="mi">1</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">            <span class="n">rest</span> <span class="o">=</span> <span class="n">n</span> <span class="o">-</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">b</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="n">c</span><span class="o">**</span><span class="mi">2</span>
+</span></span><span class="line"><span class="cl">            <span class="n">d</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">sqrt</span><span class="p">(</span><span class="n">rest</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">d</span> <span class="o">&gt;=</span> <span class="n">c</span> <span class="ow">and</span> <span class="n">d</span><span class="o">*</span><span class="n">d</span> <span class="o">==</span><span class="n">rest</span> <span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">sys</span><span class="o">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="优化">优化
+</h2><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;使用 DFS 优化
+</span></span></span><span class="line"><span class="cl"><span class="s1">DFS 是一种递归算法，我们可以从 a, b, c, d 的值出发，逐层递归，确保每次递归时只检查有效的值，减少不必要的计算。
+</span></span></span><span class="line"><span class="cl"><span class="s1">
+</span></span></span><span class="line"><span class="cl"><span class="s1">在这个问题中，我们可以通过递归来尝试分配 n 的值给四个变量，而每次递归只选择下一个更大的值，从而避免重复计算。&#39;&#39;&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="最大距离">最大距离
+</h1><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+</span></span><span class="line"><span class="cl"><span class="n">res</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">res</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">res</span><span class="p">,</span><span class="nb">abs</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">+</span><span class="nb">abs</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">-</span><span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="map函数详解">map函数详解
+</h2><p><code>map()</code> 是 Python 中的一个内置函数，用于将一个函数应用于给定可迭代对象的每个元素，并返回一个新的可迭代对象（<code>map</code> 对象）。常用于对数据进行批量处理，能够将函数映射到集合中的每个元素。</p>
+<h3 id="语法">语法：
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">map</span><span class="p">(</span><span class="n">function</span><span class="p">,</span> <span class="n">iterable</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>function</code>: 一个函数，它会作用于 <code>iterable</code> 中的每个元素。</li>
+<li><code>iterable</code>: 一个或多个可迭代对象（如列表、元组等），该函数会将其元素依次传入 <code>function</code> 中执行。</li>
+</ul>
+<h3 id="返回值">返回值：
+</h3><p>返回一个 <code>map</code> 对象，这是一个惰性计算的迭代器，只有在需要时才会计算其元素（例如通过 <code>list()</code> 或 <code>for</code> 循环）。</p>
+<h3 id="示例">示例
+</h3><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">int</span><span class="p">,</span><span class="nb">input</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>input()<code>返回</code>&lsquo;1 2 3 4 5&rsquo;</li>
+<li>split()<code>将其分割为</code>[&lsquo;1&rsquo;, &lsquo;2&rsquo;, &lsquo;3&rsquo;, &lsquo;4&rsquo;, &lsquo;5&rsquo;]</li>
+<li>map(int, &hellip;)<code>将每个字符串转换为整数，结果是</code>[1, 2, 3, 4, 5]</li>
+<li>list()<code>将</code>map<code>对象转为列表，最终结果是</code>[1, 2, 3, 4, 5]</li>
+</ul>
 
 </section>
 
@@ -384,7 +551,7 @@
     
     <section class="article-tags">
         
-            <a href="/tags/hugo/">Hugo</a>
+            <a href="/tags/%E8%93%9D%E6%A1%A5%E6%9D%AF/">蓝桥杯</a>
         
     </section>
 
@@ -430,12 +597,12 @@
             
                 
 <article class="">
-    <a href="/p/%E5%9B%BE%E5%BA%8Alsky%E9%85%8D%E7%BD%AE%E5%B0%8F%E6%8F%92%E6%9B%B2/">
+    <a href="/p/python%E5%9F%BA%E7%A1%80%E8%AF%AD%E6%B3%95/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">图床lsky配置小插曲</h2>
+            <h2 class="article-title">Python基础语法</h2>
         </div>
     </a>
 </article>
@@ -443,12 +610,12 @@
             
                 
 <article class="">
-    <a href="/p/lsky_prov2%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE/">
+    <a href="/p/c-%E5%AD%A6%E4%B9%A0/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Lsky_prov2图床配置</h2>
+            <h2 class="article-title">C&#43;&#43;学习</h2>
         </div>
     </a>
 </article>
@@ -456,38 +623,12 @@
             
                 
 <article class="">
-    <a href="/p/0492dcd/">
+    <a href="/p/50a4c39/">
         
         
 
         <div class="article-details">
-            <h2 class="article-title">Blog新建之始</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/%E5%B0%8F%E6%8F%92%E6%9B%B2/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">小插曲</h2>
-        </div>
-    </a>
-</article>
-
-            
-                
-<article class="">
-    <a href="/p/90307b6/">
-        
-        
-
-        <div class="article-details">
-            <h2 class="article-title">Hugo Fixit美化</h2>
+            <h2 class="article-title">MYSQL语法</h2>
         </div>
     </a>
 </article>
