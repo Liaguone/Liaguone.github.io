@@ -6,7 +6,7 @@
 
 <link rel='canonical' href='https://hack.liagu-one.top/p/stack%E7%B2%BE%E8%AE%B2/'>
 
-<link rel="stylesheet" href="/scss/style.min.c13489e00ede5b3fc92f1f90535dbe53ab4941e3767f8613ed8dfdce93704d60.css"><meta property='og:title' content="Stack精讲">
+<link rel="stylesheet" href="/scss/style.min.d472737ca8b950e7aa271ab727f0efe47824a3bd991aa2948f58a2f4da548fab.css"><meta property='og:title' content="Stack精讲">
 <meta property='og:description' content="经过两天的折磨，stack主题的美化几乎完工了">
 <meta property='og:url' content='https://hack.liagu-one.top/p/stack%E7%B2%BE%E8%AE%B2/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
@@ -289,7 +289,13 @@
         <div class="widget--toc">
             <nav id="TableOfContents">
   <ol>
-    <li><a href="#代码块引入macos窗口样式">代码块引入MacOS窗口样式</a></li>
+    <li><a href="#代码相关">代码相关</a>
+      <ol>
+        <li><a href="#代码块引入macos窗口样式">代码块引入MacOS窗口样式</a></li>
+        <li><a href="#固定块的高度">固定块的高度</a></li>
+        <li><a href="#代码块背景颜色">代码块背景颜色</a></li>
+      </ol>
+    </li>
   </ol>
 </nav>
         </div>
@@ -358,7 +364,7 @@
 
 
                 <time class="article-time--reading">
-                    阅读时长: 1 分钟
+                    阅读时长: 2 分钟
                 </time>
             </div>
         
@@ -374,9 +380,197 @@
     <section class="article-content">
     
     
-    <h1 id="代码块引入macos窗口样式">代码块引入MacOS窗口样式
-</h1><p>使用这个样式可以使代码块更有逼格,首先在博客根目录下的<code>static</code>文件夹中创建名为<code>img</code>的文件夹,然后再<code>img</code>文件夹中创建一个名为<code>code-header.svg</code>的文件,在文件中写入以下内容:</p>
-
+    <h1 id="代码相关">代码相关
+</h1><h2 id="代码块引入macos窗口样式">代码块引入MacOS窗口样式
+</h2><p>样式预览:</p>
+<p><img src="D:%5cdesktop%5cWeb-Security%5cimg%5cimage-20241204165143801.png"
+	
+	
+	
+	loading="lazy"
+	
+		alt="image-20241204165143801"
+	
+	
+></p>
+<p>使用这个样式可以使代码块更有逼格,首先在博客根目录下的<code>static</code>文件夹中创建名为<code>img</code>的文件夹,然后再<code>img</code>文件夹中创建一个名为<code>code-header.svg</code>的文件,在文件中写入以下内容:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&#34;http://www.w3.org/2000/svg&#34;</span> <span class="na">version</span><span class="o">=</span><span class="s">&#34;1.1&#34;</span>  <span class="na">x</span><span class="o">=</span><span class="s">&#34;0px&#34;</span> <span class="na">y</span><span class="o">=</span><span class="s">&#34;0px&#34;</span> <span class="na">width</span><span class="o">=</span><span class="s">&#34;450px&#34;</span> <span class="na">height</span><span class="o">=</span><span class="s">&#34;130px&#34;</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ellipse</span> <span class="na">cx</span><span class="o">=</span><span class="s">&#34;65&#34;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&#34;65&#34;</span> <span class="na">rx</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">ry</span><span class="o">=</span><span class="s">&#34;52&#34;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&#34;rgb(220,60,54)&#34;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&#34;2&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;rgb(237,108,96)&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ellipse</span> <span class="na">cx</span><span class="o">=</span><span class="s">&#34;225&#34;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&#34;65&#34;</span> <span class="na">rx</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">ry</span><span class="o">=</span><span class="s">&#34;52&#34;</span>  <span class="na">stroke</span><span class="o">=</span><span class="s">&#34;rgb(218,151,33)&#34;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&#34;2&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;rgb(247,193,81)&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">&lt;</span><span class="nt">ellipse</span> <span class="na">cx</span><span class="o">=</span><span class="s">&#34;385&#34;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&#34;65&#34;</span> <span class="na">rx</span><span class="o">=</span><span class="s">&#34;50&#34;</span> <span class="na">ry</span><span class="o">=</span><span class="s">&#34;52&#34;</span>  <span class="na">stroke</span><span class="o">=</span><span class="s">&#34;rgb(27,161,37)&#34;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&#34;2&#34;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&#34;rgb(100,200,86)&#34;</span><span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来我们在原来创建的<code>custom.scss</code>文件中添加以下内容:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">//</span>  <span class="o">~</span><span class="err">\</span><span class="nt">blog</span><span class="err">\</span><span class="nt">assets</span><span class="err">\</span><span class="nt">scss</span><span class="err">\</span><span class="nt">custom</span><span class="p">.</span><span class="nc">scss</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">//</span><span class="nt">----------------------------------------------------------</span>
+</span></span><span class="line"><span class="cl"><span class="o">//</span><span class="nt">为代码块顶部添加macos样式</span>
+</span></span><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-content</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="err">.</span><span class="n">highlight</span><span class="p">:</span><span class="n">before</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">content</span><span class="o">:</span> <span class="s2">&#34;&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">display</span><span class="p">:</span> <span class="kc">block</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background</span><span class="p">:</span> <span class="nb">url</span><span class="p">(</span><span class="sx">/img/code-header.svg</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="k">height</span><span class="p">:</span> <span class="mi">32</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">width</span><span class="p">:</span> <span class="mi">100</span><span class="kt">%</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-size</span><span class="p">:</span> <span class="mi">57</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-repeat</span><span class="p">:</span> <span class="kc">no-repeat</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">margin-bottom</span><span class="p">:</span> <span class="mi">5</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">background-position</span><span class="p">:</span> <span class="mi">-1</span><span class="kt">px</span> <span class="mi">2</span><span class="kt">px</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="固定块的高度">固定块的高度
+</h2><p>过长的内容影响观感，所以把 block 的高度限制在 20em，并隐藏滚动条
+在 <code>/assets/scss/partials/layout/article.scss</code> 中进行如下修改（已隐藏无关片段）：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="p">.</span><span class="nc">article-content</span> <span class="p">{</span>  <span class="c">/* line 205 */</span>
+</span></span><span class="line"><span class="cl">    <span class="err">.highlight</span> <span class="err">{</span>  <span class="c">/* line 331 */</span>
+</span></span><span class="line"><span class="cl">        <span class="k">background-color</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="kc">pre</span><span class="o">-</span><span class="n">background</span><span class="o">-</span><span class="kc">color</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">padding</span><span class="p">:</span> <span class="nf">var</span><span class="p">(</span><span class="o">--</span><span class="n">card</span><span class="o">-</span><span class="n">padding</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">position</span><span class="p">:</span> <span class="kc">relative</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="err">pre</span> <span class="err">{</span>  <span class="c">/* line 345 */</span>
+</span></span><span class="line"><span class="cl">            <span class="k">margin</span><span class="p">:</span> <span class="kc">initial</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">padding</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">margin</span><span class="p">:</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">width</span><span class="p">:</span> <span class="kc">auto</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">max-height</span><span class="p">:</span> <span class="mi">20</span><span class="kt">em</span><span class="p">;</span>  <span class="c">/* 新增：限制最大高度为 20em */</span>
+</span></span><span class="line"><span class="cl">            <span class="n">scrollbar-width</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span> <span class="c">/* Firefox 新增：隐藏滚动条 */</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c">/* 隐藏滚动条（Chrome、Safari） */</span>
+</span></span><span class="line"><span class="cl">            <span class="err">&amp;::</span><span class="kp">-webkit-</span><span class="err">scrollbar</span> <span class="err">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">display</span><span class="p">:</span> <span class="kc">none</span><span class="p">;</span>  <span class="c">/* 新增：隐藏滚动条 */</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="err">}</span>
+</span></span><span class="line"><span class="cl">    <span class="err">}</span>
+</span></span><span class="line"><span class="cl"><span class="err">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="代码块背景颜色">代码块背景颜色
+</h2><p>在variables.scss文件里面检查light主题代码颜色，如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;light&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--pre-text-color</span><span class="p">:</span> <span class="mh">#272822</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--pre-background-color</span><span class="p">:</span> <span class="mh">#ba7878</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="err">@import</span> <span class="err">&#34;partials/highlight/light.scss&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以通过以下方式设置透明度</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="o">[</span><span class="nt">data-scheme</span><span class="o">=</span><span class="s2">&#34;light&#34;</span><span class="o">]</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--pre-background-color</span><span class="p">:</span> <span class="nb">rgba</span><span class="p">(</span><span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mi">250</span><span class="p">,</span> <span class="mf">0.7</span><span class="p">);</span>  <span class="c">/* 设置背景色为白色并调整透明度 (0.7为70%不透明) */</span>
+</span></span><span class="line"><span class="cl">    <span class="nv">--pre-text-color</span><span class="p">:</span> <span class="mh">#272822</span><span class="p">;</span>  <span class="c">/* 深色文本 */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>本身代码 块的颜色用light.scss文件设置，如下文件，改对应代码即可</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-css" data-lang="css"><span class="line"><span class="cl"><span class="c">/*
+</span></span></span><span class="line"><span class="cl"><span class="c">*   Style: monokailight
+</span></span></span><span class="line"><span class="cl"><span class="c">*   https://xyproto.github.io/splash/docs/monokailight.html
+</span></span></span><span class="line"><span class="cl"><span class="c">*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">color</span><span class="o">:</span> <span class="p">#</span><span class="nn">272822</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">background-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">82eaf100</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">error-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">960050</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">keyword-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">7ad0e1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">text-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">111111</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">name-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">75af00</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">$</span><span class="nt">literal-color</span><span class="o">:</span> <span class="p">#</span><span class="nn">d88200</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">@</span><span class="k">import</span> <span class="s2">&#34;common.scss&#34;</span><span class="p">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
 </section>
 
 
@@ -595,7 +789,7 @@
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 93066字·共 27篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 93573字·共 27篇文章</br><span><p>
         
     </section>
     
@@ -616,7 +810,20 @@
 </footer>
 
 
-
+<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/waifu.css">
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/live2d.min.js"></script>
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/waifu-tips.js"></script>
+<script>
+    window.addEventListener('load', () => {
+        
+        localStorage.setItem("modelId", 2);  
+        initWidget({
+            waifuPath: "https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/waifu-tips.json",
+            cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+            tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
+        });
+    })
+</script>
 
 
 
