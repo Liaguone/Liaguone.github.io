@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-cn" dir="ltr">
     <head>
-	<meta name="generator" content="Hugo 0.139.3"><meta charset='utf-8'>
+	<meta name="generator" content="Hugo 0.139.4"><meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="zh-cn">
 <title>Pager 2 - Liagu&#39; blog</title>
 
@@ -11,7 +11,7 @@
 <meta property='og:description' content="zh-cn">
 <meta property='og:url' content='https://hack.liagu-one.top/'>
 <meta property='og:site_name' content='Liagu&#39; blog'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-12-08T19:32:44&#43;08:00 '/>
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2024-12-14T10:46:55&#43;08:00 '/>
 <meta name="twitter:title" content="Liagu' blog">
 <meta name="twitter:description" content="zh-cn"><link rel="alternate" type="application/rss&#43;xml" href="https://hack.liagu-one.top/index.xml">
     <link rel="shortcut icon" href="/favicon.ico" />
@@ -219,7 +219,7 @@
         
         
         <li >
-            <a href='https://music.shimoko.com/' target="_blank">
+            <a href='/thinking' target="_blank">
                 
                 
                 
@@ -231,7 +231,7 @@
 
 
                 
-                <span>Music</span>
+                <span>Thinking</span>
             </a>
         </li>
         
@@ -310,7 +310,7 @@
                     <a href="/archives/#2024">
                         
                             <span class="year">2024</span>
-                            <span class="count">27</span>
+                            <span class="count">26</span>
                         
                     </a> 
                 </div>
@@ -361,12 +361,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/hugo/" class="font_size_7">
-                Hugo
+            <a href="/categories/ctf/" class="font_size_7">
+                CTF
             </a>
         
-            <a href="/categories/ctf/" class="font_size_6">
-                CTF
+            <a href="/categories/hugo/" class="font_size_7">
+                Hugo
             </a>
         
             <a href="/categories/%E5%A4%A7%E6%9D%82%E7%83%A9_%E6%95%99%E7%A8%8B/" class="font_size_5">
@@ -381,16 +381,20 @@
                 大学
             </a>
         
-            <a href="/categories/draft/" class="font_size_2">
-                Draft
-            </a>
-        
             <a href="/categories/%E6%B8%97%E9%80%8F/" class="font_size_2">
                 渗透
             </a>
         
             <a href="/categories/docker/" class="font_size_1">
                 Docker
+            </a>
+        
+            <a href="/categories/draft/" class="font_size_1">
+                Draft
+            </a>
+        
+            <a href="/categories/java/" class="font_size_1">
+                Java
             </a>
         
     </div>
@@ -414,12 +418,12 @@
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/draft/" class="font_size_4">
-                Draft
-            </a>
-        
             <a href="/tags/hugo/" class="font_size_4">
                 Hugo
+            </a>
+        
+            <a href="/tags/draft/" class="font_size_3">
+                Draft
             </a>
         
             <a href="/tags/ctf/" class="font_size_2">
@@ -438,6 +442,10 @@
                 渗透
             </a>
         
+            <a href="/tags/java/" class="font_size_1">
+                Java
+            </a>
+        
             <a href="/tags/jwt/" class="font_size_1">
                 Jwt
             </a>
@@ -448,10 +456,6 @@
         
             <a href="/tags/py/" class="font_size_1">
                 Py
-            </a>
-        
-            <a href="/tags/sql/" class="font_size_1">
-                Sql
             </a>
         
     </div>
@@ -499,6 +503,18 @@
   
   var dataMap = new Map();
   
+    var key = "2024-12-10";
+    var value = dataMap.get(key);
+    var wordCount =  6334 ;
+    var link = "/p/ctfshow-java/";
+    var title = "Ctfshow-Java";
+    
+    
+    if (value == null) {
+      dataMap.set(key, [{wordCount, link, title}]);
+    } else {
+      value.push({wordCount, link, title});
+    }
     var key = "2024-12-08";
     var value = dataMap.get(key);
     var wordCount =  1247 ;
@@ -1008,74 +1024,6 @@
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/p/%E5%9B%BE%E5%BA%8Alsky%E9%85%8D%E7%BD%AE%E5%B0%8F%E6%8F%92%E6%9B%B2/">图床lsky配置小插曲</a>
-        </h2>
-    
-        
-    </div>
-
-    
-    
-    
-    
-    <footer class="article-time">
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
-  <circle cx="18" cy="18" r="4" />
-  <path d="M15 3v4" />
-  <path d="M7 3v4" />
-  <path d="M3 11h16" />
-  <path d="M18 16.496v1.504l1 1" />
-</svg>
-                <time class="article-time--published">2024-11-14</time>
-            </div>
-        
-
-        
-            <div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <circle cx="12" cy="12" r="9" />
-  <polyline points="12 7 12 12 15 15" />
-</svg>
-
-
-
-                <time class="article-time--reading">
-                    阅读时长: 2 分钟
-                </time>
-            </div>
-        
-    </footer>
-    
-
-    
-    
-<div>
-     
-</header>
-</article>
-        
-            
-<article class="">
-    <header class="article-header">
-
-    <div class="article-details">
-    
-    <header class="article-category">
-        
-            <a href="/categories/hugo/" >
-                Hugo
-            </a>
-        
-    </header>
-    
-
-    <div class="article-title-wrapper">
-        <h2 class="article-title">
             <a href="/p/lsky_prov2%E5%9B%BE%E5%BA%8A%E9%85%8D%E7%BD%AE/">Lsky_prov2图床配置</a>
         </h2>
     
@@ -1543,6 +1491,74 @@
 </header>
 </article>
         
+            
+<article class="">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/%E5%A4%A7%E6%9D%82%E7%83%A9_%E6%95%99%E7%A8%8B/" >
+                大杂烩_教程
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/windows%E7%94%A8%E6%88%B7%E5%90%8D%E9%97%AE%E9%A2%98/">Windows用户名问题</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">2024-08-29</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 2 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+    
+<div>
+     
+</header>
+</article>
+        
     </section>
     <nav class='pagination'>
         
@@ -1647,7 +1663,7 @@
         
             2023-2024 - 
         
-        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 99627字·共 30篇文章</br><span><p>
+        2024 Liagu·<i class="fas fa-bell"></i> <a id="days">0</a>Days<br>共嘟嘟了 105944字·共 31篇文章</br><span><p>
         
     </section>
     

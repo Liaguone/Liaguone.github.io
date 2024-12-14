@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Sql on Liagu&#39; blog</title>
-        <link>https://hack.liagu-one.top/tags/sql/</link>
-        <description>Recent content in Sql on Liagu&#39; blog</description>
+        <title>SQL知识 on Liagu&#39; blog</title>
+        <link>https://hack.liagu-one.top/tags/sql%E7%9F%A5%E8%AF%86/</link>
+        <description>Recent content in SQL知识 on Liagu&#39; blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Liagu</copyright>
-        <lastBuildDate>Sat, 11 May 2024 21:17:31 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/tags/sql/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 11 May 2024 21:17:31 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/tags/sql%E7%9F%A5%E8%AF%86/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>MYSQL语法</title>
         <link>https://hack.liagu-one.top/p/50a4c39/</link>
         <pubDate>Sat, 11 May 2024 21:17:31 +0800</pubDate>

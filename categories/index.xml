@@ -7,13 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>Liagu</copyright>
-        <lastBuildDate>Sun, 08 Dec 2024 19:32:44 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 10 Dec 2024 16:27:48 +0800</lastBuildDate><atom:link href="https://hack.liagu-one.top/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>CTF</title>
         <link>https://hack.liagu-one.top/categories/ctf/</link>
-        <pubDate>Sun, 08 Dec 2024 19:32:44 +0800</pubDate>
+        <pubDate>Tue, 10 Dec 2024 16:27:48 +0800</pubDate>
         
         <guid>https://hack.liagu-one.top/categories/ctf/</guid>
         <description>&lt;img src="https://figure.liagu-one.top/img/分类13.jpg" alt="Featured image of post CTF" /&gt;</description>
+        </item>
+        <item>
+        <title>Java</title>
+        <link>https://hack.liagu-one.top/categories/java/</link>
+        <pubDate>Tue, 10 Dec 2024 16:27:48 +0800</pubDate>
+        
+        <guid>https://hack.liagu-one.top/categories/java/</guid>
+        <description></description>
         </item>
         <item>
         <title>Web开发</title>
